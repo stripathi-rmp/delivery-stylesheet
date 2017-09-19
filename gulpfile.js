@@ -17,7 +17,20 @@ const rename = require('gulp-rename')
 const gutil = require('gulp-util')
 
 
-gulp.task('sass', function () {
+gulp.task('sass:delivery', function () {
+  // return gulp.src('src/sass/**/*.scss')
+  return gulp.src('src/sass/delivery/delivery.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('sass:homepage', function () {
+  return gulp.src('src/sass/homepage/home.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('sass:mobile', function () {
   // return gulp.src('src/sass/**/*.scss')
   return gulp.src('src/sass/delivery.scss')
     .pipe(sass().on('error', sass.logError))

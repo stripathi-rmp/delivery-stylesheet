@@ -1,0 +1,51 @@
+#globalContent ul li {
+  border-radius: 0;
+  transition: 0.25s;
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+
+  .label {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-weight: 500;
+    background: #fff;
+    font-size: 12px;
+    height: 3.4em;
+  }
+}
+
+#globalContent ul li,
+.bigIcon {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: cover !important;
+}
+
+.bigIcon-defaultApps0 {
+  background-position: 0 0;
+}
+
+#globalContent ul li .rmphelp {
+  width: 101px;
+  padding: 0 10px;
+  overflow-y: scroll;
+  background: $secondaryColor;
+}
+
+.rmpdescription > span {
+  top: 11px;
+}
+
+.rmpdescription {
+  border-bottom: 29px solid $secondaryColor;
+}
+
+#globalContent ul li:hover,
+.expandable ul li:active,
+.expandable ul li:focus {
+  top: 0;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2) !important;
+  opacity: 1 !important;
+}

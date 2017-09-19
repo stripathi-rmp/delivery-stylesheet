@@ -1,0 +1,51 @@
+.gwt-DisclosurePanel {
+  border: none;
+  background: transparent;
+  margin-bottom: 0.8em;
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+
+  a.header {
+    background: $PrimaryColor;
+    border-bottom: 0;
+  }
+
+  a.header > table > tbody > tr > td:nth-child(2) {
+    text-transform: uppercase;
+  }
+
+  .content {
+    padding-bottom: 1.1em;
+  }
+}
+
+.gwt-DisclosurePanel > tbody > tr > td > div {
+  margin: 10px 20px;
+}
+
+img.sectionButton {
+  display: none;
+}
+
+.gwt-DisclosurePanel a.header > table > tbody > tr > td:nth-child(2) {
+  height: 18px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.gwt-DisclosurePanel a.header > table > tbody > tr > td:nth-child(2)::before {
+  content: "\25bc";
+  padding-right: 11px;
+  padding-left: 5px;
+  color: #fff;
+}
+
+.gwt-DisclosurePanel-closed a.header > table > tbody > tr > td:nth-child(2)::before {
+  content: "\25b6";
+  padding-right: 13px;
+  padding-left: 5px;
+}
+
+.gwt-DisclosurePanel .header td:nth-child(1) {
+  padding: 0;
+  width: 0 !important;
+}

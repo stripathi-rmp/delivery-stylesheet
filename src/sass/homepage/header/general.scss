@@ -1,0 +1,52 @@
+#headerbanner {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#header {
+  background: #fff;
+  box-shadow: none;
+
+  img {
+    max-width: 250px;
+    max-height: 100px;
+    margin: 10px 0 5px;
+  }
+
+  .appliName {
+    color: $PrimaryColor;
+  }
+
+  .actionBox {
+    position: relative;
+    z-index: 1;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: none;
+
+    span {
+      font-size: 15px;
+      margin: 3px 0;
+      color: $PrimaryColor;
+    }
+  }
+}
+
+#i18nBox {
+  padding: 3px 15px;
+
+  select {
+    border: 1px solid #e3e3e3;
+  }
+}
+
+.icon-poweroff {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiPjxwYXRoIGQ9Ik0xNjY0IDg5NnEwIDE1Ni02MSAyOTh0LTE2NCAyNDUtMjQ1IDE2NC0yOTggNjEtMjk4LTYxLTI0NS0xNjQtMTY0LTI0NS02MS0yOThxMC0xODIgODAuNS0zNDN0MjI2LjUtMjcwcTQzLTMyIDk1LjUtMjV0ODMuNSA1MHEzMiA0MiAyNC41IDk0LjV0LTQ5LjUgODQuNXEtOTggNzQtMTUxLjUgMTgxdC01My41IDIyOHEwIDEwNCA0MC41IDE5OC41dDEwOS41IDE2My41IDE2My41IDEwOS41IDE5OC41IDQwLjUgMTk4LjUtNDAuNSAxNjMuNS0xMDkuNSAxMDkuNS0xNjMuNSA0MC41LTE5OC41cTAtMTIxLTUzLjUtMjI4dC0xNTEuNS0xODFxLTQyLTMyLTQ5LjUtODQuNXQyNC41LTk0LjVxMzEtNDMgODQtNTB0OTUgMjVxMTQ2IDEwOSAyMjYuNSAyNzB0ODAuNSAzNDN6bS02NDAtNzY4djY0MHEwIDUyLTM4IDkwdC05MCAzOC05MC0zOC0zOC05MHYtNjQwcTAtNTIgMzgtOTB0OTAtMzggOTAgMzggMzggOTB6IiBmaWxsPSJibGFjayIvPjwvc3ZnPg==") !important;
+  margin-left: 20px !important;
+}

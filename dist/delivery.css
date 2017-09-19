@@ -1,3 +1,218 @@
+/*
+-----------------------------------------------------------------------------------
+
+CSS INDEX
+===================
+
+1. Theme default CSS
+2. Header
+	2.1 General Header
+	2.2 Basket
+	2.3 Navigation
+	2.4 Progress Bar
+3. General widget
+	3.1 Button
+	3.2 General_widget
+	3.3 Checkbox_radio
+	3.4 Capcha
+	3.5 Report
+	3.6 Upload
+4. Structuring widgets
+	4.1 Section
+	4.2 Tab
+	4.3 Array
+
+-----------------------------------------------------------------------------------
+
+===========================================================
+	1. Theme Default CSS
+===========================================================
+*/
+/*
+    Used Colors (material default)
+    PrimaryColor: #1c1c1b;
+    secondaryColor: #f0c105;
+*/
+* {
+  font-family: Arial, sans-serif; }
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+option,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none; }
+
+body {
+  background: #fff; }
+
+#globalContent {
+  margin: auto !important;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  width: 90% !important; }
+
+#applicationContent {
+  overflow: auto;
+  padding: 20px 10px 10px;
+  margin-top: 11px; }
+
+#loading-indicator {
+  float: top;
+  background: white;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; }
+
+table.rowStyle {
+  border-spacing: 5px; }
+
+.gwt-DisclosurePanel tbody > tr > td > div {
+  margin: 0; }
+
+div#rmpfooter {
+  margin-left: 4%; }
+
+/*
+===========================================================
+	2. Header
+===========================================================
+*/
+/*
+	2.1 General header
+----------------------------
+*/
+#headerbanner {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between; }
+
+#header {
+  background: #fff;
+  box-shadow: none; }
+  #header img {
+    max-width: 250px;
+    max-height: 100px;
+    margin: 10px 0 5px; }
+  #header .appliName {
+    color: #1c1c1b; }
+  #header .actionBox {
+    position: relative;
+    z-index: 1;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: none; }
+    #header .actionBox span {
+      font-size: 15px;
+      margin: 3px 0;
+      color: #1c1c1b; }
+
+#i18nBox {
+  padding: 3px 15px; }
+
+#i18nBox select {
+  border: 1px solid #e3e3e3; }
+
+.icon-poweroff {
+  /* V1 White
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z"/></svg>') !important; */
+  /* V2 Black
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z" fill="black"/></svg>') !important; */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1536 1664'%3E%3Ctitle%3E1%3C/title%3E%3Cpath d='M1664,896q0,156-61,298t-164,245q-103,103-245,164t-298,61q-156,0-298-61T353,1439q-103-103-164-245T128,896q0-182,80.5-343T435,283q43-32,95.5-25T614,308q32,42,24.5,94.5T589,487q-98,74-151.5,181T384,896a498.71,498.71,0,0,0,40.5,198.5Q465,1189,534,1258t163.5,109.5a506.7,506.7,0,0,0,397,0Q1189,1327,1258,1258t109.5-163.5A498.71,498.71,0,0,0,1408,896q0-121-53.5-228T1203,487q-42-32-49.5-84.5T1178,308q31-43,84-50t95,25q146,109,226.5,270T1664,896ZM1024,128V768q0,52-38,90t-90,38q-52,0-90-38t-38-90V128q0-52,38-90T896,0q52,0,90,38T1024,128Z' transform='translate(-128)' fill='%23f0c105'/%3E%3C/svg%3E") !important;
+  margin-left: 20px !important; }
+
+/*
+	2.2 Basket
+----------------------------
+*/
 #rmp_mini_basket {
   border: 1px solid #e3e3e3 !important;
   background: #fff;
@@ -108,49 +323,10 @@
   opacity: 1;
   left: 0; }
 
-#headerbanner {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between; }
-
-#header {
-  background: #fff;
-  box-shadow: none; }
-  #header img {
-    max-width: 250px;
-    max-height: 100px;
-    margin: 10px 0 5px; }
-  #header .appliName {
-    color: #1c1c1b; }
-  #header .actionBox {
-    position: relative;
-    z-index: 1;
-    float: right;
-    right: 0;
-    top: 0;
-    padding: none; }
-    #header .actionBox span {
-      font-size: 15px;
-      margin: 3px 0;
-      color: #1c1c1b; }
-
-#i18nBox {
-  padding: 3px 15px; }
-
-#i18nBox select {
-  border: 1px solid #e3e3e3; }
-
-.icon-poweroff {
-  /* V1 White
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z"/></svg>') !important; */
-  /* V2 Black
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z" fill="black"/></svg>') !important; */
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1536 1664'%3E%3Ctitle%3E1%3C/title%3E%3Cpath d='M1664,896q0,156-61,298t-164,245q-103,103-245,164t-298,61q-156,0-298-61T353,1439q-103-103-164-245T128,896q0-182,80.5-343T435,283q43-32,95.5-25T614,308q32,42,24.5,94.5T589,487q-98,74-151.5,181T384,896a498.71,498.71,0,0,0,40.5,198.5Q465,1189,534,1258t163.5,109.5a506.7,506.7,0,0,0,397,0Q1189,1327,1258,1258t109.5-163.5A498.71,498.71,0,0,0,1408,896q0-121-53.5-228T1203,487q-42-32-49.5-84.5T1178,308q31-43,84-50t95,25q146,109,226.5,270T1664,896ZM1024,128V768q0,52-38,90t-90,38q-52,0-90-38t-38-90V128q0-52,38-90T896,0q52,0,90,38T1024,128Z' transform='translate(-128)' fill='%23f0c105'/%3E%3C/svg%3E") !important;
-  margin-left: 20px !important; }
-
+/*
+	2.3 Navigation
+----------------------------
+*/
 #rmpmenu {
   padding: 0 0 0 5%;
   margin: 0;
@@ -217,6 +393,10 @@ li#rmpoption0_0:hover > a {
   text-transform: uppercase;
   background: #9e9e9e; }
 
+/*
+	2.4 Progress Bar
+----------------------------
+*/
 :root .rmppgbsteps,
 _:-ms-fullscreen {
   justify-content: flex-start; }
@@ -298,6 +478,15 @@ _:-ms-fullscreen {
 .rmppgbstephidden {
   display: none; }
 
+/*
+===========================================================
+	3. General widget
+===========================================================
+*/
+/*
+	3.1 Button
+----------------------------
+*/
 .gwt-Button,
 .gwt-Button-cancel,
 .gwt-Button-cancel:hover,
@@ -341,17 +530,88 @@ _:-ms-fullscreen {
   .gwt-Button-other:hover {
     background: #2f779d !important; }
 
-.rmpCaptcha {
-  background: transparent;
-  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  border: none; }
+/*
+	3.2 General_input
+----------------------------
+*/
+.ATHeader input:focus,
+.gwt-DateBox:focus,
+.gwt-TextBox:focus,
+textarea:focus {
+  outline: #f0c105 solid 2px; }
 
-.rmpCaptcha > tbody > tr > td:last-child {
-  background: transparent; }
+.gwt-TextBox.full-width {
+  width: 100%; }
 
-.rmpCaptcha .gwt-TextBox {
-  min-width: 150px; }
+.gwt-DateBox.full-width {
+  width: 90%; }
 
+.gwt-DateBox {
+  padding: 7px;
+  width: 278px; }
+
+.ATHeader input[disabled],
+.ATHeader input[readonly],
+.gwt-DateBox[disabled],
+.gwt-DateBox[readonly],
+.gwt-ListBox[disabled],
+.gwt-ListBox[readonly],
+.gwt-TextBox[disabled],
+.gwt-TextBox[readonly],
+textarea[disabled],
+textarea[readonly] {
+  color: #191919;
+  background: #fafafa; }
+
+a.select2-choice.select2-default {
+  border-radius: 0; }
+
+.select2-container .select2-choice .select2-arrow {
+  border-radius: 0; }
+
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-drop-active {
+  border: 1px solid #f0c105 !important; }
+
+.select2-results .select2-highlighted {
+  background: #f0c105 !important; }
+
+.select2-container .select2-choice,
+.select2-container .select2-choice .select2-arrow,
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+  background: transparent !important; }
+
+.select2-container .select2-choice .select2-arrow {
+  border-left: 1px solid #aaa !important; }
+
+td.datePickerDay.datePickerDayIsToday {
+  background: #1c1c1b; }
+
+.gwt-DatePicker .datePickerDay {
+  padding: 6px 11px; }
+
+.gwt-DatePicker .datePickerDayIsValue {
+  background: #f0c105; }
+
+.ArrayTree-Panel .ATHeader input,
+.ArrayTree-Panel .gwt-ListBox,
+.ArrayTree-Panel .gwt-PasswordTextBox,
+.ArrayTree-Panel .gwt-TextBox:not(.full-width),
+textarea {
+  width: 250px; }
+
+.ImageButton.browseFileStyle {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 22'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpath d='M25,6.27a3.37,3.37,0,0,0-2.47-1H12v-.5a3.37,3.37,0,0,0-1-2.47,3.37,3.37,0,0,0-2.47-1h-5A3.37,3.37,0,0,0,1,2.27,3.37,3.37,0,0,0,0,4.74v15a3.37,3.37,0,0,0,1,2.47,3.37,3.37,0,0,0,2.47,1h19a3.52,3.52,0,0,0,3.5-3.5v-11A3.37,3.37,0,0,0,25,6.27Z' transform='translate(0 -1.24)' fill='%23f0c105'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/*
+	3.3 Checkbox_radio
+----------------------------
+*/
 input[type='checkbox'],
 input[type='radio'] {
   position: absolute;
@@ -465,80 +725,25 @@ input[type="radio"]:disabled:checked + label::before {
 input[type="radio"]:disabled:checked + label::after {
   border: 2px solid #fff; }
 
-.ATHeader input:focus,
-.gwt-DateBox:focus,
-.gwt-TextBox:focus,
-textarea:focus {
-  outline: #f0c105 solid 2px; }
+/*
+	3.4 Capcha
+----------------------------
+*/
+.rmpCaptcha {
+  background: transparent;
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  border: none; }
 
-.gwt-TextBox.full-width {
-  width: 100%; }
+.rmpCaptcha > tbody > tr > td:last-child {
+  background: transparent; }
 
-.gwt-DateBox.full-width {
-  width: 90%; }
+.rmpCaptcha .gwt-TextBox {
+  min-width: 150px; }
 
-.gwt-DateBox {
-  padding: 7px;
-  width: 278px; }
-
-.ATHeader input[disabled],
-.ATHeader input[readonly],
-.gwt-DateBox[disabled],
-.gwt-DateBox[readonly],
-.gwt-ListBox[disabled],
-.gwt-ListBox[readonly],
-.gwt-TextBox[disabled],
-.gwt-TextBox[readonly],
-textarea[disabled],
-textarea[readonly] {
-  color: #191919;
-  background: #fafafa; }
-
-a.select2-choice.select2-default {
-  border-radius: 0; }
-
-.select2-container .select2-choice .select2-arrow {
-  border-radius: 0; }
-
-.select2-container-active .select2-choice,
-.select2-container-active .select2-choices,
-.select2-drop-active {
-  border: 1px solid #f0c105 !important; }
-
-.select2-results .select2-highlighted {
-  background: #f0c105 !important; }
-
-.select2-container .select2-choice,
-.select2-container .select2-choice .select2-arrow,
-.select2-container-active .select2-choice,
-.select2-container-active .select2-choices {
-  background: transparent !important; }
-
-.select2-container .select2-choice .select2-arrow {
-  border-left: 1px solid #aaa !important; }
-
-td.datePickerDay.datePickerDayIsToday {
-  background: #1c1c1b; }
-
-.gwt-DatePicker .datePickerDay {
-  padding: 6px 11px; }
-
-.gwt-DatePicker .datePickerDayIsValue {
-  background: #f0c105; }
-
-.ArrayTree-Panel .ATHeader input,
-.ArrayTree-Panel .gwt-ListBox,
-.ArrayTree-Panel .gwt-PasswordTextBox,
-.ArrayTree-Panel .gwt-TextBox:not(.full-width),
-textarea {
-  width: 250px; }
-
-.ImageButton.browseFileStyle {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 22'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpath d='M25,6.27a3.37,3.37,0,0,0-2.47-1H12v-.5a3.37,3.37,0,0,0-1-2.47,3.37,3.37,0,0,0-2.47-1h-5A3.37,3.37,0,0,0,1,2.27,3.37,3.37,0,0,0,0,4.74v15a3.37,3.37,0,0,0,1,2.47,3.37,3.37,0,0,0,2.47,1h19a3.52,3.52,0,0,0,3.5-3.5v-11A3.37,3.37,0,0,0,25,6.27Z' transform='translate(0 -1.24)' fill='%23f0c105'/%3E%3C/svg%3E");
-  object-position: -99999px 99999px;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
+/*
+	3.5 Report
+----------------------------
+*/
 .reportBarStyle {
   background: none !important;
   width: 100% !important; }
@@ -817,6 +1022,10 @@ _:-ms-fullscreen {
     background-size: 95% 95%;
     background-repeat: no-repeat; } }
 
+/*
+	3.6 Upload
+----------------------------
+*/
 _:-ms-fullscreen, :root .FileUploadContainer .cellListWidget .fileDownloadButton span img {
   opacity: 0; }
 
@@ -833,31 +1042,15 @@ _:-ms-fullscreen, :root .FileUploadContainer .cellListWidget .fileDownloadButton
     background-size: contain;
     background-repeat: no-repeat; } }
 
-.ColumnHeader,
-.array-column-footer,
-.array-header td {
-  background: #f0c105;
-  color: #fff; }
-
-.array-header td:first-child,
-.array-header:first-child td {
-  border: none; }
-
-.addSmallStyle.add-button {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM11,11v6H8V11H2V8H8V2h3V8h6v3Z' fill='%232F779D'/%3E%3C/svg%3E");
-  object-position: -99999px 99999px;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.dashStyle.delete-button {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM2,11V8H17v3Z' fill='%232F779D'/%3E%3C/svg%3E");
-  object-position: -99999px 99999px;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-.Array-hideBtn tr td:first-child {
-  display: none; }
-
+/*
+===========================================================
+	4. Structuring widgets
+===========================================================
+*/
+/*
+	4.1 Section
+----------------------------
+*/
 .gwt-DisclosurePanel {
   border: none;
   background: transparent;
@@ -909,6 +1102,10 @@ img.sectionButton {
   padding: 0;
   width: 0 !important; }
 
+/*
+	4.1 Tab
+----------------------------
+*/
 .gwt-TabPanel {
   margin-bottom: 0.8em;
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12); }
@@ -954,126 +1151,31 @@ img.sectionButton {
   background: transparent;
   border: none; }
 
-* {
-  font-family: Arial, sans-serif; }
+/*
+	4.1 Array
+----------------------------
+*/
+.ColumnHeader,
+.array-column-footer,
+.array-header td {
+  background: #f0c105;
+  color: #fff; }
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-input,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-option,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-select,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  outline: none; }
+.array-header td:first-child,
+.array-header:first-child td {
+  border: none; }
 
-body {
-  background: #fff; }
+.addSmallStyle.add-button {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM11,11v6H8V11H2V8H8V2h3V8h6v3Z' fill='%232F779D'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain; }
 
-#globalContent {
-  margin: auto !important;
-  background: #fff;
-  box-shadow: none;
-  border-radius: 0;
-  width: 90% !important; }
+.dashStyle.delete-button {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM2,11V8H17v3Z' fill='%232F779D'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain; }
 
-#applicationContent {
-  overflow: auto;
-  padding: 20px 10px 10px;
-  margin-top: 11px; }
-
-#loading-indicator {
-  float: top;
-  background: white;
-  margin: auto;
-  text-align: center;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
-  margin-top: 10px; }
-
-table.rowStyle {
-  border-spacing: 5px; }
-
-.gwt-DisclosurePanel tbody > tr > td > div {
-  margin: 0; }
-
-div#rmpfooter {
-  margin-left: 4%; }
+.Array-hideBtn tr td:first-child {
+  display: none; }

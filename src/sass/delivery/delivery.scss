@@ -1,0 +1,269 @@
+@import "variables";
+
+/*
+-----------------------------------------------------------------------------------
+
+CSS INDEX
+===================
+
+1. Theme default CSS
+2. Header
+	2.1 General Header
+	2.2 Basket
+	2.3 Navigation
+	2.4 Progress Bar
+3. General widget
+	3.1 Button
+	3.2 General_widget
+	3.3 Checkbox_radio
+	3.4 Capcha
+	3.5 Report
+	3.6 Upload
+4. Structuring widgets
+	4.1 Section
+	4.2 Tab
+	4.3 Array
+
+-----------------------------------------------------------------------------------
+
+===========================================================
+	1. Theme Default CSS
+===========================================================
+*/
+
+/*
+    Used Colors (material default)
+    PrimaryColor: #1c1c1b;
+    secondaryColor: #f0c105;
+*/
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+option,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+body {
+  background: #fff;
+}
+
+#globalContent {
+  margin: auto !important;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  width: 90% !important;
+}
+
+#applicationContent {
+  overflow: auto;
+  padding: 20px 10px 10px;
+  margin-top: 11px;
+}
+
+#loading-indicator {
+  float: top;
+  background: white;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+table.rowStyle {
+  border-spacing: 5px;
+}
+
+.gwt-DisclosurePanel {
+  tbody > tr > td > div {
+    margin: 0;
+  }
+}
+
+div#rmpfooter {
+  margin-left: 4%;
+}
+
+/*
+===========================================================
+	2. Header
+===========================================================
+*/
+
+/*
+	2.1 General header
+----------------------------
+*/
+@import "header/header";
+
+/*
+	2.2 Basket
+----------------------------
+*/
+@import "header/basket";
+
+/*
+	2.3 Navigation
+----------------------------
+*/
+@import "header/nav";
+
+/*
+	2.4 Progress Bar
+----------------------------
+*/
+@import "header/progress_bar";
+
+/*
+===========================================================
+	3. General widget
+===========================================================
+*/
+
+/*
+	3.1 Button
+----------------------------
+*/
+@import "input_widget/button";
+
+/*
+	3.2 General_input
+----------------------------
+*/
+@import "input_widget/general_widget";
+
+/*
+	3.3 Checkbox_radio
+----------------------------
+*/
+@import "input_widget/checkbox_radio";
+
+/*
+	3.4 Capcha
+----------------------------
+*/
+@import "input_widget/capcha";
+
+/*
+	3.5 Report
+----------------------------
+*/
+@import "input_widget/report";
+
+/*
+	3.6 Upload
+----------------------------
+*/
+@import "input_widget/upload";
+
+/*
+===========================================================
+	4. Structuring widgets
+===========================================================
+*/
+
+/*
+	4.1 Section
+----------------------------
+*/
+@import "structuring_widget/section";
+
+/*
+	4.1 Tab
+----------------------------
+*/
+@import "structuring_widget/tab";
+
+/*
+	4.1 Array
+----------------------------
+*/
+@import "structuring_widget/array";

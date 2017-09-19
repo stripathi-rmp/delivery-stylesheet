@@ -1,0 +1,198 @@
+@import "variables";
+
+/*
+-----------------------------------------------------------------------------------
+
+CSS INDEX
+===================
+
+1. Theme default CSS
+2. Header
+	2.1 General Header
+	2.2 Basket
+	2.3 Navigation
+3 Structuring widgets
+	3.1 Section
+	3.2 Tuile
+
+-----------------------------------------------------------------------------------
+*/
+
+/*
+===========================================================
+	1. Theme Default CSS
+=============================================================
+*/
+
+/*
+    Used Colors (material default)
+    PrimaryColor: #1c1c1b;
+    secondaryColor: #f0c105;
+*/
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+option,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+body {
+  background: #fff;
+}
+
+#globalContent {
+  margin: auto !important;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  width: 90% !important;
+}
+
+#applicationContent {
+  overflow: auto;
+  padding: 20px 10px 10px;
+  margin-top: 11px;
+}
+
+#loading-indicator {
+  float: top;
+  background: white;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+table.rowStyle {
+  border-spacing: 5px;
+}
+
+/*
+===========================================================
+  	2. Header
+===========================================================
+*/
+
+/*
+	2.1 General header
+----------------------------
+*/
+@import "header/general";
+
+/*
+	2.2 Basket
+----------------------------
+*/
+@import "header/basket";
+
+/*
+	2.3 Navigation
+----------------------------
+*/
+@import "header/nav";
+
+/*
+===========================================================
+	3. Structuring widgets
+===========================================================
+*/
+
+/*
+	3.1 Section
+----------------------------
+*/
+@import "structuring_widget/section";
+
+/*
+	3.2 Tuile
+----------------------------
+*/
+@import "structuring_widget/tuile";
