@@ -16,3 +16,7 @@ Copyright (c) [Fujitsu RunMyProcess](https://www.runmyprocess.com/) - 2017
 ## Documentation
 
 [Delivery Stylesheet documentation on Confluence](https://runmyprocess.atlassian.net/wiki/spaces/stylesheet/)
+
+## Download
+
+[Delivery Stylesheet](dist/delivery.css)
