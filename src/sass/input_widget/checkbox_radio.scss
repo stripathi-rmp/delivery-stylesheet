@@ -1,0 +1,146 @@
+input[type='checkbox'],
+input[type='radio'] {
+  position: absolute;
+  left: -999999px;
+  opacity: 0;
+}
+
+.gwt-CheckBox label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  margin: 10px;
+  padding: 0 0 0 24px;
+  margin-left: 0;
+
+  &::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 4px;
+    height: 9px;
+    border: 2px solid transparent;
+    transform: rotate(0deg);
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+    // transition: .2s;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    z-index: 0;
+    border: 2px solid;
+    border-radius: 1px;
+    margin-top: 2px;
+    // transition: .2s;
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  &::before {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(40deg);
+  }
+
+  &::after {
+    background: $secondaryColor;
+    border: 2px solid $secondaryColor;
+  }
+}
+
+input[type="checkbox"]:disabled {
+  border-color: #d3d3d3;
+}
+
+input[type="checkbox"]:checked:disabled + label::after {
+  background: #d3d3d3;
+  border-color: #d3d3d3;
+}
+
+input[type="checkbox"]:disabled + label::after {
+  border-color: #d3d3d3;
+}
+
+.gwt-RadioButton {
+  label {
+    padding: 0;
+    position: relative;
+    padding-left: 22px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    margin: 10px 10px 10px 0;
+
+    &::before {
+      border-radius: 50%;
+      content: '';
+      z-index: 1;
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #000;
+      backface-visibility: hidden;
+    }
+
+    &::after {
+      border-radius: 50%;
+      content: '';
+      z-index: 1;
+      position: absolute;
+      top: 4px;
+      left: 3px;
+      width: 8px;
+      height: 8px;
+      border: 0;
+      backface-visibility: hidden;
+    }
+  }
+}
+
+input[type="radio"]:checked + label {
+  &::before {
+    background: $secondaryColor;
+    border: 2px solid $secondaryColor;
+  }
+
+  &::after {
+    border: 2px solid #fff;
+  }
+}
+
+input[type="radio"]:disabled + label {
+  &::before {
+    border: 2px solid #d3d3d3;
+  }
+
+  &::after {
+    border: 2px solid #fff;
+  }
+}
+
+input[type="radio"]:disabled:checked + label {
+  &::before {
+    background: #d3d3d3;
+    border: 2px solid #d3d3d3;
+  }
+
+  &::after {
+    border: 2px solid #fff;
+  }
+}

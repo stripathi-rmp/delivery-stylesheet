@@ -1,0 +1,411 @@
+/*-----------------------------------------------------------------------------------
+
+CSS INDEX
+===================
+
+1. Theme default CSS (Global content, colors used, etc.)
+2. Header
+3 Structuring widgets
+4. HomePage
+
+-----------------------------------------------------------------------------------*/
+
+/*===========================================================
+	1. Theme Default CSS
+=============================================================*/
+	/* Used Colors (material default)
+    PrimaryColor: #1C1C1B;
+    secondaryColor: #F0C105;
+	*/
+
+  * {
+      font-family: Arial, sans-serif;
+  }
+
+  html,body,div,span,applet,object,input,select,option,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      outline: none;
+  }
+
+  body {
+      background: #FFFFFF;
+  }
+
+  #globalContent {
+      margin: auto !important;
+      background: #fff;
+      box-shadow: none;
+      border-radius: 0;
+      width: 90% !important;
+  }
+
+  #applicationContent {
+      overflow: auto;
+      padding: 20px 10px 10px 10px;
+      margin-top: 11px;
+  }
+
+  #loading-indicator {
+      float: top;
+      background: white;
+      /* margin-left: auto; */
+      margin: auto;
+      /* padding-top: 16px; */
+      /* padding-left: 4px; */
+      /* height: 24px; */
+      text-align: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px 2px rgba(0,0,0,.1);
+      margin-top: 10px;
+  }
+
+  table.rowStyle{
+    border-spacing: 5px;
+  }
+  /*===========================================================
+  	2. Header
+  =============================================================*/
+
+  /*-------------------------------
+  		2.1 Headerbanner
+  --------------------------------*/
+  #headerbanner {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+  }
+
+  #header{
+  		background: #FFFFFF;
+      box-shadow: none;
+  }
+
+  /*-------------------------------
+  			2.1.1 logobox
+  --------------------------------*/
+  #header img {
+      max-width: 250px;
+      max-height: 100px;
+      margin: 10px 0px 5px 0px;
+  }
+  /*-------------------------------
+  			2.1.2 appliName
+  --------------------------------*/
+  #header .appliName{
+        color: #1C1C1B;
+  }
+  /*-------------------------------
+  			2.1.3 actionBox
+  --------------------------------*/
+
+  #header .actionBox {
+      position: relative;
+      z-index: 1;
+      float: right;
+      right: 0;
+      top: 0;
+      padding: none;
+  }
+
+  #header .actionBox span{
+      font-size: 15px;
+      margin: 3px 0;
+  		color: #1C1C1B;
+  }
+
+  #i18nBox{
+      padding: 3px 15px;
+  }
+
+  #i18nBox select{
+      border: 1px solid #e3e3e3;
+  }
+
+  .icon-poweroff{
+      /*V1 White
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z"/></svg>') !important;
+      */
+      /*V2 Black*/
+      /*background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z" fill="black"/></svg>') !important;*/
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiPjxwYXRoIGQ9Ik0xNjY0IDg5NnEwIDE1Ni02MSAyOTh0LTE2NCAyNDUtMjQ1IDE2NC0yOTggNjEtMjk4LTYxLTI0NS0xNjQtMTY0LTI0NS02MS0yOThxMC0xODIgODAuNS0zNDN0MjI2LjUtMjcwcTQzLTMyIDk1LjUtMjV0ODMuNSA1MHEzMiA0MiAyNC41IDk0LjV0LTQ5LjUgODQuNXEtOTggNzQtMTUxLjUgMTgxdC01My41IDIyOHEwIDEwNCA0MC41IDE5OC41dDEwOS41IDE2My41IDE2My41IDEwOS41IDE5OC41IDQwLjUgMTk4LjUtNDAuNSAxNjMuNS0xMDkuNSAxMDkuNS0xNjMuNSA0MC41LTE5OC41cTAtMTIxLTUzLjUtMjI4dC0xNTEuNS0xODFxLTQyLTMyLTQ5LjUtODQuNXQyNC41LTk0LjVxMzEtNDMgODQtNTB0OTUgMjVxMTQ2IDEwOSAyMjYuNSAyNzB0ODAuNSAzNDN6bS02NDAtNzY4djY0MHEwIDUyLTM4IDkwdC05MCAzOC05MC0zOC0zOC05MHYtNjQwcTAtNTIgMzgtOTB0OTAtMzggOTAgMzggMzggOTB6IiBmaWxsPSJibGFjayIvPjwvc3ZnPg==")!important;
+      margin-left: 20px !important;
+  }
+
+  /*-------------------------------
+  		2.2 rmpmenu
+  --------------------------------*/
+  /*li#rmpoption0_0 {
+      display: none;
+  }*/
+
+  #rmpmenu{
+      padding: 0 0 0 5%;
+      margin: 0;
+      display:flex;
+      width:95%;
+  }
+
+  .rmpmenu {
+      clear: both;
+      width: 100%;
+      height: 40px;
+      margin: 3px 0;
+      border-top:none;
+  		background-color: #1C1C1B;
+  }
+
+  .rmplevel1, .rmpoption0 {
+    background: #1C1C1B !important;
+    padding:0px;
+  }
+  .rmplevel0:hover, .rmplevel1:hover {
+    background: rgba(255,255,255,0.2) !important;
+  }
+  .rmplevel0 {
+      background-color: inherit;
+      padding: 0;
+      margin: 0;
+      font-weight: bolder !important;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-transform:uppercase;
+  }
+
+  .rmplevel0 a{
+      color:#fff;
+      height: 100%;
+      line-height: 40px;
+  }
+
+  .rmplevel0:hover, .rmplevel1:hover{
+      background: #414141;
+  }
+
+  .rmplevel0:hover>a, .rmplevel1:hover>a{
+      color:#F0C105 !important;
+  }
+
+  .rmpoption0 {
+      display: none;
+      padding: 0;
+      position: absolute;
+      top: 40px;
+  }
+
+  img[title='Home']{
+      display:none;
+  }
+
+  li#rmpoption0_0>a{
+      background-repeat: no-repeat;
+      padding-top:1px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      max-width: 256px;
+      max-height: 256px;
+    background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ4Ni45ODggNDg2Ljk4OCI+PHBhdGggZD0iTTE2LjgyMiwyODQuOTY4aDM5LjY2N3YxNTguNjY3YzAsOS4zNSw3LjY1LDE3LDE3LDE3aDExNi4xNjdjOS4zNSwwLDE3LTcuNjUsMTctMTdWMzI3LjQ2OGg3MC44MzN2MTE2LjE2NyAgICBjMCw5LjM1LDcuNjUsMTcsMTcsMTdoMTEwLjVjOS4zNSwwLDE3LTcuNjUsMTctMTdWMjg0Ljk2OGg0OC4xNjdjNi44LDAsMTMuMDMzLTQuMjUsMTUuNTgzLTEwLjQ4MyBjMi41NS02LjIzMywxLjEzMy0xMy42LTMuNjgzLTE4LjQxN0wyNjAuNDg5LDMxLjM4NWMtNi41MTctNi41MTctMTcuMjgzLTYuOC0yMy44LTAuMjgzTDUuMjA2LDI1NS43ODUgICAgYy01LjEsNC44MTctNi41MTcsMTIuMTgzLTMuOTY3LDE4LjdDMy43ODksMjgxLjAwMSwxMC4wMjIsMjg0Ljk2OCwxNi44MjIsMjg0Ljk2OHogTTI0OC4wMjIsNjcuMzY4bDE4MS4zMzMsMTgzLjZoLTI0LjM2NyAgICBjLTkuMzUsMC0xNyw3LjY1LTE3LDE3djE1OC42NjdoLTc2LjVWMzEwLjQ2OGMwLTkuMzUtNy42NS0xNy0xNy0xN0gxODkuNjU2Yy05LjM1LDAtMTcsNy42NS0xNywxN3YxMTYuMTY3SDkwLjQ4OVYyNjcuOTY4ICAgIGMwLTkuMzUtNy42NS0xNy0xNy0xN0g1OC43NTZMMjQ4LjAyMiw2Ny4zNjh6IiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+") !important;
+  }
+
+  li#rmpoption0_0:hover>a{
+    background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ4Ni45ODggNDg2Ljk4OCI+PHBhdGggZD0iTTE2LjgyMiwyODQuOTY4aDM5LjY2N3YxNTguNjY3YzAsOS4zNSw3LjY1LDE3LDE3LDE3aDExNi4xNjdjOS4zNSwwLDE3LTcuNjUsMTctMTdWMzI3LjQ2OGg3MC44MzN2MTE2LjE2NyAgICBjMCw5LjM1LDcuNjUsMTcsMTcsMTdoMTEwLjVjOS4zNSwwLDE3LTcuNjUsMTctMTdWMjg0Ljk2OGg0OC4xNjdjNi44LDAsMTMuMDMzLTQuMjUsMTUuNTgzLTEwLjQ4MyBjMi41NS02LjIzMywxLjEzMy0xMy42LTMuNjgzLTE4LjQxN0wyNjAuNDg5LDMxLjM4NWMtNi41MTctNi41MTctMTcuMjgzLTYuOC0yMy44LTAuMjgzTDUuMjA2LDI1NS43ODUgICAgYy01LjEsNC44MTctNi41MTcsMTIuMTgzLTMuOTY3LDE4LjdDMy43ODksMjgxLjAwMSwxMC4wMjIsMjg0Ljk2OCwxNi44MjIsMjg0Ljk2OHogTTI0OC4wMjIsNjcuMzY4bDE4MS4zMzMsMTgzLjZoLTI0LjM2NyAgICBjLTkuMzUsMC0xNyw3LjY1LTE3LDE3djE1OC42NjdoLTc2LjVWMzEwLjQ2OGMwLTkuMzUtNy42NS0xNy0xNy0xN0gxODkuNjU2Yy05LjM1LDAtMTcsNy42NS0xNywxN3YxMTYuMTY3SDkwLjQ4OVYyNjcuOTY4ICAgIGMwLTkuMzUtNy42NS0xNy0xNy0xN0g1OC43NTZMMjQ4LjAyMiw2Ny4zNjh6IiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+")!important;
+  }
+
+  .rmplevel1{
+      text-transform:uppercase;
+  		background: #9E9E9E;
+  }
+
+  /*-------------------------------
+  			2.1.4 basket
+  --------------------------------*/
+  #rmp_mini_basket {
+      border: 1px solid #e3e3e3 !important;
+      background: #fff;
+      margin: 4px 15px;
+      padding: 1px 6px;
+      cursor: pointer;
+      display: none;
+      border-radius: 0px !important;
+  }
+
+  #rmp_basket {
+      border: 1px solid #e3e3e3 !important;
+      margin: 23px 20px 10px -114px !important;
+      padding: 2px 15px;
+      background: white;
+      display: none;
+      cursor: default;
+      box-shadow: 0 2px 5px 2px rgba(0,0,0,.1) !important;
+  }
+  .actionBox #rmp_basket{
+    width: 170px !important;
+    border: 2px solid #F0C105 !important;
+    top: 15px;
+    padding: 0px;
+  }
+
+  .actionBox #rmp_basket::before {
+      content: "";
+      position: absolute;
+      top: -17px;
+      right: 22px;
+      bottom: auto;
+      left: auto;
+      border-width: 0 15px 15px;
+      border-style: solid;
+      border-color: #F0C105 transparent;
+      display: block;
+      width: 0;
+  }
+  #rmp_basket > ul:nth-child(1) > span, #rmp_basket > ul:nth-child(2) > span{
+    width:calc(100% - 20px);
+    background: #F0C105;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin:0;
+  }
+  .actionBox #rmp_basket span{
+    padding: 0 10px;
+  }
+  .actionBox #rmp_basket li, .actionBox #rmp_basket ul{
+    padding: 0;
+    width:100%;
+  }
+  .actionBox #rmp_basket ul{
+    margin-top: 0px;
+  }
+  .actionBox #rmp_basket #rmpbasketoption{
+    padding:10px;
+  }
+
+  #basketpanelnavigation{
+    background: none !important;
+  }
+  [aria-describedby="rmp_large_basket"] .ui-widget-header{
+    border: none !important;
+    background: #F0C105 !important;
+    color:#fff !important;
+    border-radius: none !important;
+  }
+  [aria-describedby="rmp_large_basket"]{
+    border: none !important;
+    padding: 0 !important;
+  }
+  .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br, .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl, .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr, .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl{
+    border-bottom-right-radius:0px !important;
+    border-bottom-left-radius:0px !important;
+    border-top-right-radius:0px !important;
+    border-top-left-radius:0px !important;
+  }
+  #basketpanel td.basket2{
+    display: none;
+  }
+
+/*===========================================================
+	3. Structuring widgets
+=============================================================*/
+
+/*-------------------------------
+		3.1 Section widget
+--------------------------------*/
+.gwt-DisclosurePanel{
+    border:none;
+    background: transparent;
+    margin-bottom: 0.8em;
+    box-shadow: 0 1px 9px 0 rgba(0,0,0,0.16), 0 1px 1px 0 rgba(0,0,0,0.12);
+}
+
+.gwt-DisclosurePanel a.header{
+    background: #1C1C1B;
+    border-bottom: 0;
+}
+
+.gwt-DisclosurePanel a.header>table>tbody>tr>td:nth-child(2){
+    text-transform: uppercase;
+}
+
+.gwt-DisclosurePanel .content{
+    padding-bottom:1.1em;
+}
+.gwt-DisclosurePanel>tbody>tr>td>div{
+  margin: 10px 20px;
+}
+img.sectionButton{
+  display: none;
+}
+.gwt-DisclosurePanel a.header>table>tbody>tr>td:nth-child(2){
+  height: 18px;
+  line-height: 18px;
+  color:#fff;
+}
+.gwt-DisclosurePanel a.header>table>tbody>tr>td:nth-child(2):before{
+    content:"\25bc";
+    padding-right:11px;
+    padding-left:5px;
+    color:#fff;
+}
+.gwt-DisclosurePanel-closed a.header>table>tbody>tr>td:nth-child(2):before{
+    content:"\25b6";
+    padding-right:13px;
+    padding-left:5px;
+}
+.gwt-DisclosurePanel .header td:nth-child(1){
+    padding: 0px;
+    width: 0px !important;
+}
+
+
+/*===========================================================
+	4. Tuile
+=============================================================*/
+#globalContent ul li{
+  border-radius: 0px;
+  transition: 0.25s;
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37)
+
+}
+#globalContent ul li .label{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color:#000;
+  font-weight: 500;
+  background: #fff;
+  font-size: 12px;
+  height: 3.4em;
+}
+#globalContent ul li, .bigIcon{
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: cover !important
+}
+.bigIcon-defaultApps0{
+  background-position: 0px 0px;
+}
+#globalContent ul li .rmphelp{
+  width: 101px;
+  padding: 0px 10px;
+  overflow-y: scroll;
+  background:#F0C105;
+}
+.rmpdescription > span{
+  top: 11px;
+}
+.rmpdescription{
+  border-bottom: 29px solid #F0C105;
+}
+#globalContent ul li:hover, .expandable ul li:focus, .expandable ul li:active{
+  top: 0px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3),0 2px 2px 0 rgba(0, 0, 0, 0.2) !important;
+  opacity: 1 !important;
+}

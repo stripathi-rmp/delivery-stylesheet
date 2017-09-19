@@ -1,0 +1,57 @@
+#headerbanner {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  // flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#header {
+  background: #fff;
+  box-shadow: none;
+
+  img {
+    max-width: 250px;
+    max-height: 100px;
+    margin: 10px 0 5px;
+  }
+
+  .appliName {
+    color: $PrimaryColor;
+  }
+
+  .actionBox {
+    position: relative;
+    z-index: 1;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: none;
+
+    span {
+      font-size: 15px;
+      margin: 3px 0;
+      color: $PrimaryColor;
+    }
+  }
+}
+
+#i18nBox {
+  padding: 3px 15px;
+}
+
+#i18nBox select {
+  border: 1px solid #e3e3e3;
+}
+
+.icon-poweroff {
+  /* V1 White
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z"/></svg>') !important; */
+
+  /* V2 Black
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1664 896q0 156-61 298t-164 245-245 164-298 61-298-61-245-164-164-245-61-298q0-182 80.5-343t226.5-270q43-32 95.5-25t83.5 50q32 42 24.5 94.5t-49.5 84.5q-98 74-151.5 181t-53.5 228q0 104 40.5 198.5t109.5 163.5 163.5 109.5 198.5 40.5 198.5-40.5 163.5-109.5 109.5-163.5 40.5-198.5q0-121-53.5-228t-151.5-181q-42-32-49.5-84.5t24.5-94.5q31-43 84-50t95 25q146 109 226.5 270t80.5 343zm-640-768v640q0 52-38 90t-90 38-90-38-38-90v-640q0-52 38-90t90-38 90 38 38 90z" fill="black"/></svg>') !important; */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1536 1664'%3E%3Ctitle%3E1%3C/title%3E%3Cpath d='M1664,896q0,156-61,298t-164,245q-103,103-245,164t-298,61q-156,0-298-61T353,1439q-103-103-164-245T128,896q0-182,80.5-343T435,283q43-32,95.5-25T614,308q32,42,24.5,94.5T589,487q-98,74-151.5,181T384,896a498.71,498.71,0,0,0,40.5,198.5Q465,1189,534,1258t163.5,109.5a506.7,506.7,0,0,0,397,0Q1189,1327,1258,1258t109.5-163.5A498.71,498.71,0,0,0,1408,896q0-121-53.5-228T1203,487q-42-32-49.5-84.5T1178,308q31-43,84-50t95,25q146,109,226.5,270T1664,896ZM1024,128V768q0,52-38,90t-90,38q-52,0-90-38t-38-90V128q0-52,38-90T896,0q52,0,90,38T1024,128Z' transform='translate(-128)' fill='%23f0c105'/%3E%3C/svg%3E") !important;
+  margin-left: 20px !important;
+}

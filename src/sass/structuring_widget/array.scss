@@ -1,0 +1,29 @@
+.ColumnHeader,
+.array-column-footer,
+.array-header td {
+  background: $secondaryColor;
+  color: #fff;
+}
+
+.array-header td:first-child,
+.array-header:first-child td {
+  border: none;
+}
+
+.addSmallStyle.add-button {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM11,11v6H8V11H2V8H8V2h3V8h6v3Z' fill='%232F779D'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dashStyle.delete-button {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM2,11V8H17v3Z' fill='%232F779D'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Array-hideBtn tr td:first-child {
+  display: none;
+}

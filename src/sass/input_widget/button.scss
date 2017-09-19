@@ -1,0 +1,59 @@
+.gwt-Button,
+.gwt-Button-cancel,
+.gwt-Button-cancel:hover,
+.gwt-Button-other,
+.gwt-Button-other:hover,
+.gwt-Button-save,
+.gwt-Button-save:hover,
+.gwt-Button:hover {
+  border: none;
+  border-radius: 3px;
+  padding: 13px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  margin: auto;
+  display: block;
+  width: 200px;
+}
+
+.gwt-Button {
+  background: #779d2f !important;
+
+  &:hover {
+    background: #779d2f;
+  }
+}
+
+.gwt-Button {
+  background: #779d2f;
+
+  &:hover {
+    background: #779d2f;
+  }
+}
+
+.gwt-Button-cancel {
+  background: #cf0b2a;
+
+  &:hover {
+    background: #cf0b2a;
+  }
+}
+
+.gwt-Button-save {
+  background: #d98f00 !important;
+
+  &:hover {
+    background: #d98f00;
+  }
+}
+
+.gwt-Button-other {
+  background: $tertiaryColor !important;
+
+  &:hover {
+    background: $tertiaryColor !important;
+  }
+}
+

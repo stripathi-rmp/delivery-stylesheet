@@ -1,0 +1,149 @@
+@import "variables";
+@import "header/basket";
+@import "header/header";
+@import "header/nav";
+@import "header/progress_bar";
+@import "input_widget/button";
+@import "input_widget/capcha";
+@import "input_widget/checkbox_radio";
+@import "input_widget/general_widget";
+@import "input_widget/report";
+@import "input_widget/upload";
+@import "structuring_widget/array";
+@import "structuring_widget/section";
+@import "structuring_widget/tab";
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+option,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+body {
+  background: #fff;
+}
+
+#globalContent {
+  margin: auto !important;
+  background: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  width: 90% !important;
+}
+
+#applicationContent {
+  overflow: auto;
+  padding: 20px 10px 10px;
+  margin-top: 11px;
+}
+
+#loading-indicator {
+  float: top;
+  background: white;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+table.rowStyle {
+  border-spacing: 5px;
+}
+
+.gwt-DisclosurePanel {
+  tbody > tr > td > div {
+    margin: 0;
+  }
+}
+
+div#rmpfooter {
+  margin-left: 4%;
+}

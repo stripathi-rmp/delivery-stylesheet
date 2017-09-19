@@ -1,0 +1,93 @@
+:root .rmppgbsteps,
+_:-ms-fullscreen {
+  justify-content: flex-start;
+}
+
+.rmppgbsteps {
+  padding-left: 0;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  .rmppgbstepname {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
+
+.rmppgbstep {
+  margin-right: 0;
+  position: relative;
+  flex-grow: 1;
+  float: none;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: column;
+  z-index: 0;
+  max-width: 170px;
+}
+
+.rmppgbsteps .rmppgbstepcurrent .rmppgbsteplastnum,
+.rmppgbsteps .rmppgbstepcurrent .rmppgbstepnum {
+  background-color: $secondaryColor;
+  border: 3px solid $secondaryColor;
+}
+
+.rmppgbsteps .rmppgbstepcurrent .rmppgbsteplastnum::after,
+.rmppgbsteps .rmppgbstepcurrent .rmppgbstepnum::after {
+  background: none repeat scroll 0 0 $secondaryColor;
+}
+
+.rmppgbsteps .rmppgbsteplastnum,
+.rmppgbsteps .rmppgbstepnum {
+  background: white;
+}
+
+.rmppgbsteplastnum,
+.rmppgbstepnum {
+  line-height: 2em;
+  width: 26px !important;
+  margin: 10px 0 5px;
+}
+
+.rmppgbstep .rmppgbsteplastnum::after,
+.rmppgbstep .rmppgbstepnum::after {
+  position: absolute;
+  background: none repeat scroll 0 0 darkgray;
+  bottom: 58px;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+.rmppgbstep .rmppgbsteplastnum::after {
+  left: 0;
+  width: 0;
+}
+
+.rmppgbsteps .rmppgbstepsubname {
+  justify-content: flex-end;
+  font-size: 14px;
+  position: static;
+  display: block;
+  height: 36px;
+}
+
+.rmppgbstephidden {
+  display: none;
+}

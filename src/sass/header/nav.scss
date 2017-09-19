@@ -1,0 +1,79 @@
+#rmpmenu {
+  padding: 0 0 0 5%;
+  margin: 0;
+  display: flex;
+  width: 95%;
+
+  img {
+    display: none;
+  }
+}
+
+.rmpmenu {
+  clear: both;
+  width: 100%;
+  height: 40px;
+  margin: 3px 0;
+  border-top: none;
+  background-color: $PrimaryColor;
+}
+
+.rmplevel1,
+.rmpoption0 {
+  background: $PrimaryColor !important;
+  padding: 0;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+.rmplevel0 {
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+  font-weight: bolder !important;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  a {
+    color: #fff;
+    height: 100%;
+    line-height: 40px;
+  }
+}
+
+.rmplevel0:hover > a,
+.rmplevel1:hover > a {
+  color: $secondaryColor !important;
+}
+
+.rmpoption0 {
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+}
+
+li#rmpoption0_0 > a {
+  background-repeat: no-repeat;
+  padding-top: 1px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  max-width: 256px;
+  max-height: 256px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 481.99 429.82'%3E%3Ctitle%3E1%3C/title%3E%3Cpath d='M18.65,286.77H57.91v157a16.87,16.87,0,0,0,16.83,16.83h115a16.87,16.87,0,0,0,16.83-16.83v-115h70.11v115a16.87,16.87,0,0,0,16.83,16.83H402.83a16.87,16.87,0,0,0,16.83-16.83v-157h47.67a16.76,16.76,0,0,0,11.78-28.6L259.81,35.79c-6.45-6.45-17.11-6.73-23.56-.28L7.15,257.89A16.84,16.84,0,0,0,3.23,276.4,16.4,16.4,0,0,0,18.65,286.77ZM247.48,71.41,426.95,253.12H402.83A16.87,16.87,0,0,0,386,269.95V427H310.29V312a16.87,16.87,0,0,0-16.83-16.83H189.71A16.87,16.87,0,0,0,172.88,312V427H91.56v-157a16.87,16.87,0,0,0-16.83-16.83H60.15Z' transform='translate(-2 -30.81)' fill='%23ffffff'/%3E%3C/svg%3E") !important;
+}
+
+li#rmpoption0_0:hover > a {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 481.99 429.82'%3E%3Ctitle%3E1%3C/title%3E%3Cpath d='M18.65,286.77H57.91v157a16.87,16.87,0,0,0,16.83,16.83h115a16.87,16.87,0,0,0,16.83-16.83v-115h70.11v115a16.87,16.87,0,0,0,16.83,16.83H402.83a16.87,16.87,0,0,0,16.83-16.83v-157h47.67a16.76,16.76,0,0,0,11.78-28.6L259.81,35.79c-6.45-6.45-17.11-6.73-23.56-.28L7.15,257.89A16.84,16.84,0,0,0,3.23,276.4,16.4,16.4,0,0,0,18.65,286.77ZM247.48,71.41,426.95,253.12H402.83A16.87,16.87,0,0,0,386,269.95V427H310.29V312a16.87,16.87,0,0,0-16.83-16.83H189.71A16.87,16.87,0,0,0,172.88,312V427H91.56v-157a16.87,16.87,0,0,0-16.83-16.83H60.15Z' transform='translate(-2 -30.81)' fill='%23f0c105'/%3E%3C/svg%3E") !important;
+}
+
+.rmplevel1 {
+  text-transform: uppercase;
+  background: #9e9e9e;
+}

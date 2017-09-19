@@ -1,0 +1,134 @@
+#rmp_mini_basket {
+  border: 1px solid #e3e3e3 !important;
+  background: #fff;
+  margin: 4px 15px;
+  padding: 1px 6px;
+  cursor: pointer;
+  display: none;
+  border-radius: 0 !important;
+}
+
+#rmp_basket {
+  margin: 23px 20px 10px -114px !important;
+  // padding: 2px 15px;
+  background: white;
+  display: none;
+  cursor: default;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1) !important;
+  width: 170px !important;
+  border: 2px solid $secondaryColor !important;
+  top: 15px;
+  padding: 0 !important;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    right: 22px;
+    bottom: auto;
+    left: auto;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: $secondaryColor transparent;
+    display: block;
+    width: 0;
+  }
+
+  ul {
+    padding: 0 !important;
+  }
+
+  ul:nth-child(1) span,
+  ul:nth-child(2) span {
+    width: calc(100% - 20px);
+    background: $secondaryColor;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  span {
+    padding: 0 10px;
+  }
+
+  li,
+  ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  #rmpbasketoption {
+    padding: 10px;
+  }
+}
+
+#basketpanelnavigation {
+  background: none !important;
+}
+
+[aria-describedby="rmp_large_basket"] .ui-widget-header {
+  border: none !important;
+  background: $secondaryColor !important;
+  color: #fff !important;
+  border-radius: none !important;
+}
+
+[aria-describedby="rmp_large_basket"] {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.ui-corner-all,
+.ui-corner-all,
+.ui-corner-all,
+.ui-corner-all,
+.ui-corner-bl,
+.ui-corner-bottom,
+.ui-corner-bottom,
+.ui-corner-br,
+.ui-corner-left,
+.ui-corner-left,
+.ui-corner-right,
+.ui-corner-right,
+.ui-corner-tl,
+.ui-corner-top,
+.ui-corner-top,
+.ui-corner-tr {
+  // border-bottom-right-radius: 0 !important;
+  // border-bottom-left-radius: 0 !important;
+  // border-top-right-radius: 0 !important;
+  // border-top-left-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+#basketpanel td.basket1,
+#basketpanel td.basket2,
+#basketpanel td.basket4,
+#basketpanel td.basket5,
+#basketpanel th.basket1,
+#basketpanel th.basket2,
+#basketpanel th.basket4,
+#basketpanel th.basket5 {
+  display: none;
+}
+
+.basketnavbefore {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10.27 16'%3E%3Ctitle%3E2%3C/title%3E%3Cpolygon points='8 0 0 8 8 16 10.27 13.73 4.54 8 10.27 2.27 8 0' fill='%232F779D'/%3E%3C/svg%3E") no-repeat 0 3px transparent !important;
+  background-size: 20px 12px !important;
+}
+
+.basketnavafter {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10.27 16'%3E%3Ctitle%3E2%3C/title%3E%3Cpolygon points='2.27 16 10.27 8 2.27 0 0 2.27 5.73 8 0 13.73 2.27 16' fill='%232F779D'/%3E%3C/svg%3E") no-repeat 0 3px transparent !important;
+  background-size: 20px 12px !important;
+}
+
+#rmpbasketoption input[type="checkbox"] {
+  position: relative;
+  opacity: 1;
+  left: 0;
+}
