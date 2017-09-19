@@ -18,7 +18,6 @@ const gutil = require('gulp-util')
 
 
 gulp.task('sass:delivery', function () {
-  // return gulp.src('src/sass/**/*.scss')
   return gulp.src('src/sass/delivery/delivery.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist'));
@@ -31,8 +30,7 @@ gulp.task('sass:homepage', function () {
 });
 
 gulp.task('sass:mobile', function () {
-  // return gulp.src('src/sass/**/*.scss')
-  return gulp.src('src/sass/delivery.scss')
+  return gulp.src('src/sass/mobile/mobile.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist'));
 });
