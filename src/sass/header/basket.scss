@@ -36,6 +36,14 @@
 
   ul {
     padding: 0 !important;
+
+    li {
+      span {
+        width: auto !important;
+        background: none !important;
+        color: $PrimaryColor !important;
+      }
+    }
   }
 
   ul:nth-child(1) span,

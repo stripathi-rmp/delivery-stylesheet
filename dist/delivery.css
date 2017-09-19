@@ -31,6 +31,10 @@
     width: 0; }
   #rmp_basket ul {
     padding: 0 !important; }
+    #rmp_basket ul li span {
+      width: auto !important;
+      background: none !important;
+      color: #1c1c1b !important; }
   #rmp_basket ul:nth-child(1) span,
   #rmp_basket ul:nth-child(2) span {
     width: calc(100% - 20px);
