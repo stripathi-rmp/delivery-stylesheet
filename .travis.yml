@@ -19,6 +19,6 @@ deploy:
     branch: master
 
 notifications:
-  slack: slack: runmyprocess:5XzowTT2rMOzruRJ8zSEK4wI#delivery-stylesheet
+  slack: runmyprocess:5XzowTT2rMOzruRJ8zSEK4wI#delivery-stylesheet
     on_success: always
     on_failure: always
