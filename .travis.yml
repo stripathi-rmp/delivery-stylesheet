@@ -21,6 +21,6 @@ deploy:
 notifications:
   slack:
     rooms:
-      - $SLACK_TOKEN#delivery-stylesheet
+      - $SLACK_TOKEN
     on_success: always
     on_failure: always
