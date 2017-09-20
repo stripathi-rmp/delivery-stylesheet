@@ -19,8 +19,9 @@ deploy:
     branch: master
 
 notifications:
+  email: false
   slack:
     rooms:
-      - $SLACK_TOKEN
+      - runmyprocess:5XzowTT2rMOzruRJ8zSEK4wI#delivery-stylesheet
     on_success: always
     on_failure: always
