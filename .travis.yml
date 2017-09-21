@@ -9,7 +9,7 @@ cache:
   directories:
     - "node_modules"
 
-script: gulp sass:delivery
+script: gulp sass-app
 
 deploy:
   provider: pages
