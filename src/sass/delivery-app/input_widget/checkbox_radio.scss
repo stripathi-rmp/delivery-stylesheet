@@ -28,7 +28,6 @@ input[type='radio'] {
     transform: rotate(0deg);
     backface-visibility: hidden;
     transform-origin: 100% 100%;
-    // transition: .2s;
   }
 
   &::after {
@@ -42,7 +41,6 @@ input[type='radio'] {
     border: 2px solid;
     border-radius: 1px;
     margin-top: 2px;
-    // transition: .2s;
   }
 }
 
