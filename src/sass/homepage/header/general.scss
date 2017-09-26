@@ -3,8 +3,8 @@
   margin: auto;
   display: flex;
   align-items: center;
+  flex-flow: nowrap;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
 

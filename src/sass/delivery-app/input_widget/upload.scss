@@ -1,6 +1,7 @@
 _:-ms-fullscreen, :root .FileUploadContainer .cellListWidget .fileDownloadButton span img{
   opacity: 0;
 }
+
 _:-ms-fullscreen, :root .FileUploadContainer .cellListWidget .fileDownloadButton{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 612 408'%3E%3Ctitle%3Ecloud-download%3C/title%3E%3Cg id='cloud-download'%3E%3Cpath d='M494.7,255A191.918,191.918,0,0,0,306,102c-73.95,0-137.7,40.8-168.3,102C58.65,214.2,0,277.95,0,357c0,84.15,68.85,153,153,153H484.5C555.9,510,612,453.9,612,382.5,612,316.2,558.45,260.1,494.7,255Zm-61.2,76.5L306,459,178.5,331.5H255v-102H357v102Z' transform='translate(0 -102)' fill='%232f779d'/%3E%3C/g%3E%3C/svg%3E");
   background-size: contain;
