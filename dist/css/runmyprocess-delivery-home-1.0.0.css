@@ -155,11 +155,16 @@ table.rowStyle {
 #headerbanner {
   width: 90%;
   margin: auto;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; }
+  -webkit-box-align: center;
+          align-items: center;
+  flex-flow: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
 
 #header {
   background: #fff;
@@ -316,6 +321,7 @@ table.rowStyle {
 #rmpmenu {
   padding: 0 0 0 5%;
   margin: 0;
+  display: -webkit-box;
   display: flex;
   width: 95%; }
 
@@ -342,9 +348,13 @@ table.rowStyle {
   margin: 0;
   font-weight: bolder !important;
   height: 40px;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   text-transform: uppercase; }
   .rmplevel0 a {
     color: #fff;
@@ -439,9 +449,12 @@ img.sectionButton {
   background: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); }
   #globalContent ul li .label {
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     color: #000;
     font-weight: 500;
     background: #fff;

@@ -12,12 +12,15 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cssnano": "^2.1.2",
+    "gulp-inject": "^4.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sequence": "^0.4.6",
     "gulp-stylefmt": "^1.1.0",
     "gulp-stylelint": "^5.0.0",
+    "gulp-template": "^4.0.0",
     "gulp-util": "^3.0.8",
+    "gulp-ver": "^0.1.0",
     "stylelint-config-recommended-scss": "^2.0.0",
     "stylelint-config-standard": "^17.0.0",
     "stylelint-formatter-pretty": "^1.0.3",
@@ -25,9 +28,11 @@
   },
   "scripts": {
     "gulp": "gulp",
+    "build": "gulp",
+    "lint-sass": "gulp lint-sass",
+    "lint-css": "gulp lint-css",
     "sass": "gulp sass",
-    "build": "gulp build",
-    "lint": "gulp lint"
+    "minify": "gulp minify"
   },
   "repository": {
     "type": "git",
