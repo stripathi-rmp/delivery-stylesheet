@@ -29,8 +29,7 @@
     "build": "gulp",
     "lint-sass": "gulp lint-sass",
     "lint-css": "gulp lint-css",
-    "sass-app": "gulp sass-app",
-    "sass-home": "gulp sass-home",
+    "sass": "gulp sass",
     "minify": "gulp minify"
   },
   "repository": {

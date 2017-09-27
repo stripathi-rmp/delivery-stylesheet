@@ -30,33 +30,19 @@ gulp.task('lint-sass', function () {
     }));
 });
 
-// SASS APP Compilation
-gulp.task('sass-app', function () {
-  return gulp.src('src/sass/delivery-app/main.scss')
+// SASS Compilation
+gulp.task('sass', function () {
+  return gulp.src('src/sass/**/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
-    .pipe(rename("css/runmyprocess-delivery-app.css"))
+    .pipe(rename(function (path) {
+      path.basename = 'runmyprocess-' + path.dirname
+      path.extname = ".css"
+      path.dirname = ''
+    }))
     .pipe(version())
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/css'))
 });
-
-// SASS HOME Compilation
-gulp.task('sass-home', function () {
-  return gulp.src('src/sass/homepage/main.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({browsers: ['last 1 version']}))
-    .pipe(rename("css/runmyprocess-delivery-home.css"))
-    .pipe(version())
-    .pipe(gulp.dest('./dist'))
-});
-
-/*
-gulp.task('sass:mobile', function () {
-  return gulp.src('src/sass/mobile/mobile.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist'));
-});
-*/
 
 // CSS Linting
 gulp.task('lint-css', function () {
@@ -82,4 +68,4 @@ gulp.task('minify', function () {
 });
 
 // BUILD Process
-gulp.task('default', sequence('lint-sass', ['sass-app', 'sass-home'], 'lint-css', 'minify'))
+gulp.task('default', sequence('lint-sass', 'sass', 'lint-css', 'minify'))
