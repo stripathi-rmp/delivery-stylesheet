@@ -26,6 +26,7 @@
   },
   "scripts": {
     "gulp": "gulp",
+    "build": "gulp",
     "lint-sass": "gulp lint-sass",
     "lint-css": "gulp lint-css",
     "sass-app": "gulp sass-app",
