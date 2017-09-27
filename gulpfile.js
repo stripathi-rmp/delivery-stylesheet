@@ -17,8 +17,13 @@ const stylefmt = require('gulp-stylefmt');
 // Utilities
 const sequence = require('gulp-sequence')
 const version = require('gulp-ver')
+const template = require('gulp-template')
+const inject = require('gulp-inject')
 const rename = require('gulp-rename')
 const gutil = require('gulp-util')
+
+// BUILD Process
+gulp.task('default', sequence('lint-sass', 'sass', 'lint-css', 'minify', 'doc'))
 
 // SASS Linting
 gulp.task('lint-sass', function () {
@@ -68,5 +73,52 @@ gulp.task('minify', function () {
     .pipe(gulp.dest('./dist'))
 });
 
-// BUILD Process
-gulp.task('default', sequence('lint-sass', 'sass', 'lint-css', 'minify'))
+// Documentation
+gulp.task('doc', () =>
+  gulp.src('src/doc.html')
+    .pipe(inject(
+      gulp.src('dist/css/min/*app*.min.css', {read: false}), {
+        starttag: '<!-- inject:app-min:{{ext}} -->',
+        removeTags: true,
+        relative: true,
+        transform: function (filepath) {return filepath}
+      }
+    ))
+    .pipe(inject(
+      gulp.src('dist/css/*app*.css', {read: false}), {
+        starttag: '<!-- inject:app:{{ext}} -->',
+        removeTags: true,
+        relative: true,
+        transform: function (filepath) {return filepath}
+      }
+    ))
+    .pipe(inject(
+      gulp.src('dist/css/min/*home*.min.css', {read: false}), {
+        starttag: '<!-- inject:home-min:{{ext}} -->',
+        removeTags: true,
+        relative: true,
+        transform: function (filepath) {return filepath}
+      }
+    ))
+    .pipe(inject(
+      gulp.src('dist/css/*home*.css', {read: false}), {
+        starttag: '<!-- inject:home:{{ext}} -->',
+        removeTags: true,
+        relative: true,
+        transform: function (filepath) {return filepath}
+      }
+    ))
+    .pipe(inject(
+      gulp.src('dist/css/**/*.css', {read: false}), {
+        relative: true,
+        transform: function (filepath) {
+            return '<li><a href="' + filepath + '" download>' + filepath + '</a></li>';
+        }
+      }
+    ))
+    .pipe(template({
+      version: '1.4.3'
+    }))
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest(''))
+)
