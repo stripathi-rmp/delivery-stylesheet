@@ -26,9 +26,11 @@
   },
   "scripts": {
     "gulp": "gulp",
-    "sass": "gulp sass",
-    "build": "gulp build",
-    "lint": "gulp lint"
+    "lint-sass": "gulp lint-sass",
+    "lint-css": "gulp lint-css",
+    "sass-app": "gulp sass-app",
+    "sass-home": "gulp sass-home",
+    "minify": "gulp minify"
   },
   "repository": {
     "type": "git",
