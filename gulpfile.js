@@ -47,11 +47,10 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
     .pipe(rename(function (path) {
-      path.basename = 'runmyprocess-delivery-' + path.dirname
+      path.basename = 'runmyprocess-delivery-' + path.dirname + '-' + packageJSON.version
       path.extname = ".css"
       path.dirname = ''
     }))
-    .pipe(version())
     .pipe(gulp.dest('./dist/css/tmp'))
 });
 
