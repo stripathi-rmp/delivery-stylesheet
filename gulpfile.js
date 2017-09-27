@@ -21,9 +21,13 @@ const template = require('gulp-template')
 const inject = require('gulp-inject')
 const rename = require('gulp-rename')
 const gutil = require('gulp-util')
+const del = require('del')
+
+// Data
+const packageJSON = require('./package.json')
 
 // BUILD Process
-gulp.task('default', sequence('lint-sass', 'sass', 'lint-css', 'minify', 'doc'))
+gulp.task('default', sequence('lint-sass', 'sass', 'lint-css', 'minify', 'backup', 'doc'))
 
 // SASS Linting
 gulp.task('lint-sass', function () {
@@ -38,6 +42,7 @@ gulp.task('lint-sass', function () {
 
 // SASS Compilation
 gulp.task('sass', function () {
+  del(['dist/css/*.css', 'dist/css/tmp/*.css', '!dist/css/archive/*.css'])
   return gulp.src('src/sass/**/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
@@ -47,31 +52,38 @@ gulp.task('sass', function () {
       path.dirname = ''
     }))
     .pipe(version())
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./dist/css/tmp'))
 });
 
 // CSS Linting
 gulp.task('lint-css', function () {
-  return gulp.src('dist/css/*.css')
+  return gulp.src('dist/css/tmp/*.css')
     .pipe(stylefmt())
     .pipe(stylelint({
       failAfterError: false,
       reporters: [
         {formatter: formatter, console: true}
       ]
-    }));
-});
+    }))
+    .pipe(gulp.dest('./dist/css'))
+})
 
 // CSS Minification
 gulp.task('minify', function () {
   return gulp.src('dist/css/*.css')
     .pipe(cssnano())
     .pipe(rename(function (path) {
-      path.dirname = 'css/min'
       path.basename += '.min'
     }))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/css'))
 });
+
+// BACKUP
+gulp.task('backup', () =>
+  gulp.src('dist/css/*.css')
+  .pipe(gulp.dest('./dist/css/archive'))
+  .pipe(gulp.dest('./backup'))
+)
 
 // Documentation
 gulp.task('doc', () =>
@@ -117,7 +129,8 @@ gulp.task('doc', () =>
       }
     ))
     .pipe(template({
-      version: '1.4.3'
+      description: packageJSON.description,
+      version: packageJSON.version
     }))
     .pipe(rename('index.html'))
     .pipe(gulp.dest(''))
