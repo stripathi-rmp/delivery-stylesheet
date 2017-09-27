@@ -24,6 +24,7 @@ const gutil = require('gulp-util')
 gulp.task('lint-sass', function () {
   return gulp.src('src/sass/**/*.scss')
     .pipe(stylelint({
+      failAfterError: false,
       reporters: [
         {formatter: formatter, console: true}
       ]
@@ -36,7 +37,7 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
     .pipe(rename(function (path) {
-      path.basename = 'runmyprocess-' + path.dirname
+      path.basename = 'runmyprocess-delivery-' + path.dirname
       path.extname = ".css"
       path.dirname = ''
     }))
