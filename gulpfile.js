@@ -16,6 +16,7 @@ const stylefmt = require('gulp-stylefmt');
 
 // Utilities
 const sequence = require('gulp-sequence')
+const version = require('gulp-ver')
 const rename = require('gulp-rename')
 const gutil = require('gulp-util')
 
@@ -35,7 +36,8 @@ gulp.task('sass-app', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
     .pipe(rename("css/runmyprocess-delivery-app.css"))
-    .pipe(gulp.dest('./dist'));
+    .pipe(version())
+    .pipe(gulp.dest('./dist'))
 });
 
 // SASS HOME Compilation
@@ -44,7 +46,8 @@ gulp.task('sass-home', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
     .pipe(rename("css/runmyprocess-delivery-home.css"))
-    .pipe(gulp.dest('./dist'));
+    .pipe(version())
+    .pipe(gulp.dest('./dist'))
 });
 
 /*
@@ -75,7 +78,7 @@ gulp.task('minify', function () {
       path.dirname = 'css/min'
       path.basename += '.min'
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
 });
 
 // BUILD Process
