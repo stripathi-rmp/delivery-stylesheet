@@ -12,12 +12,14 @@ const cssnano = require('gulp-cssnano')
 // Linter
 const stylelint = require('gulp-stylelint')
 const formatter = require('stylelint-formatter-pretty')
-const stylefmt = require('gulp-stylefmt');
+const stylefmt = require('gulp-stylefmt')
+
+// Documentation
+const template = require('gulp-template')
+const inject = require('gulp-inject')
 
 // Utilities
 const sequence = require('gulp-sequence')
-const template = require('gulp-template')
-const inject = require('gulp-inject')
 const rename = require('gulp-rename')
 const gutil = require('gulp-util')
 const del = require('del')
