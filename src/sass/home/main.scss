@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import "variables";
 
 /*
@@ -31,7 +32,7 @@ CSS INDEX
 */
 
 * {
-  font-family: Arial, sans-serif;
+  font-family: $font;
 }
 
 a,
@@ -118,7 +119,7 @@ u,
 ul,
 var,
 video {
-  font-family: Arial, sans-serif;
+  font-family: $font;
   font-size: 15px;
   outline: none;
 }
