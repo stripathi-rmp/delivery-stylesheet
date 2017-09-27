@@ -44,20 +44,21 @@
         <!-- DOWNLOAD -->
         <h2>Download</h2>
 
-        <h3>Application Stylesheet</h3>
+        <h3>Optimized Stylesheet</h3>
         <p>
-          <a class="button" href="<!-- inject:app-min:css --><!-- endinject -->" download>Optimized Stylesheet</a> or
-          <a class="button button-outline" href="<!-- inject:app:css --><!-- endinject -->" download>Customizable Stylesheet</a>
+          <a class="button" href="<!-- inject:app-min:css --><!-- endinject -->" download>Application</a>
+          <a class="button" href="<!-- inject:home-min:css --><!-- endinject -->" download>Homepage</a>
+
         </p>
 
-        <h3>Homepage Stylesheet</h3>
+        <h3>Customizable Stylesheet</h3>
         <p>
-          <a class="button" href="<!-- inject:home-min:css --><!-- endinject -->" download>Optimized Stylesheet</a> or
-          <a class="button button-outline" href="<!-- inject:home:css --><!-- endinject -->" download>Customizable Stylesheet</a>
+          <a class="button button-outline" href="<!-- inject:app:css --><!-- endinject -->" download>Application</a>
+          <a class="button button-outline" href="<!-- inject:home:css --><!-- endinject -->" download>Homepage</a>
         </p>
 
         <!-- ARCHIVE -->
-        <h2>Archive</h2>
+        <h2>Archives</h2>
         <ul>
           <!-- inject:css -->
           <!-- endinject -->
@@ -74,16 +75,18 @@
         <p><%= description %></p>
         <p><strong>Version: <%= version %></strong></p>
 
-        <!-- DOCUMENTATION -->
-        <h3>Documentation</h3>
-        <p>
-          <a target="_blank" href="https://runmyprocess.atlassian.net/wiki/spaces/delivery/pages/30900445/Howto+-+Use+the+Delivery+Stylesheet">Howto - Use the Delivery Stylesheet</a>
-        </p>
+        <!-- SUPPORT -->
+        <h3>Support</h3>
+        <ul>
+          <li><a target="_blank" href="<%= homepage %>">Read the documentation</a></li>
+          <li><a target="_blank" href="<%= bugs %>">Report an issue</a></li>
+        </ul>
 
         <h3>Contributors</h3>
         <ul>
-          <li><a href="mailto:dcourtaigne@runmyprocess.com">David Courtaigne</a></li>
-          <li><a href="mailto:qboussard@runmyprocess.com">Quentin Boussard</a></li>
+          <% _.forEach(contributors, function(contributor) { %>
+            <li><a href="mailto:<%- contributor.email %>"><%- contributor.name %></a></li>
+          <% }); %>
         </ul>
 
         <p>Copyright &copy; <a href="https://www.runmyprocess.com/">Fujitsu RunMyProcess</a> - 2017</p>

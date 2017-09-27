@@ -89,7 +89,7 @@ gulp.task('backup', () =>
 gulp.task('doc', () =>
   gulp.src('src/doc.html')
     .pipe(inject(
-      gulp.src('dist/css/min/*app*.min.css', {read: false}), {
+      gulp.src('dist/css/*app-' + packageJSON.version + '.min.css', {read: false}), {
         starttag: '<!-- inject:app-min:{{ext}} -->',
         removeTags: true,
         relative: true,
@@ -97,7 +97,7 @@ gulp.task('doc', () =>
       }
     ))
     .pipe(inject(
-      gulp.src('dist/css/*app*.css', {read: false}), {
+      gulp.src('dist/css/*app-' + packageJSON.version + '.css', {read: false}), {
         starttag: '<!-- inject:app:{{ext}} -->',
         removeTags: true,
         relative: true,
@@ -105,7 +105,7 @@ gulp.task('doc', () =>
       }
     ))
     .pipe(inject(
-      gulp.src('dist/css/min/*home*.min.css', {read: false}), {
+      gulp.src('dist/css/*home-' + packageJSON.version + '.min.css', {read: false}), {
         starttag: '<!-- inject:home-min:{{ext}} -->',
         removeTags: true,
         relative: true,
@@ -113,7 +113,7 @@ gulp.task('doc', () =>
       }
     ))
     .pipe(inject(
-      gulp.src('dist/css/*home*.css', {read: false}), {
+      gulp.src('dist/css/*home-' + packageJSON.version + '.css', {read: false}), {
         starttag: '<!-- inject:home:{{ext}} -->',
         removeTags: true,
         relative: true,
@@ -121,7 +121,7 @@ gulp.task('doc', () =>
       }
     ))
     .pipe(inject(
-      gulp.src('dist/css/**/*.css', {read: false}), {
+      gulp.src('dist/css/archive/*.css', {read: false}), {
         relative: true,
         transform: function (filepath) {
             return '<li><a href="' + filepath + '" download>' + filepath + '</a></li>';
@@ -130,7 +130,10 @@ gulp.task('doc', () =>
     ))
     .pipe(template({
       description: packageJSON.description,
-      version: packageJSON.version
+      version: packageJSON.version,
+      contributors: packageJSON.contributors,
+      homepage: packageJSON.homepage,
+      bugs: packageJSON.bugs
     }))
     .pipe(rename('index.html'))
     .pipe(gulp.dest(''))

@@ -39,6 +39,8 @@
     "type": "git",
     "url": "https://fmartin@gitlab.runmyprocess.com/delivery/stylesheet.git"
   },
+  "homepage": "https://runmyprocess.atlassian.net/wiki/spaces/delivery/pages/30900445/Howto+-+Use+the+Delivery+Stylesheet",
+  "bugs": "https://runmyprocess.atlassian.net/secure/RapidBoard.jspa?projectKey=DELCSS",
   "contributors": [
     {
       "name": "Quentin Boussard",

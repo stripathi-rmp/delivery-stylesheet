@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*
 -----------------------------------------------------------------------------------
 
@@ -34,7 +35,7 @@ CSS INDEX
     secondaryColor: #f0c105;
 */
 * {
-  font-family: Arial, sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 a,
 abbr,
@@ -120,7 +121,7 @@ u,
 ul,
 var,
 video {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   outline: none; }
 
