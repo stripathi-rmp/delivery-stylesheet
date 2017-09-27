@@ -21,7 +21,6 @@
     "gulp-stylelint": "^5.0.0",
     "gulp-template": "^4.0.0",
     "gulp-util": "^3.0.8",
-    "gulp-ver": "^0.1.0",
     "stylelint-config-recommended-scss": "^2.0.0",
     "stylelint-config-standard": "^17.0.0",
     "stylelint-formatter-pretty": "^1.0.3",

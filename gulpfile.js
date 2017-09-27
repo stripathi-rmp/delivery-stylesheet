@@ -16,7 +16,6 @@ const stylefmt = require('gulp-stylefmt');
 
 // Utilities
 const sequence = require('gulp-sequence')
-const version = require('gulp-ver')
 const template = require('gulp-template')
 const inject = require('gulp-inject')
 const rename = require('gulp-rename')
