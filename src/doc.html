@@ -42,36 +42,40 @@
       <!-- BODY -->
       <div class="column column-67">
 
-        <!-- DOWNLOAD -->
+        <!-- MAIN COLUMN -->
         <h2>Download</h2>
 
+        <!-- DOWNLOAD OPTIMIZED -->
         <h3>Optimized Stylesheet</h3>
         <p>
-          <a class="button" href="<!-- inject:app-min:css --><!-- endinject -->" download>Application</a>
-          <a class="button" href="<!-- inject:home-min:css --><!-- endinject -->" download>Homepage</a>
+          <a class="button" href="dist/css/<%- prefix %>-app-<%- version %>.min.css" download>Application</a>
+          <a class="button" href="dist/css/<%- prefix %>-home-<%- version %>.min.css" download>Homepage</a>
 
         </p>
 
+        <!-- DOWNLOAD CUSTOMIZABLE -->
         <h3>Customizable Stylesheet</h3>
         <p>
-          <a class="button button-outline" href="<!-- inject:app:css --><!-- endinject -->" download>Application</a>
-          <a class="button button-outline" href="<!-- inject:home:css --><!-- endinject -->" download>Homepage</a>
+          <a class="button button-outline" href="dist/css/<%- prefix %>-app-<%- version %>.css" download>Application</a>
+          <a class="button button-outline" href="dist/css/<%- prefix %>-home-<%- version %>.css" download>Homepage</a>
         </p>
 
-        <!-- ARCHIVE -->
+        <!-- ARCHIVES -->
         <h2>Archives</h2>
         <ul>
-          <!-- inject:css -->
-          <!-- endinject -->
+          <% _.forEach(archives, function(archive) { %>
+            <li><a href="dist/css/archive/<%- archive %>" download><%- archive %></a></li>
+          <% }); %>
         </ul>
 
       </div>
 
-      <!-- RIGHT -->
+      <!-- SIDE COLUMN -->
       <div class="column">
 
         <h2>About</h2>
 
+        <!-- PRESENTATION -->
         <h3>Presentation</h3>
         <p><%= description %></p>
         <p>Version: <%= version %></p>
@@ -83,6 +87,7 @@
           <li><a target="_blank" href="<%= bugs %>">Report an issue</a></li>
         </ul>
 
+        <!-- CONTRIBUTORS -->
         <h3>Contributors</h3>
         <ul>
           <% _.forEach(contributors, function(contributor) { %>

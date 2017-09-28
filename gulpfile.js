@@ -1,9 +1,10 @@
 /**
  * Gulp configuration file
  * For convenience all the Gulp tasks are aliased in Npm
- * Tasks : bundle, minify, lint, test, doc
+ * Tasks : lint-sass, sass, lint-css, minify, backup, doc
  */
 
+// Main
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
@@ -16,7 +17,7 @@ const stylefmt = require('gulp-stylefmt')
 
 // Documentation
 const template = require('gulp-template')
-const inject = require('gulp-inject')
+const fs = require('fs')
 
 // Utilities
 const sequence = require('gulp-sequence')
@@ -26,11 +27,12 @@ const del = require('del')
 
 // Data
 const packageJSON = require('./package.json')
+const prefix = 'runmyprocess-delivery'
 
-// BUILD Process
+// BUILD
 gulp.task('default', sequence('lint-sass', 'sass', 'lint-css', 'minify', 'backup', 'doc'))
 
-// SASS Linting
+// SASS LINTING
 gulp.task('lint-sass', function () {
   return gulp.src('src/sass/**/*.scss')
     .pipe(stylelint({
@@ -41,21 +43,21 @@ gulp.task('lint-sass', function () {
     }));
 });
 
-// SASS Compilation
+// SASS COMPILATION
 gulp.task('sass', function () {
   del(['dist/css/*.css', 'dist/css/tmp/*.css', '!dist/css/archive/*.css'])
   return gulp.src('src/sass/**/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
     .pipe(rename(function (path) {
-      path.basename = 'runmyprocess-delivery-' + path.dirname + '-' + packageJSON.version
+      path.basename = prefix + '-' + path.dirname + '-' + packageJSON.version
       path.extname = ".css"
       path.dirname = ''
     }))
     .pipe(gulp.dest('./dist/css/tmp'))
 });
 
-// CSS Linting
+// CSS LINTING
 gulp.task('lint-css', function () {
   return gulp.src('dist/css/tmp/*.css')
     .pipe(stylefmt())
@@ -68,7 +70,7 @@ gulp.task('lint-css', function () {
     .pipe(gulp.dest('./dist/css'))
 })
 
-// CSS Minification
+// CSS MINIFICATION
 gulp.task('minify', function () {
   return gulp.src('dist/css/*.css')
     .pipe(cssnano())
@@ -78,62 +80,24 @@ gulp.task('minify', function () {
     .pipe(gulp.dest('./dist/css'))
 });
 
-// BACKUP
+// CSS BACKUP
 gulp.task('backup', () =>
   gulp.src('dist/css/*.css')
   .pipe(gulp.dest('./dist/css/archive'))
   .pipe(gulp.dest('./backup'))
 )
 
-// Documentation
+// CSS DOCUMENTATION
 gulp.task('doc', () =>
   gulp.src('src/doc.html')
-    .pipe(inject(
-      gulp.src('dist/css/*app-' + packageJSON.version + '.min.css', {read: false}), {
-        starttag: '<!-- inject:app-min:{{ext}} -->',
-        removeTags: true,
-        relative: true,
-        transform: function (filepath) {return filepath}
-      }
-    ))
-    .pipe(inject(
-      gulp.src('dist/css/*app-' + packageJSON.version + '.css', {read: false}), {
-        starttag: '<!-- inject:app:{{ext}} -->',
-        removeTags: true,
-        relative: true,
-        transform: function (filepath) {return filepath}
-      }
-    ))
-    .pipe(inject(
-      gulp.src('dist/css/*home-' + packageJSON.version + '.min.css', {read: false}), {
-        starttag: '<!-- inject:home-min:{{ext}} -->',
-        removeTags: true,
-        relative: true,
-        transform: function (filepath) {return filepath}
-      }
-    ))
-    .pipe(inject(
-      gulp.src('dist/css/*home-' + packageJSON.version + '.css', {read: false}), {
-        starttag: '<!-- inject:home:{{ext}} -->',
-        removeTags: true,
-        relative: true,
-        transform: function (filepath) {return filepath}
-      }
-    ))
-    .pipe(inject(
-      gulp.src('dist/css/archive/*.css', {read: false}), {
-        relative: true,
-        transform: function (filepath) {
-            return '<li><a href="' + filepath + '" download>' + filepath + '</a></li>';
-        }
-      }
-    ))
     .pipe(template({
       description: packageJSON.description,
       version: packageJSON.version,
       contributors: packageJSON.contributors,
       homepage: packageJSON.homepage,
-      bugs: packageJSON.bugs
+      bugs: packageJSON.bugs,
+      archives: fs.readdirSync('dist/css/archive/'),
+      prefix: prefix
     }))
     .pipe(rename('index.html'))
     .pipe(gulp.dest(''))
