@@ -1,0 +1,49 @@
+.rmppgbstepsubname,
+.rmppgbstep {
+  display: none;
+}
+
+.rmppgbstepcurrent {
+  display: block !important;
+  background: $PrimaryColor;
+}
+
+.rmppgbstep {
+  flex: 100% 0 1;
+}
+
+.rmppgbsteps .rmppgbstepnum,
+.rmppgbsteps .rmppgbsteplastnum {
+  padding: 0.6rem 0 0.6rem 0.5rem;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rmppgbstep::after {
+  right: auto;
+  left: 38px;
+  border-left: 20px solid rgba(255, 255, 255, 0.1);
+}
+
+.rmppgbstepname {
+  top: 9px;
+  left: 37px;
+  font-size: 16px;
+  max-width: 275px;
+  padding-right: 5px;
+}
+
+.select2-container .select2-choice,
+.select2-container .select2-choice .select2-arrow {
+  background: none !important;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-drop-active {
+  border: 1px solid $secondaryColor !important;
+}
+
+.select2-results .select2-highlighted {
+  background: $secondaryColor !important;
+}

@@ -1,0 +1,14 @@
+.array-slider::before {
+  background: $PrimaryColor;
+  padding: 0.35rem;
+}
+
+.gwt-TabBarItem {
+  background-color: $PrimaryColor !important;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gwt-TabBarItem-selected {
+  background-color: $PrimaryColor !important;
+  color: $secondaryColor;
+}
