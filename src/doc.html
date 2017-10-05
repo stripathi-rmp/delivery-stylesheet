@@ -33,6 +33,7 @@
     <div class="row">
       <div class="column">
         <h1>Delivery Stylesheet</h1>
+        <hr/>
       </div>
     </div>
 
@@ -41,53 +42,67 @@
       <!-- BODY -->
       <div class="column column-67">
 
-        <!-- DOWNLOAD -->
+        <!-- MAIN COLUMN -->
         <h2>Download</h2>
 
-        <h3>Application Stylesheet</h3>
+        <!-- DOWNLOAD OPTIMIZED -->
+        <h3>Optimized Stylesheet</h3>
         <p>
-          <a class="button" href="<!-- inject:app-min:css --><!-- endinject -->" download>Optimized Stylesheet</a> or
-          <a class="button button-outline" href="<!-- inject:app:css --><!-- endinject -->" download>Customizable Stylesheet</a>
+          <a class="button" href="dist/css/<%- prefix %>-app-<%- version %>.min.css" download>Application</a>
+          <a class="button" href="dist/css/<%- prefix %>-home-<%- version %>.min.css" download>Homepage</a>
+
         </p>
 
-        <h3>Homepage Stylesheet</h3>
+        <!-- DOWNLOAD CUSTOMIZABLE -->
+        <h3>Customizable Stylesheet</h3>
         <p>
-          <a class="button" href="<!-- inject:home-min:css --><!-- endinject -->" download>Optimized Stylesheet</a> or
-          <a class="button button-outline" href="<!-- inject:home:css --><!-- endinject -->" download>Customizable Stylesheet</a>
+          <a class="button button-outline" href="dist/css/<%- prefix %>-app-<%- version %>.css" download>Application</a>
+          <a class="button button-outline" href="dist/css/<%- prefix %>-home-<%- version %>.css" download>Homepage</a>
         </p>
 
-        <!-- ARCHIVE -->
-        <h2>Archive</h2>
+        <!-- ARCHIVES -->
+        <h2>Archives</h2>
         <ul>
-          <!-- inject:css -->
-          <!-- endinject -->
+          <% _.forEach(archives, function(archive) { %>
+            <li><a href="dist/css/archive/<%- archive %>" download><%- archive %></a></li>
+          <% }); %>
         </ul>
 
       </div>
 
-      <!-- RIGHT -->
+      <!-- SIDE COLUMN -->
       <div class="column">
 
         <h2>About</h2>
 
+        <!-- PRESENTATION -->
         <h3>Presentation</h3>
         <p><%= description %></p>
-        <p><strong>Version: <%= version %></strong></p>
+        <p>Version: <%= version %></p>
 
-        <!-- DOCUMENTATION -->
-        <h3>Documentation</h3>
-        <p>
-          <a target="_blank" href="https://runmyprocess.atlassian.net/wiki/spaces/delivery/pages/30900445/Howto+-+Use+the+Delivery+Stylesheet">Howto - Use the Delivery Stylesheet</a>
-        </p>
-
-        <h3>Contributors</h3>
+        <!-- SUPPORT -->
+        <h3>Support</h3>
         <ul>
-          <li><a href="mailto:dcourtaigne@runmyprocess.com">David Courtaigne</a></li>
-          <li><a href="mailto:qboussard@runmyprocess.com">Quentin Boussard</a></li>
+          <li><a target="_blank" href="<%= homepage %>">Read the documentation</a></li>
+          <li><a target="_blank" href="<%= bugs %>">Report an issue</a></li>
         </ul>
 
-        <p>Copyright &copy; <a href="https://www.runmyprocess.com/">Fujitsu RunMyProcess</a> - 2017</p>
+        <!-- CONTRIBUTORS -->
+        <h3>Contributors</h3>
+        <ul>
+          <% _.forEach(contributors, function(contributor) { %>
+            <li><a href="mailto:<%- contributor.email %>"><%- contributor.name %></a></li>
+          <% }); %>
+        </ul>
 
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="row">
+      <div class="column">
+        <hr/>
+        <p>Copyright &copy; <a href="https://www.runmyprocess.com/">Fujitsu RunMyProcess</a> - 2017</p>
       </div>
     </div>
 
