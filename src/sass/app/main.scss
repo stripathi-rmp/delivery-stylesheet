@@ -4,6 +4,33 @@
 /*
 -----------------------------------------------------------------------------------
 
+Helpfull Customisation
+========================
+
+  +---------------------------+
+  | Used Colors               |
+  |---------------------------|
+  | PrimaryColor: 1c1c1b;     |
+  | SecondaryColor: f0c105;   |
+  | TertiaryColor: 2f779d;    |
+  +---------------------------+
+
+  +-------------------------------+
+  | Buttons type (class suffix)   |
+  |-------------------------------|
+  | Default: green -> (no suffix) |
+  | Save: orange -> suffix save   |
+  | Cancel: red -> suffix cancel  |
+  | Other: blue -> suffix other   |
+  +-------------------------------+
+
+  +-----------------------------------------+
+  | Array                                   |
+  |-----------------------------------------|
+  | Default -> (no suffix)                  |
+  | Hide button (first collumn) -> hideBtn  |
+  +-----------------------------------------+
+
 CSS INDEX
 ===================
 
@@ -32,11 +59,6 @@ CSS INDEX
 ===========================================================
 */
 
-/*
-    Used Colors (material default)
-    PrimaryColor: #1c1c1b;
-    secondaryColor: #f0c105;
-*/
 @import "default";
 
 /*

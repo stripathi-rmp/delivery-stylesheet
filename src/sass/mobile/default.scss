@@ -126,3 +126,7 @@ table.rowStyle {
   width: 100% !important;
   height: 100% !important;
 }
+
+.childPanel.fillParentHeight > table.Buttons {
+  height: auto !important;
+}
