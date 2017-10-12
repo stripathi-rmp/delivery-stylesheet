@@ -34,7 +34,7 @@
 }
 
 .gwt-Button-cancel {
-  background: #cf0b2a;
+  background: #cf0b2a !important;
 
   &:hover {
     background: #cf0b2a;
@@ -57,3 +57,40 @@
   }
 }
 
+.gwt-Button[disabled],
+.gwt-PushButton[disabled],
+button[disabled] {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+}
+
+.gwt-Button-disabled,
+.gwt-Button[disabled]:hover {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+  border: none;
+}
+
+// .rmpButton {
+//   position: relative;
+// }
+//
+// .rmpButton::after {
+//   content: "";
+//   position: absolute;
+//   width: 0 !important;
+//   height: 0 !important;
+//   background: rgba(255, 255, 255, 0.2);
+//   border-radius: 50%;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+//   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+//   overflow: hidden;
+// }
+//
+// .rmpButton:hover::after {
+//   width: 15vw !important;
+//   height: 15vw !important;
+// }

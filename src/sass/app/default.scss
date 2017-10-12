@@ -121,7 +121,7 @@ body {
 }
 
 table.rowStyle {
-  border-spacing: 5px;
+  border-spacing: 0;
 }
 
 .gwt-DisclosurePanel {
@@ -132,4 +132,12 @@ table.rowStyle {
 
 div#rmpfooter {
   margin-left: 4%;
+}
+
+.alertify-log-success {
+  background: #779d2f !important;
+}
+
+.alertify-log {
+  text-shadow: none;
 }
