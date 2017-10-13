@@ -22,24 +22,6 @@
       margin-top: 3rem;
       font-family: 'Montserrat', sans-serif;
     }
-    h3.indent-title{
-      padding-left: 20px;
-      margin-top: 20px;
-    }
-    .indent{
-      padding-left: 20px;
-      margin-left: 20px;
-    }
-    .indent img{
-      max-width: 500px;
-    }
-    ul{
-      padding-left: 20px;
-    }
-    .big-img{
-      margin-top: 30px;
-      max-width: 800px !important;
-    }
   </style>
 
 </head>
@@ -64,7 +46,7 @@
         <h2>Download</h2>
 
         <!-- DOWNLOAD OPTIMIZED -->
-        <h3 class='indent-title'>Optimized Stylesheet</h3>
+        <h3>Optimized Stylesheet</h3>
         <p>
           <a class="button" href="dist/css/<%- prefix %>-app-<%- version %>.min.css" download>Application</a>
           <a class="button" href="dist/css/<%- prefix %>-home-<%- version %>.min.css" download>Homepage</a>
@@ -72,7 +54,7 @@
         </p>
 
         <!-- DOWNLOAD CUSTOMIZABLE -->
-        <h3 class='indent-title'>Customizable Stylesheet</h3>
+        <h3>Customizable Stylesheet</h3>
         <p>
           <a class="button button-outline" href="dist/css/<%- prefix %>-app-<%- version %>.css" download>Application</a>
           <a class="button button-outline" href="dist/css/<%- prefix %>-home-<%- version %>.css" download>Homepage</a>
@@ -86,57 +68,53 @@
           <% }); %>
         </ul>
 
+        <!-- DOCUMENTATION -->
         <h2>Documentation</h2>
-        <h3 class='indent-title'>Import the Stylesheet</h3>
-        <div class="indent">
-          <p>Then you shall import the Stylesheet into your RunMyProcess project:</p>
-          <ol>
-            <li>Launch the RunMyProcess IDE</li>
-            <li>Open your project's Web Interface</li>
-            <li>Click on the Stylesheet tab</li>
-            <li>Replace the default Stylesheet With borders</li>
-            <li>Select the Custom radio button in the popup windows</li>
-            <li>Click on the Upload button </li>
-            <li>Select the file from your local directory </li>
-            <li>Selected the uploaded file in the list</li>
-            <li>Click on the Validate button</li>
-            <p>You're done </p>
-          </ol>
-        </div>
-        <h3 class='indent-title'>Customize the colors</h3>
-          <div class="indent">
-            <ul>
-              <li>PrimaryColor : Black, used for navigation, section and tab</li>
-              <li>SecondaryColor : Yellow, used for report, input and array</li>
-              <li>TertiaryColor : Blue, used for the report icon</li>
-            </ul>
-            <p>To change a color, open the CSS file with your code editor and then you simply need to search and replace the corresponding color code with the color code you want</p>
-            <img src="../doc/assets/color.png" alt="">
-          </div>
+
+        <h3>Import the Stylesheet</h3>
+        <p>Then you shall import the Stylesheet into your RunMyProcess project:</p>
+        <ol>
+          <li>Launch the RunMyProcess IDE</li>
+          <li>Open your project's Web Interface</li>
+          <li>Click on the Stylesheet tab</li>
+          <li>Replace the default Stylesheet With borders</li>
+          <li>Select the Custom radio button in the popup windows</li>
+          <li>Click on the Upload button </li>
+          <li>Select the file from your local directory </li>
+          <li>Selected the uploaded file in the list</li>
+          <li>Click on the Validate button</li>
+          <li>You're done </li>
+        </ol>
+
+        <h3>Customize the colors</h3>
+        <ul>
+          <li>PrimaryColor : Black, used for navigation, section and tab</li>
+          <li>SecondaryColor : Yellow, used for report, input and array</li>
+          <li>TertiaryColor : Blue, used for the report icon</li>
+        </ul>
+        <p>To change a color, open the CSS file with your code editor and then you simply need to search and replace the corresponding color code with the color code you want</p>
+        <img src="/doc/assets/color.png" alt="">
 
         <h3>Customize the button colors</h3>
-          <div class="indent">
-            <p>The default CSS gives you the option to use four different color for the buttons :</p>
+        <p>The default CSS gives you the option to use four different color for the buttons :</p>
+        <ul>
+          <li>Default → Green → no suffix</li>
+          <li>Save → Orange → suffix save</li>
+          <li>Cancel → Red → suffix cancel</li>
+          <li>Other → Blue → suffix other</li>
+        </ul>
+        <p>In order to use this color you have to add the corresponding suffix in the layout tab of the button in the IDE</p>
+        <img src="/doc/assets/btn.jpg" alt="">
 
-            <ul>
-              <li>Default → Green → no suffix</li>
-              <li>Save → Orange → suffix save</li>
-              <li>Cancel → Red → suffix cancel</li>
-              <li>Other → Blue → suffix other</li>
-            </ul>
-            <p>In order to use this color you have to add the corresponding suffix in the layout tab of the button in the IDE</p>
-            <img src="../doc/assets/btn.jpg" alt="">
-          </div>
         <h3>Customize array</h3>
-        <div class="indent">
-          <p>If you have disabled the "Add rows" and "Delete rows" features on an Array widget, you will still see the corresponding column in this widget on the Web Interface (the first column).
+        <p>If you have disabled the "Add rows" and "Delete rows" features on an Array widget, you will still see the corresponding column in this widget on the Web Interface (the first column).
           </p>
-          <img src="../doc/assets/array_3.jpg" alt="">
+        <img src="/doc/assets/array_3.jpg" alt="">
 
-          <p>If you wish to hide this column, you can add the CSS class suffix "hideBtn" in the Layout tab on the widget configuration.</p>
-          <img src="../doc/assets/array.jpg" alt="">
-          <img src="../doc/assets/array_2.jpg" alt="" class='big-img'>
-        </div>
+        <p>If you wish to hide this column, you can add the CSS class suffix "hideBtn" in the Layout tab on the widget configuration.</p>
+        <img src="/doc/assets/array.jpg" alt="">
+        <img src="/doc/assets/array_2.jpg" alt="" class='big-img'>
+
       </div>
 
       <!-- SIDE COLUMN -->
