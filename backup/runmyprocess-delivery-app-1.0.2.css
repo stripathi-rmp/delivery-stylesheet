@@ -2,6 +2,33 @@
 /*
 -----------------------------------------------------------------------------------
 
+Helpfull Customisation
+========================
+
+  +---------------------------+
+  | Used Colors               |
+  |---------------------------|
+  | PrimaryColor: 1c1c1b;     |
+  | SecondaryColor: f0c105;   |
+  | TertiaryColor: 2f779d;    |
+  +---------------------------+
+
+  +-------------------------------+
+  | Buttons type (class suffix)   |
+  |-------------------------------|
+  | Default: green -> (no suffix) |
+  | Save: orange -> suffix save   |
+  | Cancel: red -> suffix cancel  |
+  | Other: blue -> suffix other   |
+  +-------------------------------+
+
+  +-----------------------------------------+
+  | Array                                   |
+  |-----------------------------------------|
+  | Default -> (no suffix)                  |
+  | Hide button (first collumn) -> hideBtn  |
+  +-----------------------------------------+
+
 CSS INDEX
 ===================
 
@@ -28,11 +55,6 @@ CSS INDEX
 ===========================================================
 	1. Theme Default CSS
 ===========================================================
-*/
-/*
-    Used Colors (material default)
-    PrimaryColor: #1c1c1b;
-    secondaryColor: #f0c105;
 */
 * {
   font-family: "Montserrat", sans-serif;
@@ -156,7 +178,7 @@ body {
 }
 
 table.rowStyle {
-  border-spacing: 5px;
+  border-spacing: 0;
 }
 
 .gwt-DisclosurePanel tbody > tr > td > div {
@@ -165,6 +187,14 @@ table.rowStyle {
 
 div#rmpfooter {
   margin-left: 4%;
+}
+
+.alertify-log-success {
+  background: #779d2f !important;
+}
+
+.alertify-log {
+  text-shadow: none;
 }
 
 /*
@@ -533,7 +563,7 @@ _:-ms-fullscreen {
 
 .rmppgbsteps .rmppgbstepcurrent .rmppgbsteplastnum::after,
 .rmppgbsteps .rmppgbstepcurrent .rmppgbstepnum::after {
-  background: none repeat scroll 0 0 #f0c105;
+  background: none repeat scroll 0 0 darkgray;
 }
 
 .rmppgbsteps .rmppgbsteplastnum,
@@ -624,7 +654,7 @@ _:-ms-fullscreen {
 }
 
 .gwt-Button-cancel {
-  background: #cf0b2a;
+  background: #cf0b2a !important;
 }
 
 .gwt-Button-cancel:hover {
@@ -640,11 +670,25 @@ _:-ms-fullscreen {
 }
 
 .gwt-Button-other {
-  background: #2f779d !important;
+  background: #2e769e !important;
 }
 
 .gwt-Button-other:hover {
-  background: #2f779d !important;
+  background: #2e769e !important;
+}
+
+.gwt-Button[disabled],
+.gwt-PushButton[disabled],
+button[disabled] {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+}
+
+.gwt-Button-disabled,
+.gwt-Button[disabled]:hover {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+  border: none;
 }
 
 /*
@@ -667,8 +711,8 @@ textarea:focus {
 }
 
 .gwt-DateBox {
-  padding: 7px;
-  width: 278px;
+  padding: 5px;
+  min-width: 180px;
 }
 
 .ATHeader input[disabled],
@@ -682,11 +726,29 @@ textarea:focus {
 textarea[disabled],
 textarea[readonly] {
   color: #191919;
-  background: #fafafa;
+  background: #dcdcdc;
+}
+
+input:not(.full-width),
+textarea:not(.full-width) {
+  min-width: 180px;
+}
+
+select:not(.full-width),
+.gwt-Picker:not(.full-width) {
+  min-width: 194px;
+}
+
+.gwt-TextBox,
+.gwt-DateBox,
+.gwt-PasswordTextBox,
+.ATHeader input,
+textarea {
+  box-shadow: none;
 }
 
 a.select2-choice.select2-default {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .select2-container .select2-choice .select2-arrow {
@@ -1368,6 +1430,14 @@ img.sectionButton {
   width: 0 !important;
 }
 
+table.CustomWidget tr td.colStyle {
+  padding: 0 !important;
+}
+
+td.colStyle {
+  padding: 0 10px;
+}
+
 /*
 	4.1 Tab
 ----------------------------
@@ -1464,6 +1534,6 @@ img.sectionButton {
   background-size: contain;
 }
 
-.Array-hideBtn tr td:first-child {
+.Array-hideBtn .array-td-buttons {
   display: none;
 }
