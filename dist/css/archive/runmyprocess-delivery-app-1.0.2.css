@@ -417,6 +417,7 @@ div#rmpfooter {
   display: -webkit-box;
   display: flex;
   width: 95%;
+  z-index: 10;
 }
 
 #rmpmenu img {
@@ -438,8 +439,7 @@ div#rmpfooter {
   padding: 0;
 }
 
-.rmplevel1:hover,
-.rmpoption0:hover {
+.rmplevel1:hover {
   background: rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -1327,6 +1327,10 @@ _:-ms-fullscreen {
     background-size: 95% 95%;
     background-repeat: no-repeat;
   }
+}
+
+.pagerWrapperStyle .Pager td .gwt-Image[aria-disabled=true] {
+  opacity: 0.5;
 }
 
 /*

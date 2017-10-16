@@ -356,3 +356,7 @@ _:-ms-fullscreen {
     background-repeat: no-repeat;
   }
 }
+
+.pagerWrapperStyle .Pager td .gwt-Image[aria-disabled=true] {
+  opacity: 0.5;
+}

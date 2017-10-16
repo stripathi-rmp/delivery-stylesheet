@@ -366,7 +366,8 @@ div#rmpfooter {
   margin: 0;
   display: -webkit-box;
   display: flex;
-  width: 95%; }
+  width: 95%;
+  z-index: 10; }
   #rmpmenu img {
     display: none; }
 
@@ -382,9 +383,9 @@ div#rmpfooter {
 .rmpoption0 {
   background: #1c1c1b !important;
   padding: 0; }
-  .rmplevel1:hover,
-  .rmpoption0:hover {
-    background: rgba(255, 255, 255, 0.2) !important; }
+
+.rmplevel1:hover {
+  background: rgba(255, 255, 255, 0.2) !important; }
 
 .rmplevel0 {
   background-color: inherit;
@@ -1141,6 +1142,9 @@ _:-ms-fullscreen {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3E2%3C/title%3E%3Cg id='Pencil'%3E%3Cpath d='M22.71,1.29a4.41,4.41,0,0,0-6.23,0L3.22,14.47a.74.74,0,0,0-.18.28L0,23a.75.75,0,0,0,.71,1A.74.74,0,0,0,1,24l7.46-2.29a.75.75,0,0,0,.31-.19l14-14a4.41,4.41,0,0,0,0-6.23ZM7.57,20.37l-2.79.86A3.2,3.2,0,0,0,4,20a4.05,4.05,0,0,0-1-.72l1.28-3.51H6v1.5a.75.75,0,0,0,.75.75H8.07Zm11-10.87L9.47,18.64l.26-1.24A.75.75,0,0,0,9,16.5H7.5V15a.75.75,0,0,0-.75-.75H5.57l8.92-8.87h0A2.91,2.91,0,1,1,18.61,9.5Zm3-3-.7.7a4.39,4.39,0,0,0-4.12-4.11l.7-.7h0a2.91,2.91,0,1,1,4.11,4.11Zm-4.93-.25-7.5,7.5a.75.75,0,1,0,1.06,1.06l7.5-7.5a.75.75,0,0,0-1.06-1.06Z' transform='translate(0)' fill='%232F779D'/%3E%3C/g%3E%3C/svg%3E");
     background-size: 95% 95%;
     background-repeat: no-repeat; } }
+
+.pagerWrapperStyle .Pager td .gwt-Image[aria-disabled=true] {
+  opacity: 0.5; }
 
 /*
 	3.6 Upload
