@@ -32,7 +32,7 @@ textarea[readonly] {
   background: #dcdcdc;
 }
 
-input:not(.full-width),
+input:not(.full-width):not(#rmpseeall),
 textarea:not(.full-width) {
   min-width: 180px;
 }

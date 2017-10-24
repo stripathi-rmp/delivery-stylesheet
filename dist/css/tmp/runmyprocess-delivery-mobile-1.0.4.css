@@ -147,6 +147,11 @@ table.rowStyle {
 .childPanel.fillParentHeight > table.Buttons {
   height: auto !important; }
 
+.colStyle td:not([width]) {
+  -webkit-box-flex: 0;
+          flex: 0 0 auto;
+  -webkit-flex: 0 0 auto; }
+
 .rmppgbstepsubname,
 .rmppgbstep {
   display: none; }
