@@ -135,3 +135,14 @@
   opacity: 1;
   left: 0;
 }
+
+.basketnavafter,
+.basketnavbefore {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.basketnavafteractive {
+  opacity: 1;
+  cursor: pointer;
+}

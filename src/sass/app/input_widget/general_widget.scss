@@ -13,7 +13,7 @@ textarea:focus {
   width: 90%;
 }
 
-.gwt-DateBox {
+.gwt-DateBox:not(.arrayTreeFilterComponent) {
   padding: 5px;
   min-width: 180px;
 }
@@ -32,12 +32,12 @@ textarea[readonly] {
   background: #dcdcdc;
 }
 
-input:not(.full-width):not(#rmpseeall),
+input:not(.full-width):not(#rmpseeall):not(.arrayTreeFilterComponent),
 textarea:not(.full-width) {
   min-width: 180px;
 }
 
-select:not(.list-full-width),
+.gwt-ListBox:not(.list-full-width):not(.arrayTreeFilterComponent),
 .gwt-Picker:not(.full-width) {
   min-width: 194px;
 }
@@ -95,10 +95,10 @@ td.datePickerDay.datePickerDayIsToday {
   }
 }
 
-.ArrayTree-Panel .ATHeader input,
-.ArrayTree-Panel .gwt-ListBox,
+.ArrayTree-Panel .ATHeader input:not(.arrayTreeFilterComponent),
+.ArrayTree-Panel .gwt-ListBox:not(.arrayTreeFilterComponent),
 .ArrayTree-Panel .gwt-PasswordTextBox,
-.ArrayTree-Panel .gwt-TextBox:not(.full-width),
+.ArrayTree-Panel .gwt-TextBox:not(.full-width):not(.arrayTreeFilterComponent),
 textarea {
   width: 250px;
 }

@@ -359,4 +359,38 @@ _:-ms-fullscreen {
 
 .pagerWrapperStyle .Pager td .gwt-Image[aria-disabled=true] {
   opacity: 0.5;
+  cursor: default;
+}
+
+img[src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA6ElEQVR42mNgWP5IigEb2P+fhWH5fQUGgmD5fQeGFXfVGOr/M2ExACj3SIdh1X9m/AaA8NL7Bgwzz7BiGAAxxJRh/n0O/AaA8JL7FgyrXvFgGACWe2gNNEQAvwFgl9yzY1h0RwzDABBedt+eYdVjafwGwA16rIpTbtl9DUSY4VJECC++p47fgGUPtXHL3dNDxAw2BavuymENA5jX/v9nxB4GoABcdVsUayxgDUAUAx5YMSy5zYc1HSx/ZAvULIQnJWJJKDADQGlj0Qtu3ClxyWNdrEkVZMCKB0YMq66wMZAFQAGFnj+wAABtV+wnKt2GXgAAAABJRU5ErkJggg=='] {
+  opacity: 0.5;
+  cursor: default !important;
+}
+
+.Clickable .gwt-Label {
+  cursor: pointer;
+}
+
+.Report a.delete {
+  position: relative;
+}
+
+.Report a.delete::before {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+.Report a.edit {
+  cursor: pointer;
+}
+
+.ColumnHeaderText {
+  text-align: left;
+  padding-left: 6px;
 }

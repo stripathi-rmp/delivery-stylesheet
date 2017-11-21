@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*
+
+Version: delivery mobile - 1.0.5
 -----------------------------------------------------------------------------------
 
 CSS INDEX
@@ -24,7 +26,8 @@ CSS INDEX
     secondaryColor: #f0c105;
 */
 * {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 a,
 abbr,
@@ -112,10 +115,12 @@ var,
 video {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  outline: none; }
+  outline: none;
+}
 
 body {
-  background: #fff; }
+  background: #fff;
+}
 
 #globalContent {
   margin: auto !important;
@@ -123,10 +128,12 @@ body {
   box-shadow: none;
   border-radius: 0;
   width: 100% !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
 #applicationContent {
-  overflow: auto; }
+  overflow: auto;
+}
 
 #loading-indicator {
   float: top;
@@ -135,105 +142,131 @@ body {
   text-align: center;
   padding: 10px 0;
   box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 table.rowStyle {
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 .gwt-HTML canvas {
   width: 100% !important;
-  height: 100% !important; }
+  height: 100% !important;
+}
 
 .childPanel.fillParentHeight > table.Buttons {
-  height: auto !important; }
+  height: auto !important;
+}
 
 .colStyle td:not([width]) {
   -webkit-box-flex: 0;
-          flex: 0 0 auto;
-  -webkit-flex: 0 0 auto; }
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
 
 .rmppgbstepsubname,
 .rmppgbstep {
-  display: none; }
+  display: none;
+}
 
 .rmppgbstepcurrent {
   display: block !important;
-  background: #1c1c1b; }
+  background: #1c1c1b;
+}
 
 .rmppgbstep {
   -webkit-box-flex: 100%;
-          flex: 100% 0 1; }
+  flex: 100% 0 1;
+}
 
 .rmppgbsteps .rmppgbstepnum,
 .rmppgbsteps .rmppgbsteplastnum {
   padding: 0.6rem 0 0.6rem 0.5rem;
   width: 30px;
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .rmppgbstep::after {
   right: auto;
   left: 38px;
-  border-left: 20px solid rgba(255, 255, 255, 0.1); }
+  border-left: 20px solid rgba(255, 255, 255, 0.1);
+}
 
 .rmppgbstepname {
   top: 9px;
   left: 37px;
-  font-size: 16px;
+  font-size: 15px;
   max-width: 275px;
-  padding-right: 5px; }
+  padding-right: 5px;
+}
 
 .select2-container .select2-choice,
 .select2-container .select2-choice .select2-arrow {
-  background: none !important; }
+  background: none !important;
+}
 
 .select2-container-active .select2-choice,
 .select2-container-active .select2-choices,
 .select2-drop-active {
-  border: 1px solid #f0c105 !important; }
+  border: 1px solid #f0c105 !important;
+}
 
 .select2-results .select2-highlighted {
-  background: #f0c105 !important; }
+  background: #f0c105 !important;
+}
 
 .array-slider::before {
   background: #1c1c1b;
-  padding: 0.35rem; }
+  padding: 0.35rem;
+}
 
 .gwt-TabBarItem {
   background-color: #1c1c1b !important;
-  color: rgba(255, 255, 255, 0.7); }
+  color: rgba(255, 255, 255, 0.7);
+}
 
 .gwt-TabBarItem-selected {
   background-color: #1c1c1b !important;
-  color: #f0c105; }
+  color: #f0c105;
+}
 
 .ATHeader tbody tr:first-child {
   background: #f0c105 !important;
-  border-top: none !important; }
+  border-top: none !important;
+}
 
 .gwt-DisclosurePanel {
   border: none;
   background: transparent;
   margin-bottom: 0.8em;
-  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12); }
-  .gwt-DisclosurePanel a.header {
-    background: #1c1c1b;
-    border-bottom: 0; }
-    .gwt-DisclosurePanel a.header table > tbody > tr > td:nth-child(2) {
-      text-transform: uppercase;
-      height: 18px;
-      line-height: 18px;
-      color: #fff;
-      position: relative;
-      padding-left: 25px; }
-  .gwt-DisclosurePanel tbody > tr > td > div {
-    margin: 5px; }
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.gwt-DisclosurePanel a.header {
+  background: #1c1c1b;
+  border-bottom: 0;
+}
+
+.gwt-DisclosurePanel a.header table > tbody > tr > td:nth-child(2) {
+  text-transform: uppercase;
+  height: 18px;
+  line-height: 18px;
+  color: #fff;
+  position: relative;
+  padding-left: 25px;
+}
+
+.gwt-DisclosurePanel tbody > tr > td > div {
+  margin: 5px;
+}
 
 img.sectionButton {
-  display: none; }
+  display: none;
+}
 
 .gwt-DisclosurePanel a.header > table > tbody > tr > td:nth-child(2)::before {
   content: '';
-  background: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.98 12'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpolygon points='0 0.04 16.98 0 8.48 12 0 0.04' fill='%23fff'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml;charset=utf8, %3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.98 12'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpolygon points='0 0.04 16.98 0 8.48 12 0 0.04' fill='%23fff'/%3E%3C/svg%3E");
   color: #fff;
   position: absolute;
   background-repeat: no-repeat;
@@ -241,11 +274,12 @@ img.sectionButton {
   background-position-y: center;
   left: -10px;
   width: 18px;
-  height: 18px; }
+  height: 18px;
+}
 
 .gwt-DisclosurePanel-closed a.header > table > tbody > tr > td:nth-child(2)::before {
   content: '';
-  background: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 16.98'%3E%3Ctitle%3ESans titre - 2%3C/title%3E%3Cpolygon points='0.04 16.98 0 0 12 8.5 0.04 16.98' fill='%23fff'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml;charset=utf8, %3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 16.98'%3E%3Ctitle%3ESans titre - 2%3C/title%3E%3Cpolygon points='0.04 16.98 0 0 12 8.5 0.04 16.98' fill='%23fff'/%3E%3C/svg%3E");
   color: #fff;
   position: absolute;
   background-repeat: no-repeat;
@@ -253,8 +287,10 @@ img.sectionButton {
   background-position-y: center;
   left: -10px;
   width: 18px;
-  height: 18px; }
+  height: 18px;
+}
 
 .gwt-DisclosurePanel .header td:nth-child(1) {
   padding: 0;
-  width: 0 !important; }
+  width: 0 !important;
+}

@@ -2,7 +2,6 @@
   padding: 0 0 0 5%;
   margin: 0;
   display: flex;
-  width: 95%;
   z-index: 10;
 
   img {
@@ -72,6 +71,7 @@ _:-ms-fullscreen {
   padding: 0;
 }
 
+.rmplevel0:hover,
 .rmplevel1:hover {
   background: rgba(255, 255, 255, 0.2) !important;
 }

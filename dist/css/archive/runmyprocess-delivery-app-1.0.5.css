@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*
+
+Version: delivery app - 1.0.5
 -----------------------------------------------------------------------------------
 
 Helpfull Customisation
@@ -684,6 +686,48 @@ _:-ms-fullscreen {
   margin: auto;
   display: block;
   width: 200px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gwt-Button::after,
+.gwt-Button-cancel::after,
+.gwt-Button-cancel:hover::after,
+.gwt-Button-other::after,
+.gwt-Button-other:hover::after,
+.gwt-Button-save::after,
+.gwt-Button-save:hover::after,
+.gwt-Button:hover::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.75s ease-in-out;
+}
+
+.gwt-Button:active::after,
+.gwt-Button-cancel:active::after,
+.gwt-Button-cancel:hover:active::after,
+.gwt-Button-other:active::after,
+.gwt-Button-other:hover:active::after,
+.gwt-Button-save:active::after,
+.gwt-Button-save:hover:active::after,
+.gwt-Button:hover:active::after {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 1;
+  transition: 0s;
 }
 
 .gwt-Button {
@@ -775,7 +819,7 @@ textarea:not(.full-width) {
   min-width: 180px;
 }
 
-select:not(.list-full-width):not(.arrayTreeFilterComponent),
+.gwt-ListBox:not(.list-full-width):not(.arrayTreeFilterComponent),
 .gwt-Picker:not(.full-width) {
   min-width: 194px;
 }

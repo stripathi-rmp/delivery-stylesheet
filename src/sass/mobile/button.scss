@@ -1,0 +1,49 @@
+.gwt-Button,
+.gwt-Button-Bubble {
+  background: #779d2f !important;
+
+  &:hover {
+    background: #779d2f;
+  }
+}
+
+.gwt-Button-cancel,
+.gwt-Button-cancelBubble {
+  background: #cf0b2a !important;
+
+  &:hover {
+    background: #cf0b2a;
+  }
+}
+
+.gwt-Button-save,
+.gwt-Button-saveBubble {
+  background: #d98f00 !important;
+
+  &:hover {
+    background: #d98f00;
+  }
+}
+
+.gwt-Button-other,
+.gwt-Button-otherBubble {
+  background: #2e769e !important;
+
+  &:hover {
+    background: #2e769e !important;
+  }
+}
+
+.gwt-Button[disabled],
+.gwt-PushButton[disabled],
+button[disabled] {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+}
+
+.gwt-Button-disabled,
+.gwt-Button[disabled]:hover {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+  border: none;
+}

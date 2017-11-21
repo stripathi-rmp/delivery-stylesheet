@@ -115,7 +115,7 @@ ul,
 var,
 video {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   outline: none;
 }
 
@@ -258,7 +258,7 @@ table.rowStyle {
   background: none repeat scroll 0 0 transparent;
   color: #fff;
   font-family: Times New Roman;
-  font-size: 19px;
+  font-size: 15px;
   font-style: italic;
   left: -11px;
   position: relative;

@@ -32,6 +32,10 @@
     .button.button-outline, button.button-outline, input[type='button'].button-outline, input[type='reset'].button-outline, input[type='submit'].button-outline{
       color: #f0c105;
     }
+    h3{
+      color:#f0c105;
+      margin-top: 20px;
+    }
   </style>
 
 </head>
@@ -73,6 +77,13 @@
         <!-- DOCUMENTATION -->
         <h2>Documentation</h2>
 
+        <h3>Customization</h3>
+        <a href="#color">Color</a><br>
+        <a href="#button">Button color</a><br>
+        <a href="#button-animation">Button Animation</a><br>
+        <a href="#array">Array</a><br>
+        <a href="#switch">Switch</a><br>
+
         <h3>Import the Stylesheet</h3>
         <p>Then you shall import the Stylesheet into your RunMyProcess project:</p>
         <ol>
@@ -88,7 +99,7 @@
           <li>You're done </li>
         </ol>
 
-        <h3>Customize the colors</h3>
+        <h3 id="color">Customize the colors</h3>
         <ul>
           <li>PrimaryColor : Black, used for navigation, section and tab</li>
           <li>SecondaryColor : Yellow, used for report, input and array</li>
@@ -97,7 +108,7 @@
         <p>To change a color, open the CSS file with your code editor and then you simply need to search and replace the corresponding color code with the color code you want</p>
         <img src="doc/assets/color.png" alt="">
 
-        <h3>Customize the button colors</h3>
+        <h3 id="button">Customize the button colors</h3>
         <p>The default CSS gives you the option to use four different color for the buttons :</p>
         <ul>
           <li>Default → Green → no suffix</li>
@@ -108,7 +119,12 @@
         <p>In order to use this color you have to add the corresponding suffix in the layout tab of the button in the IDE</p>
         <img src="doc/assets/btn.jpg" alt="">
 
-        <h3>Customize array</h3>
+        <h3 id="button-animation">Customize the button animation</h3>
+        <p>You can customize the click effect for each button with a new suffix <b>Bubble</b> after the color</p>
+        <img src="doc/assets/btn-animation.gif" class='big-img' alt="">
+        <img src="doc/assets/bubble-suffix.png" class='big-img' alt="">
+
+        <h3 id="array">Customize array</h3>
         <p>If you have disabled the "Add rows" and "Delete rows" features on an Array widget, you will still see the corresponding column in this widget on the Web Interface (the first column).
           </p>
         <img src="doc/assets/array_3.jpg" alt="">
@@ -116,6 +132,13 @@
         <p>If you wish to hide this column, you can add the CSS class suffix "hideBtn" in the Layout tab on the widget configuration.</p>
         <img src="doc/assets/array.jpg" alt="">
         <img src="doc/assets/array_2.jpg" alt="" class='big-img'>
+
+        <h3 id="switch">Customize the switch widget</h3>
+        <p>The default display for the switch widget is as follow</p>
+        <img src="doc/assets/switch-default.png" alt="" class='big-img'>
+        <p>You have the possibility to use a more modern style by just adding the CSS suffix switch</p>
+        <img src="doc/assets/suffix-switch.png" alt="" class='big-img'>
+        <img src="doc/assets/switch-change.png" alt="" class='big-img'>
 
       </div>
 

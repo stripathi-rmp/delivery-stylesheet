@@ -1,6 +1,6 @@
 {
   "name": "delivery-stylesheet",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This template is intended to be used by RunMyProcess Delivery Team as an additional CSS layer on top of portal2 CSS.",
   "directories": {
     "doc": "./doc",
