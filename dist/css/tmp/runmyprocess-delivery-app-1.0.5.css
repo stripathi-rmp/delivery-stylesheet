@@ -603,7 +603,6 @@ _:-ms-fullscreen {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold !important;
-  margin: auto;
   display: block;
   width: 200px;
   position: relative;
@@ -1314,21 +1313,14 @@ img[src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA6
   .Report a.delete::before::before {
     content: '';
     z-index: 1;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 4px;
-    height: 9px;
-    border: 2px solid transparent;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%; }
+    position: absolute; }
 
 .Report a.edit {
   cursor: pointer; }
+
+.ColumnHeaderText {
+  text-align: left;
+  padding-left: 6px; }
 
 /*
 	3.6 Upload

@@ -44,18 +44,55 @@ gulp.task('lint-sass', function () {
 });
 
 // SASS COMPILATION
-gulp.task('sass', function () {
-  del(['dist/css/*.css', 'dist/css/tmp/*.css', '!dist/css/archive/*.css'])
-  return gulp.src('src/sass/**/main.scss')
+gulp.task('sass', sequence('sass-home','sass-app','sass-mobile'));
+
+gulp.task('sass-home', function () {
+  del(['dist/css/tmp/*-home-*.css'])
+  console.log("Home css removed")
+  return gulp.src('src/sass/home/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 1 version']}))
     .pipe(rename(function (path) {
-      path.basename = prefix + '-' + path.dirname + '-' + packageJSON.version
+      path.basename = prefix + '-home-' + packageJSON.versionHomepage
       path.extname = ".css"
       path.dirname = ''
+      console.log("Generation -> ", path.basename)
     }))
-    .pipe(gulp.dest('./dist/css/tmp'))
+    .pipe(gulp.dest('dist/css/tmp'))
+
 });
+
+gulp.task('sass-app', function () {
+  del(['dist/css/tmp/*-app-*.css'])
+  console.log("App css removed")
+  return gulp.src('src/sass/app/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({browsers: ['last 1 version']}))
+    .pipe(rename(function (path) {
+      path.basename = prefix + '-app-' + packageJSON.versionApp
+      path.extname = ".css"
+      path.dirname = ''
+      console.log("Generation -> ", path.basename)
+    }))
+    .pipe(gulp.dest('dist/css/tmp'))
+});
+
+gulp.task('sass-mobile', function () {
+  console.log("Mobile css removed")
+  del(['dist/css/tmp/*-mobile-*.css'])
+  return gulp.src('src/sass/mobile/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({browsers: ['last 1 version']}))
+    .pipe(rename(function (path) {
+      path.basename = prefix + '-mobile-' + packageJSON.versionMobile
+      path.extname = ".css"
+      path.dirname = ''
+      console.log("Generation -> ", path.basename)
+    }))
+    .pipe(gulp.dest('dist/css/tmp'))
+});
+
+
 
 // CSS LINTING
 gulp.task('lint-css', function () {
