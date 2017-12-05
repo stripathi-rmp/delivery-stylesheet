@@ -11,9 +11,10 @@ CSS INDEX
 
 1. Theme default CSS
 2. Header
-	2.1 General Header
-	2.2 Basket
-	2.3 Navigation
+3. General widget
+	3.1 Button
+	3.2 Report
+  3.3 Tooltip
 
 -----------------------------------------------------------------------------------
 */
@@ -30,10 +31,59 @@ CSS INDEX
     secondaryColor: #f0c105;
 */
 @import "default";
+
+/*
+===========================================================
+	2. Header
+=============================================================
+*/
 @import "header";
-@import "tab";
-@import "report";
-@import "section";
-@import "array";
-@import "button";
-@import "tooltip";
+
+/*
+===========================================================
+	3. General widget
+===========================================================
+*/
+
+/*
+	3.1 Button
+----------------------------
+*/
+@import "input_widget/button";
+
+/*
+	3.2 Report
+----------------------------
+*/
+@import "input_widget/report";
+
+/*
+	3.3 Tooltip
+----------------------------
+*/
+@import "input_widget/tooltip";
+
+/*
+===========================================================
+	4. Structuring widgets
+===========================================================
+*/
+
+/*
+	4.1 Section
+----------------------------
+*/
+@import "structuring_widget/section";
+
+/*
+	4.1 Tab
+----------------------------
+*/
+@import "structuring_widget/tab";
+
+/*
+	4.1 Array
+----------------------------
+*/
+@import "structuring_widget/array";
+
