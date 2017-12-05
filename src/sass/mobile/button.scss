@@ -1,4 +1,5 @@
 .gwt-Button,
+.gwt-Button:hover,
 .gwt-Button-Bubble {
   background: #779d2f !important;
 
@@ -8,6 +9,7 @@
 }
 
 .gwt-Button-cancel,
+.gwt-Button-cancel:hover,
 .gwt-Button-cancelBubble {
   background: #cf0b2a !important;
 
@@ -17,6 +19,7 @@
 }
 
 .gwt-Button-save,
+.gwt-Button-save:hover,
 .gwt-Button-saveBubble {
   background: #d98f00 !important;
 
@@ -26,6 +29,7 @@
 }
 
 .gwt-Button-other,
+.gwt-Button-other:hover,
 .gwt-Button-otherBubble {
   background: #2e769e !important;
 
@@ -35,8 +39,11 @@
 }
 
 .gwt-Button[disabled],
+.gwt-Button[disabled]:hover,
 .gwt-PushButton[disabled],
-button[disabled] {
+.gwt-PushButton[disabled]:hover,
+button[disabled],
+button[disabled]:hover {
   color: #c1c1c1 !important;
   background: #dcdcdc !important;
 }

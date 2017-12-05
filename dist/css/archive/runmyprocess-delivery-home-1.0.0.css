@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*
+
+Version: delivery homepage - 1.0.5
 -----------------------------------------------------------------------------------
 
 CSS INDEX
@@ -148,7 +150,135 @@ body {
 }
 
 table.rowStyle {
-  border-spacing: 5px;
+  border-spacing: 0;
+}
+
+#globalContent ul {
+  margin: 0 0.25em;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#globalContent ul li {
+  background: #04304b;
+  color: #fff;
+  zoom: 1;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2em;
+  border-radius: 4px;
+  margin: 1.5em 1.65em;
+  overflow: visible;
+  width: 120px;
+}
+
+#globalContent ul li:hover,
+.expandable ul li:active,
+.expandable ul li:focus {
+  position: relative;
+  top: 1px;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  box-shadow: 0 0 4px #04304b;
+  outline: none;
+  filter: Alpha(Opacity=80);
+  -ms-filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#04304b, OffX=0, OffY=shadowTop, Positive=1);
+}
+
+#globalContent ul li .bigIcon {
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#globalContent ul li .label {
+  display: block;
+  line-height: 1.35em;
+  height: 2.4em;
+  padding: 0.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+#globalContent ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#globalContent ul li .rmphelp {
+  margin: 0;
+  text-align: left;
+  white-space: pre-wrap;
+  padding: 0 4px;
+  overflow: hidden;
+  text-transform: lowercase;
+  font-weight: normal;
+  height: 117px;
+  width: 120px;
+  background-image: none;
+  display: block;
+}
+
+.rmpappbasket {
+  display: none;
+}
+
+.rmpbactive {
+  background: none repeat scroll 0 0 #f00;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  float: right;
+  margin: -12px 0;
+  padding: 4px;
+  position: relative;
+  right: -5px;
+  top: -153px;
+  min-width: 16px;
+}
+
+.rmpdescription {
+  cursor: help;
+  display: block;
+  float: right;
+  position: relative;
+  border-bottom: 29px solid #126aa1;
+  border-left: 29px solid transparent;
+  height: 0;
+  margin: -29px 0 0;
+  padding: 0;
+  width: 0;
+}
+
+.rmpdescription > span {
+  background: none repeat scroll 0 0 transparent;
+  color: #fff;
+  font-family: Times New Roman;
+  font-size: 15px;
+  font-style: italic;
+  left: -11px;
+  position: relative;
+  top: 14px;
+  text-transform: lowercase;
+}
+
+.hidden {
+  display: none;
+}
+
+#globalContent li {
+  display: inline-block;
+}
+
+#globalContent .rmpmenu li {
+  float: right;
+  font-weight: normal;
 }
 
 /*

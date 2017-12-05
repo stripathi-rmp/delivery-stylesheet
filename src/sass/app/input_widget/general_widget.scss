@@ -42,6 +42,10 @@ textarea:not(.full-width) {
   min-width: 194px;
 }
 
+.gwt-TabBarItem input[role="presentation"] {
+  min-width: unset !important;
+}
+
 .gwt-TextBox,
 .gwt-DateBox,
 .gwt-PasswordTextBox,

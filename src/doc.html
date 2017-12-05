@@ -36,6 +36,30 @@
       color:#f0c105;
       margin-top: 20px;
     }
+
+    .code,
+    .code .codehilite  {
+      display: flex;
+
+    }
+    .code .codehilite pre {
+      background: none;
+      border-left: none;
+    }
+    .code .codehilite p {
+      background: #f5f5f5;
+      padding: 20px;
+      border-left: 5px solid #f0c105;
+    }
+    .codehilite .nt {
+      color: #2196F3;
+    }
+    .codehilite .na {
+      color: #4CAF50;
+    }
+    .codehilite .s {
+      color: #F44336;
+    }
   </style>
 
 </head>
@@ -83,6 +107,7 @@
         <a href="#button-animation">Button Animation</a><br>
         <a href="#array">Array</a><br>
         <a href="#switch">Switch</a><br>
+        <a href="#tooltip">Information tags</a><br>
 
         <h3>Import the Stylesheet</h3>
         <p>Then you shall import the Stylesheet into your RunMyProcess project:</p>
@@ -117,7 +142,7 @@
           <li>Other → Blue → suffix other</li>
         </ul>
         <p>In order to use this color you have to add the corresponding suffix in the layout tab of the button in the IDE</p>
-        <img src="doc/assets/btn.jpg" alt="">
+        <img src="doc/assets/btn.png" alt="">
 
         <h3 id="button-animation">Customize the button animation</h3>
         <p>You can customize the click effect for each button with a new suffix <b>Bubble</b> after the color</p>
@@ -127,11 +152,11 @@
         <h3 id="array">Customize array</h3>
         <p>If you have disabled the "Add rows" and "Delete rows" features on an Array widget, you will still see the corresponding column in this widget on the Web Interface (the first column).
           </p>
-        <img src="doc/assets/array_3.jpg" alt="">
+        <img src="doc/assets/array_3.png" alt="">
 
         <p>If you wish to hide this column, you can add the CSS class suffix "hideBtn" in the Layout tab on the widget configuration.</p>
-        <img src="doc/assets/array.jpg" alt="">
-        <img src="doc/assets/array_2.jpg" alt="" class='big-img'>
+        <img src="doc/assets/array.png" alt="">
+        <img src="doc/assets/array_2.png" alt="" class='big-img'>
 
         <h3 id="switch">Customize the switch widget</h3>
         <p>The default display for the switch widget is as follow</p>
@@ -139,6 +164,22 @@
         <p>You have the possibility to use a more modern style by just adding the CSS suffix switch</p>
         <img src="doc/assets/suffix-switch.png" alt="" class='big-img'>
         <img src="doc/assets/switch-change.png" alt="" class='big-img'>
+
+        <h3 id="tooltip">Customize a information Tags</h3>
+
+        <p>You can use a custome information tag with this html code in your widget</p>
+        <div class="code">
+          <div class="codehilite">
+            <p>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"info"</span><span class="nt">&gt;</span>Test with class "info"<span class="nt">&lt;/div&gt;</span><br/>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"success"</span><span class="nt">&gt;</span>Test with class "success"<span class="nt">&lt;/div&gt;</span><br/>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"warning"</span><span class="nt">&gt;</span>Test with class "warning"<span class="nt">&lt;/div&gt;</span><br/>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"error"</span><span class="nt">&gt;</span>Test with class "error"<span class="nt">&lt;/div&gt;</span>
+            </p>
+          </div>
+        </div>
+        <img src="doc/assets/tooltips.png" alt="" class='big-img'>
+
 
       </div>
 

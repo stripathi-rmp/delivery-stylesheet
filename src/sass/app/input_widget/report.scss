@@ -223,7 +223,7 @@ _:-ms-fullscreen {
 }
 
 /* icon print */
-:root .Report .Buttons-Right td:nth-child(1),
+:root .Report .Buttons-Right td:nth-child(2),
 _:-ms-fullscreen {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.81 24'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M19.86,4.92h-.62V3.55A3.55,3.55,0,0,0,15.7,0H8.25A3.55,3.55,0,0,0,4.7,3.55V4.92H4.14A3.55,3.55,0,0,0,.59,8.47v5.72a3.55,3.55,0,0,0,3.55,3.55H4.7v4.5A1.77,1.77,0,0,0,6.47,24h11a1.77,1.77,0,0,0,1.77-1.77v-4.5h.62a3.55,3.55,0,0,0,3.55-3.55V8.47A3.55,3.55,0,0,0,19.86,4.92ZM6,3.55a2.21,2.21,0,0,1,2.2-2.2h7.44a2.21,2.21,0,0,1,2.2,2.2V4.92H6ZM17.89,22.24a.43.43,0,0,1-.43.43h-11A.43.43,0,0,1,6,22.24V14.82H17.89Zm4.17-8a2.21,2.21,0,0,1-2.2,2.2h-.62V14.82h.89a.67.67,0,0,0,0-1.34H3.71a.67.67,0,0,0,0,1.34h1v1.57H4.14a2.21,2.21,0,0,1-2.2-2.2V8.47a2.21,2.21,0,0,1,2.2-2.2H19.86a2.21,2.21,0,0,1,2.2,2.2Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3Cpath d='M7.67,18.13h8.55a.67.67,0,0,0,0-1.34H7.67a.67.67,0,0,0,0,1.34Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3Cpath d='M16.27,19.53H7.72a.67.67,0,0,0,0,1.34h8.55a.67.67,0,0,0,0-1.34Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3Cpath d='M19.84,7.56H18.48a.67.67,0,0,0,0,1.34h1.36a.67.67,0,0,0,0-1.34Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3C/svg%3E");
   background-size: 95% 95%;
@@ -231,7 +231,7 @@ _:-ms-fullscreen {
 }
 
 /* icon export */
-:root .Report .Buttons-Right td:nth-child(2),
+:root .Report .Buttons-Right td:nth-child(1),
 _:-ms-fullscreen {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.32 24'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M23.52,19.81l-3.17-3.17a1.16,1.16,0,0,0-2,.82v.48a.21.21,0,0,1-.2.2h-.32V4.92a.48.48,0,0,0-.14-.34L13.25.14A.48.48,0,0,0,12.91,0H.82A.48.48,0,0,0,.34.48v23A.48.48,0,0,0,.82,24H17.36a.48.48,0,0,0,.48-.48V22.16h.32a.21.21,0,0,1,.2.2v.48a1.16,1.16,0,0,0,2,.82l3.17-3.17a.48.48,0,0,0,0-.68ZM13.39,1.63l2.81,2.81H13.39ZM16.88,23H1.3V1H12.44v4a.48.48,0,0,0,.48.48h4V18.14h-1a.48.48,0,0,0-.48.48v3.06a.48.48,0,0,0,.48.48h1ZM19.67,23a.2.2,0,0,1-.35-.14v-.48a1.16,1.16,0,0,0-1.16-1.16h-1.8V19.1h1.8a1.16,1.16,0,0,0,1.16-1.16v-.48a.2.2,0,0,1,.35-.14l2.84,2.83Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M3.71,8.32h7.91a.48.48,0,0,0,0-1H3.71a.48.48,0,1,0,0,1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,10.52H3.71a.48.48,0,0,0,0,1H14.47a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,13.67H3.71a.48.48,0,0,0,0,1H14.47a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,16.83H3.71a.48.48,0,0,0,0,1H14.47a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,7.36H13.42a.48.48,0,0,0,0,1h1.05a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3C/svg%3E");
   background-size: 95% 95%;
@@ -336,14 +336,14 @@ _:-ms-fullscreen {
   }
 
   /* icon print */
-  .Report .Buttons-Right td:nth-child(1) {
+  .Report .Buttons-Right td:nth-child(2) {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.81 24'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M19.86,4.92h-.62V3.55A3.55,3.55,0,0,0,15.7,0H8.25A3.55,3.55,0,0,0,4.7,3.55V4.92H4.14A3.55,3.55,0,0,0,.59,8.47v5.72a3.55,3.55,0,0,0,3.55,3.55H4.7v4.5A1.77,1.77,0,0,0,6.47,24h11a1.77,1.77,0,0,0,1.77-1.77v-4.5h.62a3.55,3.55,0,0,0,3.55-3.55V8.47A3.55,3.55,0,0,0,19.86,4.92ZM6,3.55a2.21,2.21,0,0,1,2.2-2.2h7.44a2.21,2.21,0,0,1,2.2,2.2V4.92H6ZM17.89,22.24a.43.43,0,0,1-.43.43h-11A.43.43,0,0,1,6,22.24V14.82H17.89Zm4.17-8a2.21,2.21,0,0,1-2.2,2.2h-.62V14.82h.89a.67.67,0,0,0,0-1.34H3.71a.67.67,0,0,0,0,1.34h1v1.57H4.14a2.21,2.21,0,0,1-2.2-2.2V8.47a2.21,2.21,0,0,1,2.2-2.2H19.86a2.21,2.21,0,0,1,2.2,2.2Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3Cpath d='M7.67,18.13h8.55a.67.67,0,0,0,0-1.34H7.67a.67.67,0,0,0,0,1.34Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3Cpath d='M16.27,19.53H7.72a.67.67,0,0,0,0,1.34h8.55a.67.67,0,0,0,0-1.34Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3Cpath d='M19.84,7.56H18.48a.67.67,0,0,0,0,1.34h1.36a.67.67,0,0,0,0-1.34Z' transform='translate(-0.59)' fill='%232F779D'/%3E%3C/svg%3E");
     background-size: 95% 95%;
     background-repeat: no-repeat;
   }
 
   /* icon export */
-  .Report .Buttons-Right td:nth-child(2) {
+  .Report .Buttons-Right td:nth-child(1) {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.32 24'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M23.52,19.81l-3.17-3.17a1.16,1.16,0,0,0-2,.82v.48a.21.21,0,0,1-.2.2h-.32V4.92a.48.48,0,0,0-.14-.34L13.25.14A.48.48,0,0,0,12.91,0H.82A.48.48,0,0,0,.34.48v23A.48.48,0,0,0,.82,24H17.36a.48.48,0,0,0,.48-.48V22.16h.32a.21.21,0,0,1,.2.2v.48a1.16,1.16,0,0,0,2,.82l3.17-3.17a.48.48,0,0,0,0-.68ZM13.39,1.63l2.81,2.81H13.39ZM16.88,23H1.3V1H12.44v4a.48.48,0,0,0,.48.48h4V18.14h-1a.48.48,0,0,0-.48.48v3.06a.48.48,0,0,0,.48.48h1ZM19.67,23a.2.2,0,0,1-.35-.14v-.48a1.16,1.16,0,0,0-1.16-1.16h-1.8V19.1h1.8a1.16,1.16,0,0,0,1.16-1.16v-.48a.2.2,0,0,1,.35-.14l2.84,2.83Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M3.71,8.32h7.91a.48.48,0,0,0,0-1H3.71a.48.48,0,1,0,0,1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,10.52H3.71a.48.48,0,0,0,0,1H14.47a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,13.67H3.71a.48.48,0,0,0,0,1H14.47a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,16.83H3.71a.48.48,0,0,0,0,1H14.47a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3Cpath d='M14.47,7.36H13.42a.48.48,0,0,0,0,1h1.05a.48.48,0,1,0,0-1Z' transform='translate(-0.34)' fill='%232F779D'/%3E%3C/svg%3E");
     background-size: 95% 95%;
     background-repeat: no-repeat;
@@ -393,4 +393,24 @@ img[src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA6
 .ColumnHeaderText {
   text-align: left;
   padding-left: 6px;
+}
+
+.Report a.customRemove {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 404.7 512'%3E%3Ctitle%3Erubbish-bin%3C/title%3E%3Cpath d='M423.45,60.29H355.08V15.86A15.88,15.88,0,0,0,338.93,0a2.4,2.4,0,0,0-1.73.58A2.2,2.2,0,0,0,336,0h-163a15.63,15.63,0,0,0-15.86,15.86V60.29H88.55a34.47,34.47,0,0,0-34.9,34.9V152.3H83.94V477.39c0,19.61,15,34.61,34.61,34.61h274.9c19.61,0,34.9-15,34.9-34.61V152.3h30V95.19A34.47,34.47,0,0,0,423.45,60.29ZM188.93,31.73H323.07V60.29H188.93Zm207.4,445.66c0,2-.87,2.88-2.88,2.88H118.55c-2,0-2.88-.86-2.88-2.88V152.3H396.33Zm30-356.81H85.67V95.19c0-2,.87-3.17,2.88-3.17h334.9c2,0,2.88,1.15,2.88,3.17v25.39Z' transform='translate(-53.65)' fill='%23cf0b2a'/%3E%3Crect x='260.47' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3Crect x='186.63' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3Crect x='112.78' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3C/svg%3E");
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 5px;
+}
+
+.Report a.customEdit {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3E2%3C/title%3E%3Cg id='Pencil'%3E%3Cpath d='M22.71,1.29a4.41,4.41,0,0,0-6.23,0L3.22,14.47a.74.74,0,0,0-.18.28L0,23a.75.75,0,0,0,.71,1A.74.74,0,0,0,1,24l7.46-2.29a.75.75,0,0,0,.31-.19l14-14a4.41,4.41,0,0,0,0-6.23ZM7.57,20.37l-2.79.86A3.2,3.2,0,0,0,4,20a4.05,4.05,0,0,0-1-.72l1.28-3.51H6v1.5a.75.75,0,0,0,.75.75H8.07Zm11-10.87L9.47,18.64l.26-1.24A.75.75,0,0,0,9,16.5H7.5V15a.75.75,0,0,0-.75-.75H5.57l8.92-8.87h0A2.91,2.91,0,1,1,18.61,9.5Zm3-3-.7.7a4.39,4.39,0,0,0-4.12-4.11l.7-.7h0a2.91,2.91,0,1,1,4.11,4.11Zm-4.93-.25-7.5,7.5a.75.75,0,1,0,1.06,1.06l7.5-7.5a.75.75,0,0,0-1.06-1.06Z' transform='translate(0)' fill='%232F779D'/%3E%3C/g%3E%3C/svg%3E");
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 5px;
 }

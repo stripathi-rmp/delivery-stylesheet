@@ -2,8 +2,8 @@
   "name": "delivery-stylesheet",
   "version": "1.0.5",
   "versionHomepage":"1.0.0",
-  "versionApp":"1.0.5",
-  "versionMobile":"1.0.0",
+  "versionApp":"1.0.6",
+  "versionMobile":"1.0.1",
   "description": "This template is intended to be used by RunMyProcess Delivery Team as an additional CSS layer on top of portal2 CSS.",
   "directories": {
     "doc": "./doc",

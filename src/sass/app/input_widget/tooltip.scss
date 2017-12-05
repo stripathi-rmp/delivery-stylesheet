@@ -1,0 +1,50 @@
+// color material 200 for light 900 for dark
+.info,
+.success,
+.warning,
+.error {
+  display: block;
+  width: 100%;
+  padding: 8px 10px 8px 35px;
+  margin: 10px 0;
+}
+
+.info {
+  background: #90caf9;
+  color: #0d47a1;
+  border-left: 5px solid #0d47a1;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330'%3E%3Ctitle%3Einformation%3C/title%3E%3Cpath d='M165,0C74,0,0,74,0,165S74,330,165,330s165-74,165-165S256,0,165,0Zm0,300C90.56,300,30,239.44,30,165S90.56,30,165,30,300,90.56,300,165,239.44,300,165,300Z' fill='%231976d2'/%3E%3Cpath d='M165,70a20,20,0,1,0,20,20A20,20,0,0,0,165,70Z' fill='%231976d2'/%3E%3Cpath d='M165,140a15,15,0,0,0-15,15v90a15,15,0,0,0,30,0V155A15,15,0,0,0,165,140Z' fill='%231976d2'/%3E%3C/svg%3E");
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.success {
+  background: #a5d6a7;
+  color: #1b5e20;
+  border-left: 5px solid #1b5e20;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 486.46 367.66'%3E%3Ctitle%3Echeck%3C/title%3E%3Cpath d='M5.91,249.83a19,19,0,0,1,0-27.57l27.57-27.57a19,19,0,0,1,27.57,0l2,2,108.3,116.18a9.52,9.52,0,0,0,13.79,0L425,64.73h0c7.88-7.88,20.15-6.64,28,1.23l27.57,27.57a19,19,0,0,1,0,27.57h0L191,421.15c-3.94,3.94-7.88,5.91-13.79,5.91s-9.85-2-13.78-5.91L9.85,255.74l-3.94-5.91Z' transform='translate(0 -59.4)' fill='%23388e3c'/%3E%3C/svg%3E");
+  background-size: auto 55%;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.warning {
+  background: #ffcc80;
+  color: #e65100;
+  border-left: 5px solid #e65100;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 486.46 444.7'%3E%3Ctitle%3Ewarning%3C/title%3E%3Cpath d='M243.23,333.38a25,25,0,0,0,0,50c13.1,0,25-11.4,24.39-24.4A24.4,24.4,0,0,0,243.23,333.38Z' transform='translate(0 -20.88)' fill='%23f57c00'/%3E%3Cpath d='M474.62,422a85.37,85.37,0,0,0,.21-86.4L318.23,64.38a86.28,86.28,0,0,0-149.8-.1L11.63,335.78a86.61,86.61,0,0,0,75,129.8H399.42C430.73,465.58,458.83,449.28,474.62,422Zm-34-19.6a47.25,47.25,0,0,1-41.29,23.9H86.53a46.61,46.61,0,0,1-40.8-23.4,47.32,47.32,0,0,1-.1-47.7l156.8-271.4a47.09,47.09,0,0,1,81.8.1l156.7,271.4A46.67,46.67,0,0,1,440.62,402.38Z' transform='translate(0 -20.88)' fill='%23f57c00'/%3E%3Cpath d='M237,157.88c-11.9,3.4-19.3,14.2-19.3,27.3.6,7.9,1.1,15.9,1.7,23.8,1.7,30.1,3.4,59.6,5.1,89.7a18.32,18.32,0,0,0,18.7,17.6c10.2,0,18.2-7.9,18.7-18.2,0-6.2,0-11.9.6-18.2,1.1-19.3,2.3-38.6,3.4-57.9.6-12.5,1.7-25,2.3-37.5a30.88,30.88,0,0,0-2.3-12.5A25.05,25.05,0,0,0,237,157.88Z' transform='translate(0 -20.88)' fill='%23f57c00'/%3E%3C/svg%3E");
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.error {
+  background: #ef9a9a;
+  color: #b71c1c;
+  border-left: 5px solid #b71c1c;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 47.97 47.97'%3E%3Ctitle%3Eclose%3C/title%3E%3Cpath d='M28.23,24,47.09,5.12A3,3,0,0,0,42.85.88L24,19.74,5.12.88A3,3,0,0,0,.88,5.12L19.74,24,.88,42.85a3,3,0,1,0,4.24,4.24L24,28.23,42.85,47.09a3,3,0,0,0,4.24-4.24Z' transform='translate(0 0)' fill='%23d32f2f'/%3E%3C/svg%3E");
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
