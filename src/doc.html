@@ -103,12 +103,13 @@
 
         <h3>Customization</h3>
         <a href="#color">Color</a><br>
+        <a href="#progress">ProgressBar</a><br>
         <a href="#button">Button color</a><br>
         <a href="#button-animation">Button Animation</a><br>
         <a href="#array">Array</a><br>
         <a href="#switch">Switch</a><br>
-        <a href="#tooltip">Information tags</a><br>
-        <a href="#editReport">Edition Report</a><br>
+        <a href="#tooltip">Information messages</a><br>
+        <a href="#editReport">Edit and Remove icons (BackOffice)</a><br>
 
         <h3>Import the Stylesheet</h3>
         <p>Then you shall import the Stylesheet into your RunMyProcess project:</p>
@@ -133,6 +134,11 @@
         </ul>
         <p>To change a color, open the CSS file with your code editor and then you simply need to search and replace the corresponding color code with the color code you want</p>
         <img src="doc/assets/color.png" alt="">
+
+        <h3 id="progress">Customize the ProgressBar</h3>
+        <p>To change the previous step on your Progress bar you can add the CSS class suffix "check"</p>
+        <img src="doc/assets/check.png" class='big-img' alt="">
+        <img src="doc/assets/progress.png" class='big-img' alt="">
 
         <h3 id="button">Customize the button colors</h3>
         <p>The default CSS gives you the option to use four different color for the buttons :</p>
@@ -189,8 +195,8 @@
         <div class="code">
           <div class="codehilite">
             <p>
-              <span class="na">"</span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">\"#\"</span> <span class="na">onClick=</span><span class="s">\"javascript:edit(\'" + "[[item_id]]" + "\');\</span> <span class="na">class=</span><span class="s">\"customEdit\"</span>  <span class="na">style=</span><span class="s">\"cursor: pointer;\");\"</span><span class="nt">&lt;/a&gt;</span><br/>
-              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">\"#\"</span> <span class="na">onClick=</span><span class="s">\"javascript:remove(\'" + "[[item_id]]" + "\');\</span> <span class="na">class=</span><span class="s">\"customRemove\"</span>  <span class="na">style=</span><span class="s">\"cursor: pointer;\");\"</span><span class="nt">&lt;/a&gt;</span><span class="na">"</span>
+              <span class="na">"</span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">\"#\"</span> <span class="na">onClick=</span><span class="s">\"javascript:edit(\'" + "[[item_id]]" + "\');\</span> <span class="na">class=</span><span class="s">\"update\"</span>  <span class="na">style=</span><span class="s">\"cursor: pointer;\");\"</span><span class="nt">&lt;/a&gt;</span><br/>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">\"#\"</span> <span class="na">onClick=</span><span class="s">\"javascript:remove(\'" + "[[item_id]]" + "\');\</span> <span class="na">class=</span><span class="s">\"delete\"</span>  <span class="na">style=</span><span class="s">\"cursor: pointer;\");\"</span><span class="nt">&lt;/a&gt;</span><span class="na">"</span>
             </p>
           </div>
         </div>
@@ -209,11 +215,11 @@
         <p>Version: <%= version %></p>
 
         <!-- SUPPORT -->
-        <h3>Support</h3>
+        <!-- <h3>Support</h3>
         <ul>
           <li><a target="_blank" href="<%= homepage %>">Read the documentation</a></li>
           <li><a target="_blank" href="<%= bugs %>">Report an issue</a></li>
-        </ul>
+        </ul> -->
 
         <!-- CONTRIBUTORS -->
         <h3>Contributors</h3>
@@ -224,12 +230,12 @@
         </ul>
 
         <!-- ARCHIVES -->
-        <h3>Archives</h3>
+        <!-- <h3>Archives</h3>
         <ul>
           <% _.forEach(archives, function(archive) { %>
             <li><a href="dist/css/archive/<%- archive %>" download><%- archive %></a></li>
           <% }); %>
-        </ul>
+        </ul> -->
 
       </div>
     </div>

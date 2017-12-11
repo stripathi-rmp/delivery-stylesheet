@@ -98,14 +98,14 @@ td.datePickerDay.datePickerDayIsToday {
     background: $secondaryColor;
   }
 }
-
-.ArrayTree-Panel .ATHeader input:not(.arrayTreeFilterComponent),
-.ArrayTree-Panel .gwt-ListBox:not(.arrayTreeFilterComponent),
-.ArrayTree-Panel .gwt-PasswordTextBox,
-.ArrayTree-Panel .gwt-TextBox:not(.full-width):not(.arrayTreeFilterComponent),
-textarea {
-  width: 250px;
-}
+// 
+// .ArrayTree-Panel .ATHeader input:not(.arrayTreeFilterComponent),
+// .ArrayTree-Panel .gwt-ListBox:not(.arrayTreeFilterComponent),
+// .ArrayTree-Panel .gwt-PasswordTextBox,
+// .ArrayTree-Panel .gwt-TextBox:not(.full-width):not(.arrayTreeFilterComponent),
+// textarea {
+//   width: 250px;
+// }
 
 .ImageButton.browseFileStyle {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 22'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpath d='M25,6.27a3.37,3.37,0,0,0-2.47-1H12v-.5a3.37,3.37,0,0,0-1-2.47,3.37,3.37,0,0,0-2.47-1h-5A3.37,3.37,0,0,0,1,2.27,3.37,3.37,0,0,0,0,4.74v15a3.37,3.37,0,0,0,1,2.47,3.37,3.37,0,0,0,2.47,1h19a3.52,3.52,0,0,0,3.5-3.5v-11A3.37,3.37,0,0,0,25,6.27Z' transform='translate(0 -1.24)' fill='%23f0c105'/%3E%3C/svg%3E");

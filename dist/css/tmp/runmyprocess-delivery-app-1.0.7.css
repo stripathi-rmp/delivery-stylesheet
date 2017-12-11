@@ -48,6 +48,7 @@ CSS INDEX
 	3.5 Report
 	3.6 Upload
   3.7 Tooltip
+  3.8 Modal
 4. Structuring widgets
 	4.1 Section
 	4.2 Tab
@@ -137,6 +138,7 @@ sup,
 table,
 tbody,
 td,
+textarea,
 tfoot,
 th,
 thead,
@@ -573,6 +575,25 @@ _:-ms-fullscreen {
 .rmppgbstephidden {
   display: none; }
 
+.gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstepprevious .rmppgbstepnum::before {
+  content: "";
+  width: 8px !important;
+  height: 16px !important;
+  position: absolute;
+  z-index: 100;
+  margin-left: -4px;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 1px; }
+
+.gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstep1.rmppgbstepprevious .rmppgbstepnum::before {
+  margin-left: -4px; }
+
+.gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstepprevious .rmppgbstepnum {
+  color: darkgray; }
+
 /*
 ===========================================================
 	3. General widget
@@ -780,13 +801,6 @@ td.datePickerDay.datePickerDayIsToday {
 
 .gwt-DatePicker .datePickerDayIsValue {
   background: #f0c105; }
-
-.ArrayTree-Panel .ATHeader input:not(.arrayTreeFilterComponent),
-.ArrayTree-Panel .gwt-ListBox:not(.arrayTreeFilterComponent),
-.ArrayTree-Panel .gwt-PasswordTextBox,
-.ArrayTree-Panel .gwt-TextBox:not(.full-width):not(.arrayTreeFilterComponent),
-textarea {
-  width: 250px; }
 
 .ImageButton.browseFileStyle {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 22'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpath d='M25,6.27a3.37,3.37,0,0,0-2.47-1H12v-.5a3.37,3.37,0,0,0-1-2.47,3.37,3.37,0,0,0-2.47-1h-5A3.37,3.37,0,0,0,1,2.27,3.37,3.37,0,0,0,0,4.74v15a3.37,3.37,0,0,0,1,2.47,3.37,3.37,0,0,0,2.47,1h19a3.52,3.52,0,0,0,3.5-3.5v-11A3.37,3.37,0,0,0,25,6.27Z' transform='translate(0 -1.24)' fill='%23f0c105'/%3E%3C/svg%3E");
@@ -1326,19 +1340,28 @@ img[src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA6
   text-align: left;
   padding-left: 6px; }
 
-.Report a.customRemove {
+.Report a.delete {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 404.7 512'%3E%3Ctitle%3Erubbish-bin%3C/title%3E%3Cpath d='M423.45,60.29H355.08V15.86A15.88,15.88,0,0,0,338.93,0a2.4,2.4,0,0,0-1.73.58A2.2,2.2,0,0,0,336,0h-163a15.63,15.63,0,0,0-15.86,15.86V60.29H88.55a34.47,34.47,0,0,0-34.9,34.9V152.3H83.94V477.39c0,19.61,15,34.61,34.61,34.61h274.9c19.61,0,34.9-15,34.9-34.61V152.3h30V95.19A34.47,34.47,0,0,0,423.45,60.29ZM188.93,31.73H323.07V60.29H188.93Zm207.4,445.66c0,2-.87,2.88-2.88,2.88H118.55c-2,0-2.88-.86-2.88-2.88V152.3H396.33Zm30-356.81H85.67V95.19c0-2,.87-3.17,2.88-3.17h334.9c2,0,2.88,1.15,2.88,3.17v25.39Z' transform='translate(-53.65)' fill='%23cf0b2a'/%3E%3Crect x='260.47' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3Crect x='186.63' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3Crect x='112.78' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3C/svg%3E");
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0 5px; }
 
-.Report a.customEdit {
+.Report a.update {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3E2%3C/title%3E%3Cg id='Pencil'%3E%3Cpath d='M22.71,1.29a4.41,4.41,0,0,0-6.23,0L3.22,14.47a.74.74,0,0,0-.18.28L0,23a.75.75,0,0,0,.71,1A.74.74,0,0,0,1,24l7.46-2.29a.75.75,0,0,0,.31-.19l14-14a4.41,4.41,0,0,0,0-6.23ZM7.57,20.37l-2.79.86A3.2,3.2,0,0,0,4,20a4.05,4.05,0,0,0-1-.72l1.28-3.51H6v1.5a.75.75,0,0,0,.75.75H8.07Zm11-10.87L9.47,18.64l.26-1.24A.75.75,0,0,0,9,16.5H7.5V15a.75.75,0,0,0-.75-.75H5.57l8.92-8.87h0A2.91,2.91,0,1,1,18.61,9.5Zm3-3-.7.7a4.39,4.39,0,0,0-4.12-4.11l.7-.7h0a2.91,2.91,0,1,1,4.11,4.11Zm-4.93-.25-7.5,7.5a.75.75,0,1,0,1.06,1.06l7.5-7.5a.75.75,0,0,0-1.06-1.06Z' transform='translate(0)' fill='%232F779D'/%3E%3C/g%3E%3C/svg%3E");
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 5px; }
+
+a.create {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510'%3E%3Ctitle%3Eadd-button-inside-black-circle%3C/title%3E%3Cpath d='M255,0C114.75,0,0,114.75,0,255S114.75,510,255,510,510,395.25,510,255,395.25,0,255,0Zm47.07,302.07V438.62H207.93V302.07H71.38V207.93H207.93V71.38h94.14V207.93H438.62v94.14Z' fill='%23789c38'/%3E%3C/svg%3E");
+  height: 25px;
+  width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1373,7 +1396,6 @@ _:-ms-fullscreen, :root .FileUploadContainer .cellListWidget .fileDownloadButton
 .warning,
 .error {
   display: block;
-  width: 98%;
   padding: 8px 10px 8px 35px;
   margin: 10px 0; }
 
@@ -1412,6 +1434,90 @@ _:-ms-fullscreen, :root .FileUploadContainer .cellListWidget .fileDownloadButton
   background-size: auto 25px;
   background-repeat: no-repeat;
   background-position: 5px 5px; }
+
+/*
+	3.8 Modal
+----------------------------
+*/
+.gwt-DialogBox .Caption {
+  background: #f0c105;
+  color: #fff;
+  border-top: none; }
+
+html > body .gwt-DialogBox .dialogTopRight,
+html > body .gwt-DialogBox .dialogTopLeft,
+.gwt-DialogBox .dialogMiddleLeft,
+.gwt-DialogBox .dialogMiddleRight,
+html > body .gwt-DialogBox .dialogBottomCenter,
+html > body .gwt-DialogBox .dialogBottomLeft,
+html > body .gwt-DialogBox .dialogBottomRight,
+html > body .gwt-DialogBox .dialogMiddleRight {
+  background: none; }
+
+.gwt-DialogBox .dialogMiddleCenter {
+  background: #f7f7f7; }
+
+.ui-front {
+  z-index: 99999 !important; }
+
+.ui-dialog-titlebar {
+  border: none !important;
+  background: #2f779d !important;
+  padding: 15px 18px !important;
+  color: white !important;
+  font-size: 15px !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin-bottom: 10px !important;
+  padding-left: 18px !important;
+  text-transform: uppercase !important; }
+
+.ui-dialog-title {
+  font-size: 15px !important; }
+
+.ui-dialog-titlebar-close::before {
+  content: "" !important;
+  color: white !important;
+  font-size: 18px !important;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 438.53 438.53'%3E%3Ctitle%3Ecross-mark-on-a-black-circle-background%3C/title%3E%3Cpath d='M409.13,109.2a218.26,218.26,0,0,0-79.8-79.79Q278.95,0,219.27,0T109.21,29.41a218.26,218.26,0,0,0-79.8,79.79Q0,159.6,0,219.27T29.41,329.33a218.29,218.29,0,0,0,79.8,79.8q50.39,29.4,110.06,29.4t110.06-29.4a218.36,218.36,0,0,0,79.8-79.8q29.4-50.4,29.4-110.06T409.13,109.2ZM322.62,270.94a17.54,17.54,0,0,1,5.43,12.85,17.86,17.86,0,0,1-5.43,13.13l-25.69,25.7A17.93,17.93,0,0,1,283.79,328,17.57,17.57,0,0,1,271,322.62l-51.68-51.68-51.68,51.68A17.57,17.57,0,0,1,154.74,328a17.91,17.91,0,0,1-13.13-5.42l-25.7-25.7a17.89,17.89,0,0,1-5.42-13.13,17.59,17.59,0,0,1,5.42-12.85l51.68-51.67-51.68-51.68a17.57,17.57,0,0,1-5.42-12.85,17.89,17.89,0,0,1,5.42-13.13l25.7-25.7a17.91,17.91,0,0,1,13.13-5.42,17.57,17.57,0,0,1,12.85,5.42l51.68,51.68L271,115.91a17.55,17.55,0,0,1,12.84-5.42,17.93,17.93,0,0,1,13.14,5.42l25.69,25.7a17.86,17.86,0,0,1,5.43,13.13,17.54,17.54,0,0,1-5.43,12.85L271,219.27Z' fill='%23fff'/%3E%3C/svg%3E"); }
+
+.ui-dialog-titlebar-close {
+  border: none !important; }
+
+.ui-dialog .ui-dialog-content {
+  padding: 0.5em 0.5em !important; }
+
+.ui-dialog.ui-widget-content {
+  border: none !important;
+  background: #FFFFFF !important;
+  border-radius: 0 !important;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: auto !important;
+  min-width: 450px !important; }
+
+.ui-dialog-buttonpane {
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  padding: 0.3em 1em 0.5em 1.2em !important; }
+
+.ui-dialog-titlebar-close {
+  background: initial !important; }
+
+.ui-dialog-titlebar-close {
+  top: 45% !important; }
+
+.ui-dialog {
+  padding: 0px !important; }
+
+.ui-state-default .ui-icon {
+  background-image: none !important; }
 
 /*
 ===========================================================

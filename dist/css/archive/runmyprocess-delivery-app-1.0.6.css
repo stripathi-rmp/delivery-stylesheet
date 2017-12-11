@@ -138,6 +138,7 @@ sup,
 table,
 tbody,
 td,
+textarea,
 tfoot,
 th,
 thead,
@@ -906,14 +907,6 @@ td.datePickerDay.datePickerDayIsToday {
   background: #f0c105;
 }
 
-.ArrayTree-Panel .ATHeader input:not(.arrayTreeFilterComponent),
-.ArrayTree-Panel .gwt-ListBox:not(.arrayTreeFilterComponent),
-.ArrayTree-Panel .gwt-PasswordTextBox,
-.ArrayTree-Panel .gwt-TextBox:not(.full-width):not(.arrayTreeFilterComponent),
-textarea {
-  width: 250px;
-}
-
 .ImageButton.browseFileStyle {
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 22'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpath d='M25, 6.27a3.37, 3.37, 0, 0, 0-2.47-1H12v-.5a3.37, 3.37, 0, 0, 0-1-2.47, 3.37, 3.37, 0, 0, 0-2.47-1h-5A3.37, 3.37, 0, 0, 0, 1, 2.27, 3.37, 3.37, 0, 0, 0, 0, 4.74v15a3.37, 3.37, 0, 0, 0, 1, 2.47, 3.37, 3.37, 0, 0, 0, 2.47, 1h19a3.52, 3.52, 0, 0, 0, 3.5-3.5v-11A3.37, 3.37, 0, 0, 0, 25, 6.27Z' transform='translate(0 -1.24)' fill='%23f0c105'/%3E%3C/svg%3E");
   -o-object-position: -99999px 99999px;
@@ -1542,20 +1535,30 @@ img[src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA6
   padding-left: 6px;
 }
 
-.Report a.customRemove {
+.Report a.delete {
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 404.7 512'%3E%3Ctitle%3Erubbish-bin%3C/title%3E%3Cpath d='M423.45, 60.29H355.08V15.86A15.88, 15.88, 0, 0, 0, 338.93, 0a2.4, 2.4, 0, 0, 0-1.73.58A2.2, 2.2, 0, 0, 0, 336, 0h-163a15.63, 15.63, 0, 0, 0-15.86, 15.86V60.29H88.55a34.47, 34.47, 0, 0, 0-34.9, 34.9V152.3H83.94V477.39c0, 19.61, 15, 34.61, 34.61, 34.61h274.9c19.61, 0, 34.9-15, 34.9-34.61V152.3h30V95.19A34.47, 34.47, 0, 0, 0, 423.45, 60.29ZM188.93, 31.73H323.07V60.29H188.93Zm207.4, 445.66c0, 2-.87, 2.88-2.88, 2.88H118.55c-2, 0-2.88-.86-2.88-2.88V152.3H396.33Zm30-356.81H85.67V95.19c0-2, 0.87-3.17, 2.88-3.17h334.9c2, 0, 2.88, 1.15, 2.88, 3.17v25.39Z' transform='translate(-53.65)' fill='%23cf0b2a'/%3E%3Crect x='260.47' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3Crect x='186.63' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3Crect x='112.78' y='189.52' width='32.02' height='262.49' fill='%23cf0b2a'/%3E%3C/svg%3E");
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0 5px;
 }
 
-.Report a.customEdit {
+.Report a.update {
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3E2%3C/title%3E%3Cg id='Pencil'%3E%3Cpath d='M22.71, 1.29a4.41, 4.41, 0, 0, 0-6.23, 0L3.22, 14.47a.74.74, 0, 0, 0-.18.28L0, 23a.75.75, 0, 0, 0, 0.71, 1A.74.74, 0, 0, 0, 1, 24l7.46-2.29a.75.75, 0, 0, 0, 0.31-.19l14-14a4.41, 4.41, 0, 0, 0, 0-6.23ZM7.57, 20.37l-2.79.86A3.2, 3.2, 0, 0, 0, 4, 20a4.05, 4.05, 0, 0, 0-1-.72l1.28-3.51H6v1.5a.75.75, 0, 0, 0, 0.75.75H8.07Zm11-10.87L9.47, 18.64l.26-1.24A.75.75, 0, 0, 0, 9, 16.5H7.5V15a.75.75, 0, 0, 0-.75-.75H5.57l8.92-8.87h0A2.91, 2.91, 0, 1, 1, 18.61, 9.5Zm3-3-.7.7a4.39, 4.39, 0, 0, 0-4.12-4.11l.7-.7h0a2.91, 2.91, 0, 1, 1, 4.11, 4.11Zm-4.93-.25-7.5, 7.5a.75.75, 0, 1, 0, 1.06, 1.06l7.5-7.5a.75.75, 0, 0, 0-1.06-1.06Z' transform='translate(0)' fill='%232F779D'/%3E%3C/g%3E%3C/svg%3E");
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 5px;
+}
+
+a.create {
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510'%3E%3Ctitle%3Eadd-button-inside-black-circle%3C/title%3E%3Cpath d='M255, 0C114.75, 0, 0, 114.75, 0, 255S114.75, 510, 255, 510, 510, 395.25, 510, 255, 395.25, 0, 255, 0Zm47.07, 302.07V438.62H207.93V302.07H71.38V207.93H207.93V71.38h94.14V207.93H438.62v94.14Z' fill='%23789c38'/%3E%3C/svg%3E");
+  height: 25px;
+  width: 25px;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;

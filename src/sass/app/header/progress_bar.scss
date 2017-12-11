@@ -91,3 +91,24 @@ _:-ms-fullscreen {
 .rmppgbstephidden {
   display: none;
 }
+
+.gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstepprevious .rmppgbstepnum::before {
+  content: "";
+  width: 8px !important;
+  height: 16px !important;
+  position: absolute;
+  z-index: 100;
+  margin-left: -4px;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  transform: rotate(45deg);
+  margin-top: 1px;
+}
+
+.gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstep1.rmppgbstepprevious .rmppgbstepnum::before {
+  margin-left: -4px;
+}
+
+.gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstepprevious .rmppgbstepnum {
+  color: darkgray;
+}
