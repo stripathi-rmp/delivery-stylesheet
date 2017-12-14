@@ -51,6 +51,7 @@ CSS INDEX
 	3.6 Upload
   3.7 Tooltip
   3.8 Modal
+  3.9 Table in HTML widget
 4. Structuring widgets
 	4.1 Section
 	4.2 Tab
@@ -148,6 +149,12 @@ CSS INDEX
 ----------------------------
 */
 @import "input_widget/modal";
+
+/*
+	3.9 Table in HTML widget
+----------------------------
+*/
+@import "input_widget/html";
 
 /*
 ===========================================================

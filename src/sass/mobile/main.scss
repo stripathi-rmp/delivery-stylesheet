@@ -15,7 +15,11 @@ CSS INDEX
 	3.1 Button
 	3.2 Report
   3.3 Tooltip
-
+  3.4 Modal
+4. Structuring widgets
+  4.1 section
+  4.2 tab
+  4.3 array
 -----------------------------------------------------------------------------------
 */
 
@@ -62,6 +66,12 @@ CSS INDEX
 ----------------------------
 */
 @import "input_widget/tooltip";
+
+/*
+	3.4 Modal
+----------------------------
+*/
+@import "input_widget/modal";
 
 /*
 ===========================================================
