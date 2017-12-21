@@ -109,7 +109,7 @@ gulp.task('lint-css', function () {
 
 // CSS MINIFICATION
 gulp.task('minify', function () {
-  return gulp.src('dist/css/*.css')
+  return gulp.src('dist/css/tmp/*.css')
     .pipe(cssnano())
     .pipe(rename(function (path) {
       path.basename += '.min'
