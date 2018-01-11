@@ -129,7 +129,8 @@ gulp.task('doc', () =>
   gulp.src('src/doc.html')
     .pipe(template({
       description: packageJSON.description,
-      version: packageJSON.version,
+      versionApp: packageJSON.versionApp,
+      versionHomepage: packageJSON.versionHomepage,
       contributors: packageJSON.contributors,
       homepage: packageJSON.homepage,
       bugs: packageJSON.bugs,
