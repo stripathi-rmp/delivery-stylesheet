@@ -37,6 +37,9 @@
       margin-top: 20px;
     }
 
+    h4{
+      color:#f0c105;
+    }
     .code,
     .code .codehilite  {
       display: flex;
@@ -83,8 +86,9 @@
         <!-- MAIN COLUMN -->
         <h2>Download</h2>
 
+        <h3>Desktop version</h3>
         <!-- DOWNLOAD OPTIMIZED -->
-        <h3>Optimized Stylesheet</h3>
+        <h4>Optimized Stylesheet (minified)</h4>
         <p>
           <a class="button" href="dist/css/<%- prefix %>-app-<%- versionApp %>.min.css" download>Application</a>
           <a class="button" href="dist/css/<%- prefix %>-home-<%- versionHomepage %>.min.css" download>Homepage</a>
@@ -92,11 +96,14 @@
         </p>
 
         <!-- DOWNLOAD CUSTOMIZABLE -->
-        <h3>Customizable Stylesheet</h3>
+        <h4>Customizable Stylesheet</h4>
         <p>
           <a class="button button-outline" href="dist/css/<%- prefix %>-app-<%- versionApp %>.css" download>Application</a>
           <a class="button button-outline" href="dist/css/<%- prefix %>-home-<%- versionHomepage %>.css" download>Homepage</a>
         </p>
+
+        <h3>Mobile & Tablet version</h3>
+        <p>Coming soon!</p>
 
         <!-- DOCUMENTATION -->
         <h2>Documentation</h2>
@@ -111,13 +118,13 @@
         <a href="#tooltip">Information messages</a><br>
         <a href="#editReport">Edit and Remove icons (BackOffice)</a><br>
 
-        <h3>Import the desktop Stylesheet</h3>
-        <p>Then you shall import the Stylesheet into your RunMyProcess project:</p>
+        <h3>Import the Stylesheet (Desktop versions)</h3>
+        <p>To use the avaivalable stylesheets for desktop:</p>
         <ol>
           <li>Launch the RunMyProcess IDE</li>
           <li>Open your project's Web Interface</li>
           <li>Click on the Stylesheet tab</li>
-          <li>Replace the main Stylesheet</li>
+          <li>Replace the <b>main Stylesheet</b></li>
           <li>Select the Custom radio button in the popup windows</li>
           <li>Click on the Upload button </li>
           <li>Select the file from your local directory </li>
@@ -125,23 +132,6 @@
           <li>Click on the Validate button</li>
           <li>You're done </li>
         </ol>
-
-        <h3>Import the mobile Stylesheet</h3>
-        <p>Then you shall import the Stylesheet into your RunMyProcess project:</p>
-        <ol>
-          <li>Launch the RunMyProcess IDE</li>
-          <li>Open your project's Web Interface</li>
-          <li>Click on the Stylesheet tab</li>
-          <li>Create a new Stylesheet</li>
-          <li>Select the Custom radio button in the popup windows</li>
-          <li>Click on the Upload button </li>
-          <li>Select the file from your local directory </li>
-          <li>Select the uploaded file in the list</li>
-          <li>Click on the Validate button</li>
-          <li>Add in media the parameter "handheld"</li>
-          <li>You're done </li>
-        </ol>
-
 
         <h3 id="color">Customize the colors</h3>
         <ul>
