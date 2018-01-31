@@ -28,3 +28,38 @@
   background: $secondaryColor !important;
 }
 
+.ATHeader>tbody>tr.array-slider, tr.array-slider {
+    padding: 2.75rem 0 !important;
+}
+
+.array-slider {
+    background-color: #fff !important;
+}
+
+tr {
+    &.array-slider {
+        &.in {
+            background-color: #fff !important;
+        }
+    }
+}
+
+.array-slider>td:before {
+    font-size: 1rem;
+    color:#fff;
+    background-color: #f0c105;
+    padding: .5rem;
+}
+
+.array-slider>td:not(.hide) {
+    border-top: none !important;
+}
+
+tr.array-slider>td>div {
+    padding-left: .5rem;
+    margin: 1rem 0 !important;
+}
+
+.gwt-TreeItem td {
+    border-bottom: none !important;
+}

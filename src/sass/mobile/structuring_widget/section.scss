@@ -1,8 +1,8 @@
 .gwt-DisclosurePanel {
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   background: transparent;
   margin-bottom: 0.8em;
-  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16);
 
   a.header {
     background: $PrimaryColor !important;
@@ -61,4 +61,14 @@ img.sectionButton {
 
 td.colStyle {
   padding: 0 10px;
+}
+
+.gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr >.colStyle {
+    flex: 1 1 100% !important;
+}
+
+@media screen and (min-width:1024px) {
+    .gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr >.colStyle {
+        margin: 0 0.5rem;
+    }
 }

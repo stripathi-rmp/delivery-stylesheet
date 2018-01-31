@@ -54,3 +54,11 @@ button[disabled]:hover {
   background: #dcdcdc !important;
   border: none;
 }
+
+@media screen and (max-width: 590px) {
+    .gwt-Button, .gwt-PushButton, button {
+        margin: .25rem auto;
+        font-weight: bold;
+        width: 50%;
+    }
+}

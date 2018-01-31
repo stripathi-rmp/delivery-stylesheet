@@ -169,8 +169,30 @@ table.rowStyle {
   -webkit-flex: 0 0 auto;
 }
 
+.colStyle > table > tbody > tr {
+  background: transparent !important;
+}
+
 .required::after {
   padding: 0 0.15rem;
+}
+
+input[disabled] + label {
+  color: #bdbdbd !important;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 591px) {
+  .colStyle > table > tbody > tr > td {
+    -webkit-box-flex: 1 !important;
+    flex: 1 1 100% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .rmpCaptcha > tbody > tr > td:nth-child(2) {
+    -webkit-box-flex: 0 !important;
+    flex: 0 0 60px !important;
+  }
 }
 
 /*
@@ -315,6 +337,16 @@ button[disabled]:hover {
   color: #c1c1c1 !important;
   background: #dcdcdc !important;
   border: none;
+}
+
+@media screen and (max-width: 590px) {
+  .gwt-Button,
+  .gwt-PushButton,
+  button {
+    margin: 0.25rem auto;
+    font-weight: bold;
+    width: 50%;
+  }
 }
 
 /*
@@ -561,10 +593,10 @@ html > body .gwt-DialogBox .dialogMiddleRight {
 ----------------------------
 */
 .gwt-DisclosurePanel {
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   background: transparent;
   margin-bottom: 0.8em;
-  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.16);
 }
 
 .gwt-DisclosurePanel a.header {
@@ -625,6 +657,17 @@ td.colStyle {
   padding: 0 10px;
 }
 
+.gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr > .colStyle {
+  -webkit-box-flex: 1 !important;
+  flex: 1 1 100% !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr > .colStyle {
+    margin: 0 0.5rem;
+  }
+}
+
 /*
 	4.1 Tab
 ----------------------------
@@ -652,6 +695,12 @@ td.colStyle {
   top: 7px;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 244.74 315.37'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpolygon points='122.37 0 0 95.87 31.5 127.37 122.37 49.5 213.24 127.37 244.74 95.87 122.37 0' fill='%23f0c105'/%3E%3Cpolygon points='122.37 315.37 244.74 219.5 213.24 188 122.37 265.87 31.5 188 0 219.5 122.37 315.37' fill='%23f0c105'/%3E%3C/svg%3E");
+}
+
+@media screen and (min-width: 1024px) {
+  .gwt-TabBarItem::before {
+    display: none;
+  }
 }
 
 /*
@@ -688,4 +737,37 @@ td.colStyle {
 .array-footer > td,
 .array-header {
   background: #f0c105 !important;
+}
+
+.ATHeader > tbody > tr.array-slider,
+tr.array-slider {
+  padding: 2.75rem 0 !important;
+}
+
+.array-slider {
+  background-color: #fff !important;
+}
+
+tr.array-slider.in {
+  background-color: #fff !important;
+}
+
+.array-slider > td:before {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #f0c105;
+  padding: 0.5rem;
+}
+
+.array-slider > td:not(.hide) {
+  border-top: none !important;
+}
+
+tr.array-slider > td > div {
+  padding-left: 0.5rem;
+  margin: 1rem 0 !important;
+}
+
+.gwt-TreeItem td {
+  border-bottom: none !important;
 }
