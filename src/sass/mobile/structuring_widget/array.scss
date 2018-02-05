@@ -44,7 +44,7 @@ tr {
     }
 }
 
-.array-slider>td:before {
+.array-slider>td[class*="ArrayTreeColumn"]::before {
     font-size: 1rem;
     color:#fff;
     background-color: #f0c105;
