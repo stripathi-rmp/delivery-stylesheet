@@ -67,6 +67,10 @@ td.colStyle {
     flex: 1 1 100% !important;
 }
 
+.gwt-DisclosurePanel, .gwt-TabPanel {
+    background-color: #f5f3f3;
+}
+
 @media screen and (min-width:1024px) {
     .gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr >.colStyle {
         margin: 0 0.5rem;
