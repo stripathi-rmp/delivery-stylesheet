@@ -169,7 +169,7 @@ table.rowStyle {
   -webkit-flex: 0 0 auto;
 }
 
-.colStyle > table > tbody > tr {
+.colStyle > table > tbody > tr:not(.array-list) {
   background: transparent !important;
 }
 
@@ -440,6 +440,12 @@ img[src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA6
   padding: 0 5px;
 }
 
+.reportBarStyle,
+.pagerStyle,
+.Report .childPanel .Buttons {
+  background: #f7f7f7 !important;
+}
+
 /*
 	3.3 Tooltip
 ----------------------------
@@ -676,12 +682,21 @@ td.colStyle {
 
 .gwt-DisclosurePanel,
 .gwt-TabPanel {
-  background-color: #f5f3f3;
+  background-color: #f7f7f7;
+}
+
+.gwt-DisclosurePanel .content .gwt-TabPanel > tbody > tr:nth-child(2) {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  width: 99% !important;
 }
 
 @media screen and (min-width: 1024px) {
   .gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr > .colStyle {
     margin: 0 0.5rem;
+  }
+
+  .gwt-DisclosurePanel .content .gwt-TabBar {
+    background: #fff !important;
   }
 }
 
@@ -729,8 +744,12 @@ td.colStyle {
   }
 
   .gwt-TabBar {
-    background: #f5f3f3 !important;
+    background: #fff !important;
   }
+}
+
+.gwt-TabPanel > tbody > tr:first-child {
+  border-bottom: none;
 }
 
 /*
@@ -755,8 +774,9 @@ td.colStyle {
 
 .ColumnHeader:not(.ColumnFilter),
 .array-column-footer,
-.array-header td {
-  background: #f0c105;
+.array-header td,
+.array-header .array-td-buttons {
+  background: #f0c105 !important;
   color: #fff;
 }
 
@@ -769,6 +789,25 @@ td.colStyle {
   background: #f0c105 !important;
 }
 
+.array-footer {
+  border-bottom: solid 1px #ddd;
+}
+
+.array-header {
+  border-top: #f0c105 !important;
+}
+
+.array-column-footer {
+  min-height: 27.5px;
+}
+
+.array-list {
+  background: #f7f7f7 !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
 .ATHeader > tbody > tr.array-slider,
 tr.array-slider {
   padding: 2.75rem 0 !important;
@@ -778,11 +817,18 @@ tr.array-slider {
   background-color: #fff !important;
 }
 
+.array-slider .rmpInput,
+.array-slider .rmpList,
+.array-slider .rmpFileUpload {
+  padding: 0.5rem;
+}
+
 tr.array-slider.in {
   background-color: #fff !important;
 }
 
-.array-slider > td[class*="ArrayTreeColumn"]::before {
+.array-slider > td[class*="ArrayTreeColumn"]::before,
+.array-slider > td[class*="array-column"]::before {
   font-size: 1rem;
   color: #fff;
   background-color: #f0c105;
@@ -800,4 +846,10 @@ tr.array-slider > td > div {
 
 .gwt-TreeItem td {
   border-bottom: none !important;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 591px) {
+  .array-header .array-td-buttons ~ td {
+    display: block !important;
+  }
 }

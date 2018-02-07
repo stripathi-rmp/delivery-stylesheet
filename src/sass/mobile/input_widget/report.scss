@@ -68,3 +68,8 @@ img[src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAA6
   background-size: contain;
   padding: 0 5px;
 }
+
+.reportBarStyle, .pagerStyle,
+.Report .childPanel .Buttons{
+  background:#f7f7f7 !important;
+}

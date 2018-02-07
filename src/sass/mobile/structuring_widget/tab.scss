@@ -37,6 +37,10 @@
     }
 
     .gwt-TabBar {
-        background: #f5f3f3 !important;
+        background: #FFFFFF !important;
     }
+}
+
+.gwt-TabPanel>tbody>tr:first-child{
+  border-bottom:none;
 }

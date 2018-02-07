@@ -68,11 +68,21 @@ td.colStyle {
 }
 
 .gwt-DisclosurePanel, .gwt-TabPanel {
-    background-color: #f5f3f3;
+    background-color: #f7f7f7;
 }
+
+.gwt-DisclosurePanel .content .gwt-TabPanel>tbody>tr:nth-child(2){
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  width:99% !important;
+}
+
 
 @media screen and (min-width:1024px) {
     .gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr >.colStyle {
         margin: 0 0.5rem;
+    }
+
+    .gwt-DisclosurePanel .content .gwt-TabBar {
+        background: transparent !important;
     }
 }

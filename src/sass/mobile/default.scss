@@ -136,7 +136,7 @@ table.rowStyle {
   -webkit-flex: 0 0 auto;
 }
 
-.colStyle>table>tbody>tr {
+.colStyle>table>tbody>tr:not(.array-list) {
     background: transparent !important;
 }
 

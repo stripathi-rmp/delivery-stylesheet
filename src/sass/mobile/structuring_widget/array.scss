@@ -14,8 +14,9 @@
 
 .ColumnHeader:not(.ColumnFilter),
 .array-column-footer,
-.array-header td {
-  background: $secondaryColor;
+.array-header td,
+.array-header .array-td-buttons{
+  background: $secondaryColor !important;
   color: #fff;
 }
 
@@ -28,12 +29,39 @@
   background: $secondaryColor !important;
 }
 
+.array-footer{
+  border-bottom: solid 1px #DDD;
+}
+
+.array-header{
+  border-top: $secondaryColor !important;
+}
+
+.array-column-footer{
+  min-height:27.5px
+}
+
+.array-list{
+  background:#f7f7f7 !important;
+  border-left:1px solid rgba(0, 0, 0, 0.12);
+  border-right:1px solid rgba(0, 0, 0, 0.12);
+  border-bottom:1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.array-list .array-td-buttons{
+  background:transparent !important;
+}
+
 .ATHeader>tbody>tr.array-slider, tr.array-slider {
     padding: 2.75rem 0 !important;
 }
 
 .array-slider {
     background-color: #fff !important;
+
+    .rmpInput,.rmpList,.rmpFileUpload{
+      padding: 0.5rem;
+    }
 }
 
 tr {
@@ -44,10 +72,11 @@ tr {
     }
 }
 
-.array-slider>td[class*="ArrayTreeColumn"]::before {
+.array-slider>td[class*="ArrayTreeColumn"]::before,
+.array-slider>td[class*="array-column"]::before{
     font-size: 1rem;
     color:#fff;
-    background-color: #f0c105;
+    background-color: $secondaryColor;
     padding: .5rem;
 }
 
@@ -62,4 +91,10 @@ tr.array-slider>td>div {
 
 .gwt-TreeItem td {
     border-bottom: none !important;
+}
+
+@media only screen and (max-width:960px) and (min-width:591px){
+  .array-header .array-td-buttons ~ td{
+    display:block !important;
+  }
 }
