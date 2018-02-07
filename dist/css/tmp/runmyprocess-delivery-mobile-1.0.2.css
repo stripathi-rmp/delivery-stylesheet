@@ -595,7 +595,7 @@ td.colStyle {
   .gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr > .colStyle {
     margin: 0 0.5rem; }
   .gwt-DisclosurePanel .content .gwt-TabBar {
-    background: #FFFFFF !important; } }
+    background: transparent !important; } }
 
 /*
 	4.1 Tab
@@ -682,6 +682,9 @@ td.colStyle {
   border-left: 1px solid rgba(0, 0, 0, 0.12);
   border-right: 1px solid rgba(0, 0, 0, 0.12);
   border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important; }
+
+.array-list .array-td-buttons {
+  background: transparent !important; }
 
 .ATHeader > tbody > tr.array-slider, tr.array-slider {
   padding: 2.75rem 0 !important; }

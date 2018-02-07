@@ -696,7 +696,7 @@ td.colStyle {
   }
 
   .gwt-DisclosurePanel .content .gwt-TabBar {
-    background: #fff !important;
+    background: transparent !important;
   }
 }
 
@@ -806,6 +806,10 @@ td.colStyle {
   border-left: 1px solid rgba(0, 0, 0, 0.12);
   border-right: 1px solid rgba(0, 0, 0, 0.12);
   border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.array-list .array-td-buttons {
+  background: transparent !important;
 }
 
 .ATHeader > tbody > tr.array-slider,
