@@ -74,45 +74,92 @@
     <div class="row">
       <div class="column">
         <h1>Delivery Stylesheet</h1>
-        <hr/>
       </div>
     </div>
-
     <div class="row">
-
-      <!-- BODY -->
-      <div class="column column-67">
-
-        <!-- MAIN COLUMN -->
+      <div class="column">
         <h2>Download</h2>
-
+      </div>
+    </div>
+    <div class="row">
+      <!-- BODY -->
+      <div class="column column-50">
         <h3>Desktop version</h3>
-        <!-- DOWNLOAD OPTIMIZED -->
-        <h4>Optimized Stylesheet (minified)</h4>
-        <p>
-          <a class="button" href="dist/css/<%- prefix %>-app-<%- versionApp %>.min.css" download>Application</a>
-          <a class="button" href="dist/css/<%- prefix %>-home-<%- versionHomepage %>.min.css" download>Homepage</a>
-
-        </p>
-
         <!-- DOWNLOAD CUSTOMIZABLE -->
         <h4>Customizable Stylesheet</h4>
         <p>
-          <a class="button button-outline" href="dist/css/<%- prefix %>-app-<%- versionApp %>.css" download>Application</a>
-          <a class="button button-outline" href="dist/css/<%- prefix %>-home-<%- versionHomepage %>.css" download>Homepage</a>
+          <a class="button" href="dist/css/<%- prefix %>-app-<%- versionApp %>.css" download>Application</a>
+          <a class="button" href="dist/css/<%- prefix %>-home-<%- versionHomepage %>.css" download>Homepage</a>
         </p>
 
-        <h3>Mobile & Tablet version</h3>
+        <!-- DOWNLOAD OPTIMIZED -->
         <h4>Optimized Stylesheet (minified)</h4>
         <p>
-          <a class="button" href="dist/css/<%- prefix %>-mobile-<%- versionApp %>.min.css" download>Application</a>
-        </p>
+          <a class="button button-outline" href="dist/css/<%- prefix %>-app-<%- versionApp %>.min.css" download>Application</a>
+          <a class="button button-outline" href="dist/css/<%- prefix %>-home-<%- versionHomepage %>.min.css" download>Homepage</a>
 
+        </p>
+      </div>
+      <div class="column column-50">
+        <h3>Mobile & Tablet version</h3>
         <h4>Customizable Stylesheet</h4>
         <p>
-          <a class="button button-outline" href="dist/css/<%- prefix %>-mobile-<%- versionApp %>.css" download>Application</a>
+          <a class="button" href="dist/css/<%- prefix %>-mobile-<%- versionMobile %>.css" download>Application</a>
         </p>
+        <h4>Optimized Stylesheet (minified)</h4>
+        <p>
+          <a class="button button-outline" href="dist/css/<%- prefix %>-mobile-<%- versionMobile %>.min.css" download>Application</a>
+        </p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h2>Installation</h2>
+    </div>
+  </div>
+<div class="row">
+  <div class="column column-50">
+    <h3>Import the Stylesheet (Desktop)</h3>
+    <p>To use the avaivalable stylesheets for desktop:</p>
+    <ol>
+      <li>Launch the RunMyProcess IDE</li>
+      <li>Open your project's Web Interface</li>
+      <li>Click on the Stylesheet tab</li>
+      <li>Replace the <b>main Stylesheet</b></li>
+      <li>Select the Custom radio button in the popup windows</li>
+      <li>Click on the Upload button </li>
+      <li>Select the file from your local directory </li>
+      <li>Select the uploaded file in the list</li>
+      <li>Click on the Validate button</li>
+      <li>You're done </li>
+    </ol>
+  </div>
 
+  <div class="column column-50">
+    <h3>Import the Stylesheet (Mobile & Tablet)</h3>
+    <p>To use the avaivalable stylesheets for mobile & tablet:</p>
+    <ol>
+      <li>Launch the RunMyProcess IDE</li>
+      <li>Open your project's Web Interface</li>
+      <li>Click on the Stylesheet tab</li>
+      <li>Click on the <i>Add custom stylesheet</i> button</li>
+      <li>Select the Custom radio button in the popup windows</li>
+      <li>Click on the Upload button </li>
+      <li>Select the file from your local directory </li>
+      <li>Select the uploaded file in the list</li>
+      <li>Click on the Validate button</li>
+      <li>Add <i>handheld</i> in the Media column for this stylesheet</li>
+      <li>You're done </li>
+    </ol>
+  </div>
+</div>
+<div class="row">          <!-- BODY -->
+  <div class="column">
+    <img src="doc/assets/install_stylesheet.png" alt="" class='big-img'>
+  </div>
+</div>
+<div class="row">          <!-- BODY -->
+  <div class="column column-67">
         <!-- DOCUMENTATION -->
         <h2>Documentation</h2>
 
@@ -125,37 +172,6 @@
         <a href="#switch">Switch</a><br>
         <a href="#tooltip">Information messages</a><br>
         <a href="#editReport">Edit and Remove icons (BackOffice)</a><br>
-
-        <h3>Import the Stylesheet (Desktop versions)</h3>
-        <p>To use the avaivalable stylesheets for desktop:</p>
-        <ol>
-          <li>Launch the RunMyProcess IDE</li>
-          <li>Open your project's Web Interface</li>
-          <li>Click on the Stylesheet tab</li>
-          <li>Replace the <b>main Stylesheet</b></li>
-          <li>Select the Custom radio button in the popup windows</li>
-          <li>Click on the Upload button </li>
-          <li>Select the file from your local directory </li>
-          <li>Select the uploaded file in the list</li>
-          <li>Click on the Validate button</li>
-          <li>You're done </li>
-        </ol>
-
-        <h3>Import the Stylesheet (Mobile & Tablet versions)</h3>
-        <p>To use the avaivalable stylesheets for mobile & tablet:</p>
-        <ol>
-          <li>Launch the RunMyProcess IDE</li>
-          <li>Open your project's Web Interface</li>
-          <li>Click on the Stylesheet tab</li>
-          <li>Click on the <i>Add custom stylesheet</i> button</li>
-          <li>Select the Custom radio button in the popup windows</li>
-          <li>Click on the Upload button </li>
-          <li>Select the file from your local directory </li>
-          <li>Select the uploaded file in the list</li>
-          <li>Click on the Validate button</li>
-          <li>Add <i>handheld</i> in the Media column for this stylesheet</li>
-          <li>You're done </li>
-        </ol>
 
         <h3 id="color">Customize the colors</h3>
         <ul>
@@ -234,18 +250,25 @@
         <p>Result :</p>
         <img src="doc/assets/ico.png" alt="" class='big-img'>
       </div>
-
-      <!-- SIDE COLUMN -->
+    </div>
+    <div class="row">
       <div class="column">
-
         <h2>About</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column column-50">
 
         <!-- PRESENTATION -->
         <h3>Presentation</h3>
         <p><%= description %></p>
-        <p>Version Application: <%= versionApp %></p>
-        <p>Version HomePage: <%= versionHomepage %></p>
-
+        <ul>
+          <li>>Version Application (Desktop): <%= versionApp %></li>
+          <li>Version Application (Mobile & Tablet): <%= versionMobile %></li>
+          <li>Version HomePage: <%= versionHomepage %></li>
+        </ul>
+      </div>
+      <div class="column column-50">
         <!-- SUPPORT -->
         <!-- <h3>Support</h3>
         <ul>
@@ -268,10 +291,8 @@
             <li><a href="dist/css/archive/<%- archive %>" download><%- archive %></a></li>
           <% }); %>
         </ul> -->
-
       </div>
     </div>
-
     <!-- FOOTER -->
     <div class="row">
       <div class="column">

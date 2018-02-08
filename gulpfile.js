@@ -131,6 +131,7 @@ gulp.task('doc', () =>
       description: packageJSON.description,
       versionApp: packageJSON.versionApp,
       versionHomepage: packageJSON.versionHomepage,
+      versionMobile: packageJSON.versionMobile,
       contributors: packageJSON.contributors,
       homepage: packageJSON.homepage,
       bugs: packageJSON.bugs,

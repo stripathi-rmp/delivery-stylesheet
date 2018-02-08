@@ -1,37 +1,236 @@
-.rmppgbstepsubname,
-.rmppgbstep {
-  display: none;
+@media screen and (max-width: 1023px) {
+  .rmppgbstepsubname,
+  .rmppgbstep {
+    display: none;
+  }
+
+  .rmppgbstepcurrent {
+    display: block !important;
+    background: #1c1c1b;
+  }
+
+  .rmppgbstep {
+    -webkit-box-flex: 100%;
+    flex: 100% 0 1;
+  }
+
+  .rmppgbstep:before{
+      border:none;
+  }
+
+  .rmppgbsteps .rmppgbstepnum,
+  .rmppgbsteps .rmppgbsteplastnum {
+    padding: 0.6rem 0 0.6rem 0.5rem;
+    width: 30px;
+    background-color: #f0c105;
+  }
+
+  .rmppgbstep::after {
+    right: auto;
+    left: 37px;
+    border-left: 20px solid #f0c105 !important;
+  }
+
+  .rmppgbstepname {
+    top: 9px;
+    left: 37px;
+    font-size: 15px;
+    max-width: 275px;
+    padding-right: 5px;
+  }
+
+  .rmppgbstep::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -20px;
+    top: -1px;
+    z-index: 1;
+    border-bottom: 22px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #e3e3e3;
+    font-size: 0;
+  }
 }
 
-.rmppgbstepcurrent {
-  display: block !important;
-  background: $PrimaryColor;
+@media screen and (min-width: 1024px) {
+
+  .rmppgbstep {
+      -webkit-flex: unset;
+      flex: unset;
+      text-align: unset;
+      background: none;
+      color: #666;
+      width: 100px;
+  }
+
+  .rmppgbstepcurrent {
+      background: unset;
+  }
+
+  .rmppgbstepname {
+      text-align: center !important;
+      position: initial !important;
+  	padding: 0 !important;
+      top: initial;
+      width: 100%;
+      white-space: initial;
+  }
+
+
+  .rmppgbstep:before{
+  	width:unset !important;
+  	height:unset !important;
+  }
+
+  .rmppgbstep:after, .rmppgbstepcurrent:after{
+  	border-top: none !important;
+      border-left: none !important;
+  }
+
+  .rmppgbsteps .rmppgbstepnum, .rmppgbsteps .rmppgbsteplastnum{
+  	padding:0 2px !important;
+  	text-align:center;
+  	border: 3px solid gray;
+  	border-radius:50%;
+  }
+
+  .rmppgbsteps .rmppgbstepprevious .rmppgbstepnum, .rmppgbsteps .rmppgbstepprevious .rmppgbsteplastnum{
+      background-color: darkgray;
+      border: 3px solid darkgray;
+  }
+   :root .rmppgbsteps,
+  _:-ms-fullscreen {
+    justify-content: flex-start;
+  }
+
+  .rmppgbsteps {
+    padding-left: 0;
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+
+  .rmppgbsteps .rmppgbstepname {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .rmppgbstep {
+    margin-right: 0;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    float: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    z-index: 0;
+    max-width: 170px;
+  }
+
+  .rmppgbsteps .rmppgbstepcurrent .rmppgbsteplastnum,
+  .rmppgbsteps .rmppgbstepcurrent .rmppgbstepnum {
+    background-color: #f0c105;
+    border: 3px solid #f0c105;
+  }
+
+  .rmppgbsteps .rmppgbstepcurrent .rmppgbsteplastnum::after,
+  .rmppgbsteps .rmppgbstepcurrent .rmppgbstepnum::after {
+    background: none repeat scroll 0 0 darkgray;
+  }
+
+  .rmppgbsteps .rmppgbsteplastnum,
+  .rmppgbsteps .rmppgbstepnum {
+    background: white;
+  }
+
+  .rmppgbsteplastnum,
+  .rmppgbstepnum {
+    line-height: 2em;
+    width: 26px !important;
+    margin: 10px 0 5px;
+  }
+
+  .rmppgbstep .rmppgbsteplastnum::after,
+  .rmppgbstep .rmppgbstepnum::after {
+    position: absolute;
+    background: none repeat scroll 0 0 darkgray;
+    bottom: 58px;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .rmppgbstep .rmppgbsteplastnum::after {
+    left: 0;
+    width: 0;
+  }
+
+  .rmppgbsteps .rmppgbstepsubname {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    font-size: 14px;
+    position: static;
+    display: block;
+    height: 36px;
+  }
+
+  .rmppgbstephidden {
+    display: none;
+  }
+
+  .gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstepprevious .rmppgbstepnum::before {
+    content: "";
+    width: 8px !important;
+    height: 16px !important;
+    position: absolute;
+    z-index: 100;
+    margin-left: -4px;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: 1px;
+  }
+
+  .gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstep1.rmppgbstepprevious .rmppgbstepnum::before {
+    margin-left: -4px;
+  }
+
+  .gwt-HTML-check.rmp-ProgressBar .rmppgbsteps .rmppgbstepprevious .rmppgbstepnum {
+    color: darkgray;
+  }
+
 }
 
-.rmppgbstep {
-  flex: 100% 0 1;
-}
-
-.rmppgbsteps .rmppgbstepnum,
-.rmppgbsteps .rmppgbsteplastnum {
-  padding: 0.6rem 0 0.6rem 0.5rem;
-  width: 30px;
-  background-color: $secondaryColor;
-}
-
-.rmppgbstep::after {
-  right: auto;
-  left: 37px;
-  border-left: 20px solid $secondaryColor !important;
-}
-
-.rmppgbstepname {
-  top: 9px;
-  left: 37px;
-  font-size: 15px;
-  max-width: 275px;
-  padding-right: 5px;
-}
 
 .select2-container .select2-choice,
 .select2-container .select2-choice .select2-arrow {
