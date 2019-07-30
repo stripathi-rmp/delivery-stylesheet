@@ -20,7 +20,6 @@ const template = require('gulp-template')
 const fs = require('fs')
 
 // Utilities
-const sequence = require('gulp-sequence')
 const rename = require('gulp-rename')
 const del = require('del')
 
@@ -28,8 +27,6 @@ const del = require('del')
 const packageJSON = require('./package.json')
 const prefix = 'runmyprocess-delivery'
 
-// BUILD
-gulp.task('default', sequence('lint-sass', 'sass', 'lint-css', 'minify', 'backup', 'doc'))
 
 // SASS LINTING
 gulp.task('lint-sass', function () {
@@ -137,5 +134,8 @@ gulp.task('doc', () =>
       prefix: prefix
     }))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest(''))
+    .pipe(gulp.dest('./'))
 )
+
+// BUILD
+gulp.task('default', gulp.series('lint-sass', 'sass', 'lint-css', 'minify', 'backup', 'doc'))
