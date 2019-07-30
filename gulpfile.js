@@ -22,7 +22,6 @@ const fs = require('fs')
 // Utilities
 const sequence = require('gulp-sequence')
 const rename = require('gulp-rename')
-const gutil = require('gulp-util')
 const del = require('del')
 
 // Data
@@ -44,7 +43,6 @@ gulp.task('lint-sass', function () {
 });
 
 // SASS COMPILATION
-gulp.task('sass', sequence('sass-home','sass-app','sass-mobile'));
 
 gulp.task('sass-home', function () {
   del(['dist/css/tmp/*-home-*.css'])
@@ -92,7 +90,7 @@ gulp.task('sass-mobile', function () {
     .pipe(gulp.dest('dist/css/tmp'))
 });
 
-
+gulp.task('sass', gulp.series('sass-home','sass-app','sass-mobile'));
 
 // CSS LINTING
 gulp.task('lint-css', function () {

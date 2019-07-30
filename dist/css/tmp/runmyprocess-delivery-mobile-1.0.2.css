@@ -155,8 +155,7 @@ table.rowStyle {
   height: auto !important; }
 
 .colStyle td:not([width]) {
-  -webkit-box-flex: 0;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   -webkit-flex: 0 0 auto; }
 
 .colStyle > table > tbody > tr:not(.array-list) {
@@ -173,8 +172,7 @@ input[disabled] + label {
 
 @media only screen and (min-width: 591px) and (max-width: 960px) {
   .colStyle > table > tbody > tr > td {
-    -webkit-box-flex: 1 !important;
-            flex: 1 1 100% !important; } }
+    flex: 1 1 100% !important; } }
 
 @media screen and (max-width: 1024px) {
   .gwt-CheckBox-switch #id_switch_label, .gwt-CheckBox-disabled #id_switch_disabled_label {
@@ -182,11 +180,9 @@ input[disabled] + label {
 
 @media screen and (min-width: 1024px) {
   .rmpCaptcha > tbody > tr > td:nth-child(2) {
-    -webkit-box-flex: 0 !important;
-            flex: 0 0 60px !important; }
+    flex: 0 0 60px !important; }
   .colStyle > table > tbody > tr > td:not(.array-td-buttons) {
-    -webkit-box-flex: 1 !important;
-            flex: 1 1 30% !important; } }
+    flex: 1 1 30% !important; } }
 
 /*
 ===========================================================
@@ -201,7 +197,6 @@ input[disabled] + label {
     display: block !important;
     background: #1c1c1b; }
   .rmppgbstep {
-    -webkit-box-flex: 100%;
     flex: 100% 0 1; }
   .rmppgbstep:before {
     border: none; }
@@ -235,8 +230,7 @@ input[disabled] + label {
 
 @media screen and (min-width: 1024px) {
   .rmppgbstep {
-    -webkit-box-flex: unset;
-            flex: unset;
+    flex: unset;
     text-align: unset;
     background: none;
     color: #666;
@@ -271,41 +265,28 @@ input[disabled] + label {
     padding-left: 0;
     -webkit-padding-start: 0;
     -moz-padding-start: 0;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
     align-content: center;
     width: 100%;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    -webkit-box-align: end;
     align-items: flex-end; }
   .rmppgbsteps .rmppgbstepname {
-    -webkit-box-flex: 1;
     flex-grow: 1;
     width: 100%;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: end;
     justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
     font-size: 14px; }
   .rmppgbstep {
     margin-right: 0;
     position: relative;
-    -webkit-box-flex: 1;
     flex-grow: 1;
     float: none;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     align-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
     z-index: 0;
     max-width: 170px; }
@@ -339,7 +320,6 @@ input[disabled] + label {
     left: 0;
     width: 0; }
   .rmppgbsteps .rmppgbstepsubname {
-    -webkit-box-pack: end;
     justify-content: flex-end;
     font-size: 14px;
     position: static;
@@ -725,8 +705,7 @@ td.colStyle {
   padding: 0 10px; }
 
 .gwt-DisclosurePanel tbody > tr > td > div > table > tbody > tr > td > table > tbody > tr > .colStyle {
-  -webkit-box-flex: 1 !important;
-          flex: 1 1 100% !important; }
+  flex: 1 1 100% !important; }
 
 .gwt-DisclosurePanel, .gwt-TabPanel {
   background-color: #f7f7f7; }
