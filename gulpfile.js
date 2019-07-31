@@ -8,12 +8,13 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
-const cssnano = require('gulp-cssnano')
+//const cssnano = require('gulp-cssnano')
+const cleancss = require('gulp-clean-css')
 
 // Linter
 const stylelint = require('gulp-stylelint')
 const formatter = require('stylelint-formatter-pretty')
-const stylefmt = require('gulp-stylefmt')
+//const stylefmt = require('gulp-stylefmt')
 
 // Documentation
 const template = require('gulp-template')
@@ -92,8 +93,9 @@ gulp.task('sass', gulp.series('sass-home','sass-app','sass-mobile'));
 // CSS LINTING
 gulp.task('lint-css', function () {
   return gulp.src('dist/css/tmp/*.css')
-    .pipe(stylefmt())
+    //.pipe(stylefmt())
     .pipe(stylelint({
+      fix: true,
       failAfterError: false,
       reporters: [
         {formatter: formatter, console: true}
@@ -105,7 +107,9 @@ gulp.task('lint-css', function () {
 // CSS MINIFICATION
 gulp.task('minify', function () {
   return gulp.src('dist/css/tmp/*.css')
-    .pipe(cssnano())
+    //.pipe(cssnano())
+    //.pipe(cleancss({compatibility: 'ie8'}))
+    .pipe(cleancss({level: 2}))
     .pipe(rename(function (path) {
       path.basename += '.min'
     }))
