@@ -1,0 +1,115 @@
+.ATHeader input:focus,
+.gwt-DateBox:focus,
+.gwt-TextBox:focus,
+textarea:focus {
+  outline: $secondaryColor solid 2px;
+}
+
+.gwt-TextBox.full-width {
+  width: 100%;
+}
+
+.gwt-DateBox.full-width {
+  width: 90%;
+}
+
+.gwt-DateBox:not(.arrayTreeFilterComponent) {
+  padding: 5px;
+  min-width: 180px;
+}
+
+.ATHeader input[disabled],
+.ATHeader input[readonly],
+.gwt-DateBox[disabled],
+.gwt-DateBox[readonly],
+.gwt-ListBox[disabled],
+.gwt-ListBox[readonly],
+.gwt-TextBox[disabled],
+.gwt-TextBox[readonly],
+textarea[disabled],
+textarea[readonly] {
+  color: #191919;
+  background: #dcdcdc;
+}
+
+input:not(.full-width):not(#rmpseeall):not(.arrayTreeFilterComponent),
+textarea:not(.full-width) {
+  min-width: 180px;
+}
+
+.gwt-ListBox:not(.list-full-width):not(.arrayTreeFilterComponent),
+.gwt-Picker:not(.full-width) {
+  min-width: 194px;
+}
+
+.gwt-TabBarItem input[role="presentation"] {
+  min-width: unset !important;
+}
+
+.gwt-TextBox,
+.gwt-DateBox,
+.gwt-PasswordTextBox,
+.ATHeader input,
+textarea {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+a.select2-choice.select2-default {
+  border-radius: 3px;
+}
+
+.select2-container .select2-choice .select2-arrow {
+  border-radius: 0;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-drop-active {
+  border: 1px solid $secondaryColor !important;
+}
+
+.select2-results .select2-highlighted {
+  background: $secondaryColor !important;
+}
+
+.select2-container .select2-choice,
+.select2-container .select2-choice .select2-arrow,
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+  background: transparent !important;
+}
+
+.select2-container .select2-choice .select2-arrow {
+  border-left: 1px solid #aaa !important;
+}
+
+td.datePickerDay.datePickerDayIsToday {
+  background: $PrimaryColor;
+}
+
+.gwt-DatePicker {
+  .datePickerDay {
+    padding: 6px 11px;
+  }
+
+  .datePickerDayIsValue {
+    background: $secondaryColor;
+  }
+}
+// 
+// .ArrayTree-Panel .ATHeader input:not(.arrayTreeFilterComponent),
+// .ArrayTree-Panel .gwt-ListBox:not(.arrayTreeFilterComponent),
+// .ArrayTree-Panel .gwt-PasswordTextBox,
+// .ArrayTree-Panel .gwt-TextBox:not(.full-width):not(.arrayTreeFilterComponent),
+// textarea {
+//   width: 250px;
+// }
+
+.ImageButton.browseFileStyle {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 22'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpath d='M25,6.27a3.37,3.37,0,0,0-2.47-1H12v-.5a3.37,3.37,0,0,0-1-2.47,3.37,3.37,0,0,0-2.47-1h-5A3.37,3.37,0,0,0,1,2.27,3.37,3.37,0,0,0,0,4.74v15a3.37,3.37,0,0,0,1,2.47,3.37,3.37,0,0,0,2.47,1h19a3.52,3.52,0,0,0,3.5-3.5v-11A3.37,3.37,0,0,0,25,6.27Z' transform='translate(0 -1.24)' fill='%23f0c105'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,125 @@
+.gwt-Button,
+.gwt-Button-cancel,
+.gwt-Button-cancel:hover,
+.gwt-Button-other,
+.gwt-Button-other:hover,
+.gwt-Button-save,
+.gwt-Button-save:hover,
+.gwt-Button:hover,
+.gwt-Button-Bubble,
+.gwt-Button-cancelBubble,
+.gwt-Button-cancelBubble:hover,
+.gwt-Button-otherBubble,
+.gwt-Button-otherBubble:hover,
+.gwt-Button-saveBubble,
+.gwt-Button-saveBubble:hover,
+.gwt-Button-Bubble:hover {
+  border: none;
+  border-radius: 3px;
+  padding: 13px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  display: block;
+  width: 200px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gwt-Button-Bubble,
+.gwt-Button-cancelBubble,
+.gwt-Button-cancelBubble:hover,
+.gwt-Button-otherBubble,
+.gwt-Button-otherBubble:hover,
+.gwt-Button-saveBubble,
+.gwt-Button-saveBubble:hover,
+.gwt-Button-Bubble:hover {
+  &::after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    margin: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all $duration $transition-style;
+  }
+
+  &:active::after {
+    transform: scale(0);
+    opacity: 1;
+    transition: 0s;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .gwt-Button-bubble,
+  .gwt-Button-cancel-bubble,
+  .gwt-Button-cancel-bubble:hover,
+  .gwt-Button-other-bubble,
+  .gwt-Button-other-bubble:hover,
+  .gwt-Button-save-bubble,
+  .gwt-Button-save-bubble:hover,
+  .gwt-Button-bubble:hover {
+    &::after {
+      content: none !important;
+    }
+  }
+}
+
+.gwt-Button,
+.gwt-Button-Bubble {
+  background: #779d2f !important;
+
+  &:hover {
+    background: #779d2f;
+  }
+}
+
+.gwt-Button-cancel,
+.gwt-Button-cancelBubble {
+  background: #cf0b2a !important;
+
+  &:hover {
+    background: #cf0b2a;
+  }
+}
+
+.gwt-Button-save,
+.gwt-Button-saveBubble {
+  background: #d98f00 !important;
+
+  &:hover {
+    background: #d98f00;
+  }
+}
+
+.gwt-Button-other,
+.gwt-Button-otherBubble {
+  background: #2e769e !important;
+
+  &:hover {
+    background: #2e769e !important;
+  }
+}
+
+.gwt-Button[disabled],
+.gwt-PushButton[disabled],
+button[disabled] {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+}
+
+.gwt-Button-disabled,
+.gwt-Button[disabled]:hover {
+  color: #c1c1c1 !important;
+  background: #dcdcdc !important;
+  border: none;
+}

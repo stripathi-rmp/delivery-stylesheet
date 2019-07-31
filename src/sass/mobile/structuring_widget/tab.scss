@@ -1,0 +1,46 @@
+.array-slider::before {
+  background: $PrimaryColor;
+  padding: 0.35rem;
+}
+
+.gwt-TabBarItem {
+  background-color: $PrimaryColor !important;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gwt-TabBarItem-selected {
+  background-color: $PrimaryColor !important;
+  color: $secondaryColor;
+}
+
+.gwt-TabBarItem::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 7px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 244.74 315.37'%3E%3Ctitle%3ESans titre - 1%3C/title%3E%3Cpolygon points='122.37 0 0 95.87 31.5 127.37 122.37 49.5 213.24 127.37 244.74 95.87 122.37 0' fill='%23f0c105'/%3E%3Cpolygon points='122.37 315.37 244.74 219.5 213.24 188 122.37 265.87 31.5 188 0 219.5 122.37 315.37' fill='%23f0c105'/%3E%3C/svg%3E");
+}
+
+.gwt-TabBarItem-wrapper.noselect::before, .gwt-TabBarFirst-wrapper::before {
+    background-color: transparent !important;
+}
+
+@media screen and (min-width:1024px) {
+    .gwt-TabBarItem::before {
+        display: none;
+    }
+
+    .gwt-TabBarItem {
+        margin: 0 1px 0 0 !important;
+    }
+
+    .gwt-TabBar {
+        background: #FFFFFF !important;
+    }
+}
+
+.gwt-TabPanel>tbody>tr:first-child{
+  border-bottom:none;
+}

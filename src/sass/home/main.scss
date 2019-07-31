@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "variables";
+
+/*
+
+Version: delivery homepage - 1.0.5
+-----------------------------------------------------------------------------------
+
+CSS INDEX
+===================
+
+1. Theme default CSS
+2. Header
+	2.1 General Header
+	2.2 Basket
+	2.3 Navigation
+3 Structuring widgets
+	3.1 Section
+	3.2 Tuile
+
+-----------------------------------------------------------------------------------
+*/
+
+/*
+===========================================================
+	1. Theme Default CSS
+=============================================================
+*/
+
+/*
+    Used Colors (material default)
+    PrimaryColor: #1c1c1b;
+    secondaryColor: #f0c105;
+*/
+@import "default";
+@import "old_homepage";
+
+/*
+===========================================================
+  	2. Header
+===========================================================
+*/
+
+/*
+	2.1 General header
+----------------------------
+*/
+@import "header/general";
+
+/*
+	2.2 Basket
+----------------------------
+*/
+@import "header/basket";
+
+/*
+	2.3 Navigation
+----------------------------
+*/
+@import "header/nav";
+
+/*
+===========================================================
+	3. Structuring widgets
+===========================================================
+*/
+
+/*
+	3.1 Section
+----------------------------
+*/
+@import "structuring_widget/section";
+
+/*
+	3.2 Tuile
+----------------------------
+*/
+@import "structuring_widget/tuile";

@@ -1,0 +1,100 @@
+.addSmallStyle.add-button {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM11,11v6H8V11H2V8H8V2h3V8h6v3Z' fill='%232F779D'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dashStyle.delete-button {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3E%3Ctitle%3E2%3C/title%3E%3Cpath d='M9.5,0A9.5,9.5,0,1,0,19,9.5,9.5,9.5,0,0,0,9.5,0ZM2,11V8H17v3Z' fill='%232F779D'/%3E%3C/svg%3E");
+  object-position: -99999px 99999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ColumnHeader:not(.ColumnFilter),
+.array-column-footer,
+.array-header td,
+.array-header .array-td-buttons{
+  background: $secondaryColor !important;
+  color: #fff;
+}
+
+.Array-hideBtn .array-td-buttons {
+  display: none;
+}
+
+.array-footer > td,
+.array-header {
+  background: $secondaryColor !important;
+}
+
+.array-footer{
+  border-bottom: solid 1px #DDD;
+}
+
+.array-header{
+  border-top: $secondaryColor !important;
+}
+
+.array-column-footer{
+  min-height:27.5px
+}
+
+.array-list{
+  background:#f7f7f7 !important;
+  border-left:1px solid rgba(0, 0, 0, 0.12);
+  border-right:1px solid rgba(0, 0, 0, 0.12);
+  border-bottom:1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.array-list .array-td-buttons{
+  background:transparent !important;
+}
+
+.ATHeader>tbody>tr.array-slider, tr.array-slider {
+    padding: 2.75rem 0 !important;
+}
+
+.array-slider {
+    background-color: #fff !important;
+
+    .rmpInput,.rmpList,.rmpFileUpload{
+      padding: 0.5rem;
+    }
+}
+
+tr {
+    &.array-slider {
+        &.in {
+            background-color: #fff !important;
+        }
+    }
+}
+
+.array-slider>td[class*="ArrayTreeColumn"]::before,
+.array-slider>td[class*="array-column"]::before{
+    font-size: 1rem;
+    color:#fff;
+    background-color: $secondaryColor;
+    padding: .5rem;
+}
+
+.array-slider>td:not(.hide) {
+    border-top: none !important;
+}
+
+tr.array-slider>td>div {
+    padding-left: .5rem;
+    margin: 1rem 0 !important;
+}
+
+.gwt-TreeItem td {
+    border-bottom: none !important;
+}
+
+@media only screen and (max-width:960px) and (min-width:591px){
+  .array-header .array-td-buttons ~ td{
+    display:block !important;
+  }
+}

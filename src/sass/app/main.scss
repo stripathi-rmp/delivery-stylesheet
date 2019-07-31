@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "variables";
+
+/*
+
+Version: delivery app - 1.0.5
+-----------------------------------------------------------------------------------
+
+Helpfull Customisation
+========================
+
+  +---------------------------+
+  | Used Colors               |
+  |---------------------------|
+  | PrimaryColor: 1c1c1b;     |
+  | SecondaryColor: f0c105;   |
+  | TertiaryColor: 2f779d;    |
+  +---------------------------+
+
+  +-------------------------------+
+  | Buttons type (class suffix)   |
+  |-------------------------------|
+  | Default: green -> (no suffix) |
+  | Save: orange -> suffix save   |
+  | Cancel: red -> suffix cancel  |
+  | Other: blue -> suffix other   |
+  +-------------------------------+
+
+  +-----------------------------------------+
+  | Array                                   |
+  |-----------------------------------------|
+  | Default -> (no suffix)                  |
+  | Hide button (first collumn) -> hideBtn  |
+  +-----------------------------------------+
+
+CSS INDEX
+===================
+
+1. Theme default CSS
+2. Header
+	2.1 General Header
+	2.2 Basket
+	2.3 Navigation
+	2.4 Progress Bar
+3. General widget
+	3.1 Button
+	3.2 General_widget
+	3.3 Checkbox_radio
+	3.4 Capcha
+	3.5 Report
+	3.6 Upload
+  3.7 Tooltip
+  3.8 Modal
+  3.9 Table in HTML widget
+4. Structuring widgets
+	4.1 Section
+	4.2 Tab
+	4.3 Array
+
+-----------------------------------------------------------------------------------
+
+===========================================================
+	1. Theme Default CSS
+===========================================================
+*/
+
+@import "default";
+
+/*
+===========================================================
+	2. Header
+===========================================================
+*/
+
+/*
+	2.1 General header
+----------------------------
+*/
+@import "header/header";
+
+/*
+	2.2 Basket
+----------------------------
+*/
+@import "header/basket";
+
+/*
+	2.3 Navigation
+----------------------------
+*/
+@import "header/nav";
+
+/*
+	2.4 Progress Bar
+----------------------------
+*/
+@import "header/progress_bar";
+
+/*
+===========================================================
+	3. General widget
+===========================================================
+*/
+
+/*
+	3.1 Button
+----------------------------
+*/
+@import "input_widget/button";
+
+/*
+	3.2 General_input
+----------------------------
+*/
+@import "input_widget/general_widget";
+
+/*
+	3.3 Checkbox_radio
+----------------------------
+*/
+@import "input_widget/checkbox_radio";
+
+/*
+	3.4 Capcha
+----------------------------
+*/
+@import "input_widget/capcha";
+
+/*
+	3.5 Report
+----------------------------
+*/
+@import "input_widget/report";
+
+/*
+	3.6 Upload
+----------------------------
+*/
+@import "input_widget/upload";
+
+/*
+	3.7 Tooltip
+----------------------------
+*/
+@import "input_widget/tooltip";
+
+/*
+	3.8 Modal
+----------------------------
+*/
+@import "input_widget/modal";
+
+/*
+	3.9 Table in HTML widget
+----------------------------
+*/
+@import "input_widget/html";
+
+/*
+===========================================================
+	4. Structuring widgets
+===========================================================
+*/
+
+/*
+	4.1 Section
+----------------------------
+*/
+@import "structuring_widget/section";
+
+/*
+	4.1 Tab
+----------------------------
+*/
+@import "structuring_widget/tab";
+
+/*
+	4.1 Array
+----------------------------
+*/
+@import "structuring_widget/array";

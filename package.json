@@ -1,0 +1,61 @@
+{
+  "name": "delivery-stylesheet",
+  "version": "1.0.5",
+  "versionHomepage": "1.0.0",
+  "versionApp": "1.0.7",
+  "versionMobile": "1.0.2",
+  "description": "This template is intended to be used by RunMyProcess Delivery Team as an additional CSS layer on top of portal2 CSS.",
+  "directories": {
+    "doc": "./doc",
+    "test": "./test"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "del": "^5.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^9.0.0",
+    "gulp-template": "^5.0.0",
+    "stylelint": "10.1.0",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-formatter-pretty": "^1.1.2",
+    "stylelint-scss": "^3.9.2"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "build": "gulp",
+    "lint-sass": "gulp lint-sass",
+    "sass": "gulp sass",
+    "lint-css": "gulp lint-css",
+    "minify": "gulp minify",
+    "backup": "gulp backup",
+    "doc": "gulp doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://fmartin@gitlab.runmyprocess.com/delivery/stylesheet.git"
+  },
+  "homepage": "https://runmyprocess.atlassian.net/wiki/spaces/delivery/pages/30900445/Howto+-+Use+the+Delivery+Stylesheet",
+  "bugs": "https://runmyprocess.atlassian.net/secure/RapidBoard.jspa?projectKey=DELCSS",
+  "contributors": [
+    {
+      "name": "Quentin Boussard",
+      "email": "qboussard@runmyprocess.com"
+    },
+    {
+      "name": "David Courtaigne",
+      "email": "dcourtaigne@runmyprocess.com"
+    },
+    {
+      "name": "Franck Martin",
+      "email": "fmartin@runmyprocess.com"
+    }
+  ],
+  "license": "ISC"
+}
